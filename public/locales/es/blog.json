@@ -1,0 +1,14 @@
+{
+  "pageTitle": "Blog - ENGYX",
+  "pageDescription": "Lee nuestras últimas publicaciones sobre energía renovable, tecnología blockchain y el futuro de la inversión en activos del mundo real.",
+  "mainTitle": "Nuestro Blog",
+  "mainSubtitle": "Explora artículos sobre energía renovable, tokenización de activos y el futuro de las finanzas descentralizadas.",
+  "noPostsTitle": "No hay publicaciones todavía",
+  "noPostsDescription": "Vuelve pronto para leer nuestros artículos.",
+  "authorFallback": "Equipo Engyx",
+  "backToBlog": "Volver al Blog",
+  "errorTitle": "Error",
+  "errorNotFound": "No se pudo encontrar la publicación.",
+  "publishedOn": "Publicado el",
+  "postMetaTitle": "{{title}} - Blog de ENGYX"
+}

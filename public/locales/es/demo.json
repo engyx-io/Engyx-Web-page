@@ -1,0 +1,130 @@
+{
+  "metaTitle": "Demo Interactiva - ENGYX",
+  "metaDescription": "Explora la plataforma ENGYX con nuestra demo interactiva. Descubre cómo funciona la tokenización de energía renovable.",
+  "title": "Demo Interactiva",
+  "subtitle": "Explora todas las funcionalidades de ENGYX en tiempo real. Descubre cómo revolucionamos la energía renovable con blockchain.",
+  "controls": {
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "reset": "Reiniciar",
+    "realTimeData": "Datos en tiempo real",
+    "progress": "Progreso del Demo"
+  },
+  "devices": {
+    "desktop": "Escritorio",
+    "tablet": "Tableta",
+    "mobile": "Móvil"
+  },
+  "steps": [
+    {
+      "title": "Bienvenida a ENGYX",
+      "description": "Explora la plataforma de tokenización de energía renovable más avanzada del mundo.",
+      "duration": 3000
+    },
+    {
+      "title": "Dashboard Principal",
+      "description": "Monitorea en tiempo real todas las métricas de energía, ingresos e impacto ambiental.",
+      "duration": 4000
+    },
+    {
+      "title": "Plantas de Energía",
+      "description": "Visualiza el estado operativo y rendimiento de cada planta solar, eólica e hidrógeno.",
+      "duration": 4000
+    },
+    {
+      "title": "Portafolio Personal",
+      "description": "Gestiona tus inversiones, tokens y recompensas de manera intuitiva.",
+      "duration": 3500
+    },
+    {
+      "title": "Simulador de Inversión",
+      "description": "Calcula proyecciones de ROI y impacto ambiental antes de invertir.",
+      "duration": 4000
+    },
+    {
+      "title": "Mapa Global",
+      "description": "Explora todas las plantas de energía distribuidas mundialmente.",
+      "duration": 3000
+    }
+  ],
+  "welcome": {
+    "title": "Bienvenido a ENGYX",
+    "description": "La plataforma más avanzada para tokenizar energía renovable y crear un futuro sostenible."
+  },
+  "dashboard": {
+    "title": "Dashboard Principal",
+    "totalEnergy": "Energía Total",
+    "revenue": "Ingresos",
+    "investors": "Inversores",
+    "active": "Activos",
+    "avgROI": "ROI Promedio",
+    "annual": "Anual",
+    "envImpact": "Impacto Ambiental",
+    "co2Avoided": "CO₂ Evitado",
+    "treesEquivalent": "Árboles Equivalentes",
+    "networkStatus": "Estado de la Red",
+    "systemOperational": "Sistema Operativo",
+    "activePlants": "{{count}}/3 plantas activas"
+  },
+  "plants": {
+    "title": "Plantas de Energía Activas",
+    "types": {
+      "solar": "Solar",
+      "eólica": "Eólica",
+      "hidrógeno": "Hidrógeno"
+    },
+    "status": {
+      "operational": "Operativa",
+      "maintenance": "Mantenimiento"
+    },
+    "capacity": "Capacidad",
+    "energyToday": "Energía Hoy",
+    "revenue": "Ingresos",
+    "efficiency": "Eficiencia"
+  },
+  "portfolio": {
+    "title": "Mi Portafolio",
+    "totalInvested": "Total Invertido",
+    "currentValue": "Valor Actual",
+    "returns": "Retornos",
+    "roi": "ROI",
+    "myTokens": "Mis Tokens",
+    "tokenName": "Token {{token}}"
+  },
+  "simulator": {
+    "title": "Simulador de Inversión",
+    "investmentAmount": "Monto de Inversión (USD)",
+    "period": "Período (meses)",
+    "months": "{{count}} meses",
+    "plantType": "Tipo de Planta",
+    "types": {
+      "solar": "Solar",
+      "wind": "Eólica",
+      "hydrogen": "Hidrógeno"
+    },
+    "projectedReturns": "Proyección de Retornos",
+    "initialInvestment": "Inversión inicial",
+    "estimatedROI": "ROI estimado ({{months}}m)",
+    "projectedReturn": "Retorno proyectado",
+    "estimatedTotal": "Total estimado",
+    "envImpact": "Impacto ambiental",
+    "co2Avoided": "Evitarás ~{{amount}} toneladas de CO₂"
+  },
+  "map": {
+    "title": "Mapa Global de Plantas",
+    "interactiveMap": "Mapa Interactivo",
+    "description": "Visualiza la ubicación de todas las plantas de energía renovable distribuidas globalmente.",
+    "operational": "Plantas Operativas",
+    "activeCount": "{{count}} activas",
+    "maintenance": "En Mantenimiento",
+    "maintenanceCount": "{{count}} planta",
+    "inDevelopment": "En Desarrollo",
+    "developmentCount": "{{count}} proyectos"
+  },
+  "cta": {
+    "title": "¿Listo para comenzar tu revolución energética?",
+    "description": "Únete a ENGYX y forma parte del futuro de la energía descentralizada. Invierte en proyectos reales y obtén retornos sostenibles.",
+    "startNow": "Comenzar Ahora",
+    "contactSales": "Contactar Ventas"
+  }
+}

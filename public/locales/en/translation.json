@@ -1,0 +1,897 @@
+{
+      "nav": {
+        "home": "Home",
+        "presale": "Pre-sale",
+        "market": "Market",
+        "services": "Services",
+        "blockchain": "Blockchain",
+        "contact": "Contact",
+        "connectWallet": "Connect Wallet"
+      },
+      "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "close": "Close",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "loadingPDF": "Loading PDF..."
+      },
+      "dashboard": {
+        "title": "ENGYX Dashboard",
+        "subtitle": "Energy Monitoring System",
+        "lastUpdate": "Last update",
+        "systemActive": "SYSTEM ACTIVE",
+        "update": "Update",
+        "profile": "Profile",
+        "metaDescription": "ENGYX Dashboard - Monitor your renewable energy investments in real time."
+      },
+      "tabs": {
+        "overview": "Global Overview",
+        "plants": "Active Plants",
+        "development": "In Development",
+        "forSale": "Projects for Sale",
+        "portfolio": "My Portfolio",
+        "map": "Global Map",
+        "simulator": "Simulator",
+        "staking": "Staking",
+        "admin": "Admin"
+      },
+      "presale": {
+        "metaTitle": "$ENGYX Pre-sale",
+        "metaDescription": "Participate in the $ENGYX token pre-sale. Get early access to the decentralized energy revolution.",
+        "title": "$ENGYX Pre-sale",
+        "subtitle": "Join the energy revolution. Get $ENGYX tokens with a 50% discount before the public launch.",
+        "endsIn": "Pre-sale ends in:",
+        "connectWallet": "Connect Wallet",
+        "buyTokens": "Buy $ENGYX",
+        "payWith": "Pay with:",
+        "amount": "Amount",
+        "youWillReceive": "You will receive:",
+        "currentPrice": "Current price:",
+        "processing": "Processing...",
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds",
+        "statsError": "Could not load presale data.",
+        "completeConnection": "Complete Connection",
+        "completeConnectionDesc": "Log in or sign up to link your wallet and continue.",
+        "securityTitle": "Guaranteed Security",
+        "securityDesc1": "Smart contracts audited by leading firms.",
+        "securityDesc2": "Funds secured in multi-signature wallets.",
+        "securityDesc3": "Full blockchain transparency for all transactions.",
+        "acceptedCurrencies": "We Accept",
+        "benefitsTitle": "Exclusive Benefits",
+        "benefit1Title": "Preferential Price",
+        "benefit1Desc": "50% discount on the public launch price",
+        "benefit2Title": "Early Access",
+        "benefit2Desc": "First to access all platform features",
+        "benefit3Title": "Staking Bonus",
+        "benefit3Desc": "Additional 12% APY on staking for the first 12 months",
+        "benefit4Title": "VIP Community",
+        "benefit4Desc": "Exclusive access to events and governance decisions",
+        "faqTitle": "Frequently Asked Questions",
+        "faq1Question": "Which wallets are supported?",
+        "faq1Answer": "We support EVM wallets like MetaMask, Trust Wallet, and more via WalletConnect. We also support Solana wallets like Phantom and Solflare.",
+        "faq2Question": "What is the minimum investment?",
+        "faq2Answer": "The minimum investment to participate in the pre-sale is $50 USD.",
+        "faq3Question": "How will I receive my $ENGYX tokens?",
+        "faq3Answer": "Tokens will be distributed to the wallet you used for the purchase after the pre-sale period ends (TGE - Token Generation Event). We will announce the exact dates on our official channels.",
+        "faq4Question": "Is my investment secure?",
+        "faq4Answer": "Yes. We use Coinbase Commerce to process payments, one of the most secure platforms in the world. Our smart contracts are audited to ensure the security of funds and tokens.",
+        "statsTitle": "Pre-sale Statistics",
+        "statsProgress": "Target Progress",
+        "statsParticipants": "Participants",
+        "statsCurrentPrice": "Current Price",
+        "statsTokensSold": "Tokens Sold:",
+        "statsTokensAvailable": "Tokens Available:",
+        "statsCurrentDiscount": "Current Discount:",
+        "statsLimitedSupply": "Limited Supply",
+        "statsLimitedSupplyDesc": "Only 10,000,000 tokens available in pre-sale",
+        "statsLaunchPriceDiscount": "Launch Price Discount",
+        "statsLaunchPriceDiscountDesc": "Public price will be ${{launchPrice}} - Save {{discount}}% by buying now!",
+        "purchaseFormTitle": "Buy $ENGYX Token",
+        "purchaseFormSubtitle": "Current phase: ${{price}}/token",
+        "purchaseFormAmountUSD": "Amount in USD",
+        "purchaseFormTokensToReceive": "$ENGYX Tokens to receive",
+        "purchaseFormConnectPrompt": "Connect your wallet to continue",
+        "purchaseFormConnectEVM": "EVM Wallet",
+        "purchaseFormConnectSolana": "Solana Wallet",
+        "purchaseFormPayWithCoinbase": "Pay with Coinbase",
+        "notification": {
+          "connectWalletFirst": "Please connect your wallet first.",
+          "minInvestment": "The minimum investment is $50 USD.",
+          "redirectingToCoinbase": "Redirecting to Coinbase",
+          "redirectingToCoinbaseDesc": "Complete the payment in the new tab. The page will update automatically.",
+          "coinbaseChargeError": "Could not create Coinbase charge.",
+          "paymentError": "Could not process payment. Please try again.",
+          "addressCopied": "Wallet address copied to clipboard.",
+          "copied": "Copied"
+        }
+      },
+      "contact": {
+        "metaTitle": "Contact - ENGYX",
+        "metaDescription": "Get in touch with ENGYX. We are here to help you with renewable energy tokenization and blockchain.",
+        "title": "Contact Us",
+        "subtitle": "Ready to revolutionize the energy future? Let's connect and build a sustainable ecosystem together.",
+        "sendMessage": "Send us a message",
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send Message",
+        "info": "Contact Information",
+        "phone": "Phone",
+        "office": "Office",
+        "joinTelegram": "Join Telegram",
+        "sending": "Sending...",
+        "followUs": "Follow Us",
+        "officeLocation": "Delaware, United States",
+        "loadingRecaptcha": "Loading reCAPTCHA...",
+        "joinTelegramChannel": "Join our Telegram Channel",
+        "placeholders": {
+          "name": "Your full name",
+          "email": "you@email.com",
+          "company": "Your company name",
+          "subject": "How can we help you?",
+          "message": "Tell us more about your project..."
+        },
+        "ctaHelp": {
+          "title": "Need immediate help?",
+          "desc": "Join our community on Telegram for real-time support."
+        },
+        "notifications": {
+          "configErrorTitle": "❌ Configuration Error",
+          "configErrorDesc": "Could not load reCAPTCHA key. The form cannot be submitted.",
+          "configErrorRecaptcha": "reCAPTCHA is not configured. The form cannot be submitted.",
+          "verificationRequiredTitle": "⚠️ Verification Required",
+          "verificationRequiredDesc": "Please complete the reCAPTCHA verification.",
+          "successTitle": "🎉 Message sent successfully!",
+          "successDesc": "We have received your message. We will get back to you soon.",
+          "errorTitle": "❌ Error sending message",
+          "errorDesc": "Please try again later."
+        }
+      },
+      "notification": {
+        "featureNotImplementedTitle": "🚧 Feature Not Implemented",
+        "featureNotImplementedDesc": "But don't worry! You can request it in your next prompt! 🚀",
+        "walletConnected": "🎉 Wallet connected successfully!",
+        "investmentSuccess": "🎉 Investment successful!",
+        "walletNotConnected": "⚠️ Wallet not connected",
+        "addressCopied": "📋 Address copied",
+        "dataUpdated": "✅ Data updated successfully",
+        "dataUpdatedDesc": "Dashboard data has been updated with the latest information.",
+        "stakingSuccess": "🎉 Staking successful!",
+        "stakingSuccessDesc": "You have successfully staked {{amount}} $ENGYX for {{period}} days.",
+        "unstakingSuccess": "🎉 Unstaking successful!",
+        "unstakingSuccessDesc": "Your tokens have been unlocked and rewards transferred.",
+        "walletDisconnected": "👋 Wallet disconnected",
+        "purchaseSuccess": "🎉 Purchase successful!"
+      },
+      "simulator": {
+        "title": "Investment Simulation",
+        "configureInvestment": "Configure Investment",
+        "investmentAmount": "Investment Amount (USD)",
+        "period": "Period (months)",
+        "period12": "12 months",
+        "period24": "24 months",
+        "period36": "36 months",
+        "selectProject": "Select Project",
+        "projectedReturns": "Projected Returns",
+        "projectedGain": "Projected Gain",
+        "initialInvestment": "Initial Investment",
+        "estimatedROI": "Estimated ROI",
+        "finalTotal": "Final Total",
+        "startInvestment": "Start Investment",
+        "projectSoldOut": "❌ Project Completely Sold Out",
+        "projectSoldOutDesc": "This project has sold out all available tokens. Please select another project.",
+        "noProjectsAvailable": "No Projects Available",
+        "noProjectsDesc": "All projects are sold out. New projects will be available soon.",
+        "noProjectSelected": "Project not found",
+        "inMonths": "in {{months}} months",
+        "annual": "annual",
+        "project": "Project",
+        "environmentalImpact": "Estimated Environmental Impact",
+        "co2Avoided": "CO₂ Avoided",
+        "treesEquivalent": "Trees Equivalent"
+      },
+      "staking": {
+        "title": "Staking Simulator",
+        "availablePools": "Available Pools",
+        "myStakes": "My Stakes",
+        "newStake": "New Stake",
+        "amount": "Amount",
+        "selectedPool": "Selected Pool",
+        "projectedRewards": "Projected Rewards",
+        "stakingAmount": "Staking Amount",
+        "lockPeriod": "Lock Period",
+        "estimatedRewards": "Estimated Rewards",
+        "stakeNow": "Stake Now",
+        "processing": "Processing...",
+        "minStakeRequired": "Minimum required: ${{amount}}",
+        "benefits": "Staking Benefits",
+        "benefit1": "Earn passive rewards",
+        "benefit2": "Participate in governance",
+        "benefit3": "Access to exclusive pools",
+        "benefit4": "Flexible token locking",
+        "pool30Days": "30 Days Pool",
+        "pool90Days": "90 Days Pool",
+        "pool180Days": "180 Days Pool",
+        "pool365Days": "365 Days Pool",
+        "minStake": "Min Stake",
+        "totalStaked": "Total Staked",
+        "participants": "Participants",
+        "active": "Active",
+        "completed": "Completed",
+        "staked": "Staked",
+        "rewards": "Rewards",
+        "unstake": "Unstake",
+        "noStakes": "You have no active stakes",
+        "days": "days"
+      },
+      "language": {
+        "spanish": "Español",
+        "english": "English"
+      },
+      "blockchainPage": {
+        "metaTitle": "Blockchain - ENGYX",
+        "metaDescription": "Discover ENGYX's blockchain technology, full whitepaper, and the tokenomics of the $ENGYX token.",
+        "title": "Blockchain",
+        "subtitle": "Decentralized technology to democratize investment in energy asset revenues",
+        "securityTitle": "Security",
+        "securityDesc": "Audited smart contracts and enterprise-grade security protocols",
+        "decentralizationTitle": "Decentralization",
+        "decentralizationDesc": "Community governance and transparent operations without intermediaries",
+        "scalabilityTitle": "Scalability",
+        "scalabilityDesc": "Optimized architecture to handle a global ecosystem of assets",
+        "whitepaperTitle": "Whitepaper",
+        "whitepaperDesc": "Complete technical documentation of the ENGYX protocol",
+        "downloadPDF": "Download PDF",
+        "loadingPDF": "Loading...",
+        "tokenomicsTitle": "Tokenomics $ENGYX",
+        "tokenomicsDesc": "Distribution and utility of the native token - 1B tokens",
+        "roadmapTitle": "Roadmap",
+        "roadmapDesc": "Development plan and future goals",
+        "ctaTitle": "Ready to be part of the future?",
+        "ctaDesc": "Join the $ENGYX pre-sale and get early access to the digital revenue revolution",
+        "joinPresale": "Join Pre-sale",
+        "accessPlatform": "Access Platform",
+        "restrictedAccessTitle": "Restricted Access",
+        "restrictedAccessDesc": "Please log in and connect your wallet to download the Whitepaper.",
+        "downloadErrorTitle": "Download Error",
+        "downloadErrorDesc": "Could not find the Whitepaper. Please try again later.",
+        "viewFullWhitepaper": "View Full Whitepaper",
+        "whitepaper": {
+          "s1_title": "1. Executive Summary",
+          "s1_content": "ENGYX revolutionizes the energy sector by digitizing revenue streams from renewable energy assets. Our platform allows global investors to participate in the profits of clean energy projects, generating sustainable and measurable returns.",
+          "s2_title": "2. Problem and Opportunity",
+          "s2_content": "The traditional energy sector faces high entry barriers, a lack of transparency, and limited access for small investors. ENGYX democratizes investment in renewable energy, creating a transparent and accessible ecosystem.",
+          "s3_title": "3. Technological Solution",
+          "s3_content": "We use smart contracts on Ethereum to digitize the revenues of renewable energy plants. Each token represents a share of the generated income, with dividends automatically distributed based on actual production.",
+          "s4_title": "4. Blockchain Architecture",
+          "s4_content": "Audited smart contracts, oracles for real-time energy production data, a decentralized governance system, and staking mechanisms for additional rewards.",
+          "s5_title": "5. Business Model",
+          "s5_content": "Commissions from digitizing plant revenues, transaction fees on the platform, and premium analytics services for project developers.",
+          "s6_title": "6. Roadmap and Development",
+          "s6_content": "Q1 2025: Pre-sale launch and MVP. Q2 2025: First plant with digitized revenues. Q3 2025: Expansion to 5 countries. Q4 2025: Launch of decentralized governance."
+        }
+      },
+      "main": {
+        "loading": "loading"
+      },
+      "marketplace": {
+        "metaTitle": "Marketplace - ENGYX",
+        "metaDescription": "Explore and trade revenue-sharing tokens from renewable energy projects on the ENGYX marketplace.",
+        "title": "Digital Energy Market",
+        "subtitle": "Discover investment opportunities on our Launchpad and trade revenue tokens on our Exchange.",
+        "launchpadTitle": "Launchpad",
+        "exchangeTitle": "Exchange",
+        "tabs": {
+          "newOpportunities": "New Opportunities",
+          "assetMarket": "Asset Market"
+        },
+        "projectStatus": {
+          "soldOut": "Sold Out",
+          "lastUnits": "Last Units",
+          "available": "Available"
+        },
+        "projectCard": {
+          "capacity": "Capacity",
+          "tokenPrice": "Token Price",
+          "roi": "ROI",
+          "tokenizedProgressEquity": "% of Project Tokenized",
+          "tokenizedProgressRevenue": "% of Revenue Tokenized",
+          "fundedProgress": "% Funded",
+          "soldProgress": "% Sold",
+          "viewDetails": "View Details"
+        },
+        "toggle": {
+          "expand": "Expand",
+          "collapse": "Collapse"
+        },
+        "searchPlaceholder": "Search token or project...",
+        "filter": {
+          "placeholder": "Filter by type",
+          "all": "All types",
+          "solar": "Solar",
+          "wind": "Wind",
+          "hydro": "Hydroelectric"
+        },
+        "table": {
+          "name": "Name",
+          "symbol": "Symbol",
+          "tokenizationType": "Tokenization Type",
+          "network": "Network",
+          "lastPrice": "Last Price",
+          "change24h": "Change (24H)",
+          "volume24h": "Volume (24H)",
+          "marketCap": "Market Cap",
+          "actions": "Actions",
+          "loading": "Loading tokens...",
+          "noResults": "No tokens found.",
+          "buy": "Buy",
+          "sell": "Sell",
+          "errorTokens": "Error loading tokens",
+          "errorTokensDesc": "Could not fetch secondary market data.",
+          "errorProjects": "Error loading projects",
+          "errorProjectsDesc": "Could not fetch projects for sale."
+        },
+        "pagination": {
+          "previous": "Previous",
+          "next": "Next",
+          "pageInfo": "Page {{currentPage}} of {{totalPages}}"
+        }
+      },
+      "servicesPage": {
+        "metaTitle": "Services - Engyx Digital Energy",
+        "metaDescription": "Discover our services for asset tokenization, decentralized marketplace, smart contracts, and on-chain monitoring.",
+        "title": "Our Services",
+        "subtitle": "Comprehensive solutions for the tokenization and trading of digital assets.",
+        "service1Title": "Energy Asset Tokenization",
+        "service1Desc": "We convert renewable energy plants, software licenses, and other digital assets into tradable tokens, opening new avenues for investment and liquidity.",
+        "service2Title": "Decentralized Marketplace",
+        "service2Desc": "A secure and transparent platform to buy, sell, and trade digital asset tokens, driven by the community.",
+        "service3Title": "Automated Smart Contracts",
+        "service3Desc": "We develop custom smart contracts that automate transactions, dividend distributions, and governance.",
+        "service4Title": "On-Chain Monitoring & Analytics",
+        "service4Desc": "We offer an advanced dashboard to track asset performance, investment profitability, and key metrics in real-time.",
+        "ctaTitle": "Have a project in mind?",
+        "ctaDesc": "Our team of experts is ready to help you tokenize your assets and take your idea to the next level.",
+        "ctaButton": "Contact Us"
+      },
+      "digitalAssetsPage": {
+        "metaTitle": "Digital Assets - Engyx",
+        "metaDescription": "Discover how Engyx tokenizes a wide range of digital and real-world assets, from renewable energy to software licenses.",
+        "title": "Tokenization of Digital Assets",
+        "subtitle": "We transform real-world value into liquid, transparent, and accessible digital assets on the blockchain.",
+        "asset1Title": "Renewable Energy",
+        "asset1Desc": "We tokenize the revenue streams of solar, wind, and hydroelectric plants, allowing anyone to invest in a sustainable future and earn returns based on real energy production.",
+        "asset2Title": "Software Licenses",
+        "asset2Desc": "We convert software licenses into digital tokens, creating a secondary market for developers and users, and enabling new business models like fractional ownership.",
+        "asset3Title": "Intellectual Property",
+        "asset3Desc": "We tokenize patents, copyrights, and trademarks, allowing creators to finance their projects and investors to participate in the success of innovative ideas.",
+        "asset4Title": "Real Estate",
+        "asset4Desc": "We fractionalize real estate properties, democratizing access to real estate investment and increasing liquidity in a traditionally illiquid market.",
+        "ctaTitle": "Ready to Tokenize Your Asset?",
+        "ctaDesc": "Whether you have an energy project, a software product, or any other valuable asset, our team can help you unlock its full potential through tokenization.",
+        "ctaButton": "Get in Touch"
+      },
+      "profile": {
+        "metaTitle": "My Profile - ENGYX",
+        "metaDescription": "Manage your user profile, settings, and wallet on ENGYX.",
+        "backToPlatform": "Back to Platform",
+        "title": "My Profile",
+        "subtitle": "Manage your account, settings, and investment preferences on ENGYX.",
+        "loading": "Loading profile data...",
+        "accessRequired": "Access Required",
+        "accessRequiredDesc": "You must log in to view and manage your profile.",
+        "loginOrRegister": "Log In or Register",
+        "notifications": {
+          "loadErrorTitle": "Error loading data",
+          "loadErrorDesc": "Could not retrieve your profile information.",
+          "updateErrorTitle": "Update Error",
+          "updateSuccessTitle": "✅ Profile updated",
+          "updateSuccessDesc": "Your changes have been saved successfully.",
+          "noChangesTitle": "No changes",
+          "noChangesDesc": "You haven't made any changes to your profile.",
+          "settingsUpdatedTitle": "⚙️ Settings updated",
+          "settingsUpdatedDesc": "The option has been updated.",
+          "avatarUpdatedTitle": "✅ Profile picture updated",
+          "avatarUpdatedDesc": "Your new profile picture has been saved.",
+          "avatarErrorTitle": "Error uploading image",
+          "walletDeletedTitle": "✅ Wallet deleted",
+          "walletDeletedDesc": "The wallet has been unlinked from your profile.",
+          "walletDeleteErrorTitle": "Error deleting wallet"
+        },
+        "sidebar": {
+          "user": "User",
+          "guest": "Guest"
+        },
+        "tabs": {
+          "profile": "Profile",
+          "verification": "Verification",
+          "wallet": "Wallet",
+          "settings": "Settings",
+          "notifications": "Notifications"
+        },
+        "investorStats": {
+          "totalInvested": "Total Invested",
+          "totalReturns": "Total Returns",
+          "activeProjects": "Active Projects",
+          "investorLevel": "Investor Level",
+          "levels": {
+            "geo": "🔥 Geo",
+            "greenHydrogen": "💧 Green Hydrogen",
+            "wind": "🌬 Wind",
+            "solar": "☀️ Solar",
+            "seed": "🌱 Seed",
+            "initial": "Initial Investor",
+            "na": "N/A"
+          }
+        },
+        "infoTab": {
+          "title": "Personal Information",
+          "edit": "Edit",
+          "save": "Save",
+          "saving": "Saving...",
+          "fullName": "Full Name",
+          "birthDate": "Date of Birth",
+          "selectDate": "Select a date",
+          "nationality": "Nationality",
+          "selectNationality": "Select nationality",
+          "address": "Address",
+          "docType": "Document Type",
+          "selectDocType": "Select document type",
+          "docNumber": "Document Number",
+          "ssn": "Social Security Number (SSN) or ITIN",
+          "docTypes": {
+            "id_card": "Identification Document",
+            "passport": "Passport",
+            "driving_license": "Driving License"
+          }
+        },
+        "verificationTab": {
+          "title": "Identity Verification (KYC)",
+          "description": "To comply with regulations and ensure platform security, we require all users to complete an identity verification process.",
+          "startVerification": "Start Verification",
+          "loading": "Loading...",
+          "tokenErrorTitle": "Token renewal error",
+          "tokenErrorDesc": "Could not get a new access token for verification.",
+          "sdkErrorTitle": "Verification Error",
+          "sdkErrorDesc": "An error occurred during the verification process.",
+          "submittedTitle": "Verification submitted",
+          "submittedDesc": "Your verification has been submitted and is under review.",
+          "status": {
+            "verified": "Verified",
+            "verifiedDesc": "Your identity has been successfully verified.",
+            "pending": "Pending",
+            "pendingDesc": "Your verification is under review. This may take a few minutes.",
+            "rejected": "Rejected",
+            "rejectedDesc": "Your verification was rejected. Please try again or contact support.",
+            "notVerified": "Not Verified",
+            "notVerifiedDesc": "Complete the identity verification to access all features."
+          }
+        },
+        "walletTab": {
+          "title": "My Connected Wallets",
+          "noWallets": "You have no wallets linked to your profile.",
+          "addNew": "Add a new wallet",
+          "addNewDesc": "To add a new wallet, first disconnect the current one from the top menu, and then connect your new wallet. It will be automatically linked to your profile if it is not associated with another account.",
+          "autoProcess": "Automatic process on connect",
+          "deleteDialog": {
+            "title": "Are you sure?",
+            "description": "This action cannot be undone. This will permanently unlink the wallet from your ENGYX profile.",
+            "confirm": "Yes, delete wallet"
+          },
+          "copied": "Copied",
+          "copiedDesc": "Wallet address copied to clipboard."
+        },
+        "settingsTab": {
+          "title": "General Settings",
+          "language": "Language",
+          "currency": "Currency",
+          "riskTolerance": "Risk Tolerance",
+          "riskLevels": {
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High"
+          },
+          "currencies": {
+            "usd": "USD - Dollar",
+            "eur": "EUR - Euro",
+            "btc": "BTC - Bitcoin",
+            "eth": "ETH - Ethereum"
+          }
+        },
+        "notificationsTab": {
+          "title": "Notification Preferences",
+          "email": "Email Notifications",
+          "emailDesc": "Receive updates by email",
+          "push": "Push Notifications",
+          "pushDesc": "Real-time alerts",
+          "marketing": "Marketing Emails",
+          "marketingDesc": "Special offers and promotions"
+        }
+      },
+      "aboutPage": {
+        "metaTitle": "About Us - ENGYX",
+        "metaDescription": "Learn about the mission, vision, and team behind ENGYX, the platform revolutionizing renewable energy investment.",
+        "title": "About ENGYX",
+        "subtitle": "We are redefining the future of energy, making it more accessible, transparent, and sustainable for everyone.",
+        "mission": {
+          "title": "Our Mission",
+          "description": "To democratize access to investment in renewable energy through the tokenization of energy assets. We create a bridge between energy producers and investors worldwide, fostering sustainable growth and a positive environmental impact."
+        },
+        "vision": {
+          "title": "Our Vision",
+          "description": "To be the leading global platform for the tokenization of renewable energy assets, driving the global transition to a 100% clean and decentralized energy future, where every individual can participate in and benefit from the green revolution."
+        },
+        "values": {
+          "title": "Our Values",
+          "innovation": {
+            "title": "Innovation",
+            "description": "We drive the future of energy with cutting-edge technology and creative solutions."
+          },
+          "sustainability": {
+            "title": "Sustainability",
+            "description": "We are committed to a greener planet, promoting clean and renewable energy."
+          },
+          "transparency": {
+            "title": "Transparency",
+            "description": "Blockchain technology allows us to offer full transparency and trust in every transaction."
+          },
+          "community": {
+            "title": "Community",
+            "description": "We build a global ecosystem of investors and energy producers with a common purpose."
+          }
+        }
+      },
+      "helpCenterPage": {
+        "metaTitle": "Help Center - ENGYX",
+        "metaDescription": "Find answers to your questions about ENGYX, energy tokenization, pre-sale, KYC, and security.",
+        "title": "Help Center",
+        "subtitle": "Have questions? We have answers. Find everything you need to know about ENGYX here.",
+        "searchPlaceholder": "Search for a question...",
+        "categories": {
+          "general": {
+            "title": "General",
+            "q1": {
+              "question": "What is ENGYX?",
+              "answer": "ENGYX is a digital energy asset tokenization platform. We enable investors to participate in renewable energy projects through blockchain technology, offering transparency, liquidity, and new investment opportunities."
+            },
+            "q2": {
+              "question": "How does energy tokenization work?",
+              "answer": "We convert energy assets (like solar plants or wind farms) into digital tokens. Each token represents a fraction of the underlying asset. Investors can buy these tokens, which entitles them to a share of the profits generated by the project."
+            },
+            "q3": {
+              "question": "What are the benefits of investing with ENGYX?",
+              "answer": "Benefits include access to a traditionally exclusive market, greater liquidity for your investments, full transparency thanks to the blockchain, and the opportunity to support the transition to more sustainable energy."
+            }
+          },
+          "tokens": {
+            "title": "Tokens & Pre-sale",
+            "q1": {
+              "question": "What is the ENGYX token?",
+              "answer": "The ENGYX token is our platform's utility and governance token. It is used to invest in projects, participate in decision-making, and access to exclusive services within our ecosystem."
+            },
+            "q2": {
+              "question": "How can I participate in the pre-sale?",
+              "answer": "To participate in the pre-sale, you need to connect a compatible wallet (like MetaMask or Trust Wallet), complete the KYC verification process, and use one of the accepted cryptocurrencies (like ETH, USDT, or USDC) to purchase ENGYX tokens at a preferential price."
+            },
+            "q3": {
+              "question": "When will I receive my tokens after purchase?",
+              "answer": "Tokens purchased during the pre-sale will be distributed to your wallet according to the vesting schedule specified in our whitepaper. This is done to ensure long-term market stability."
+            }
+          },
+          "kyc": {
+            "title": "KYC & Security",
+            "q1": {
+              "question": "Why do I need to complete KYC?",
+              "answer": "The 'Know Your Customer' (KYC) process is a mandatory legal requirement to prevent money laundering and terrorist financing. It helps us ensure our platform is secure and compliant with international regulations."
+            },
+            "q2": {
+              "question": "Is my personal information secure?",
+              "answer": "Absolutely. We use end-to-end encryption and work with industry-leading identity verification partners to protect your data. Your privacy and security are our top priority. See our Privacy Policy for more details."
+            },
+            "q3": {
+              "question": "How do I protect my account and funds?",
+              "answer": "We recommend enabling two-factor authentication (2FA), using strong and unique passwords, and never sharing your private keys or recovery phrases. ENGYX will never ask you for this information."
+            }
+          }
+        },
+        "noResults": {
+          "title": "No results found",
+          "description": "Try another search or contact us if you can't find what you're looking for."
+        }
+      },
+      "privacyPolicyPage": {
+        "metaTitle": "Privacy Policy - ENGYX",
+        "metaDescription": "ENGYX Digital Energy's Privacy Policy. Learn how we protect and manage your personal data.",
+        "pageTitle": "Privacy Policy",
+        "lastUpdated": "Last updated: July 01, 2025",
+        "sections": [
+          {
+            "icon": "Shield",
+            "title": "Introduction",
+            "content": "ENGYX Digital Energy (“we”, “our”) is committed to protecting your privacy. This policy outlines how we collect, use, and protect your personal information when you interact with our services at https://engyx.io, and how we comply with the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States."
+          },
+          {
+            "icon": "Database",
+            "title": "What data we collect",
+            "subsections": [
+              {
+                "title": "Personal data:",
+                "items": [
+                  "Full name",
+                  "Date of birth",
+                  "Nationality",
+                  "Residential address",
+                  "Email and wallet address",
+                  "Official documentation (passport, ID card, driver's license)",
+                  "Biometric image (selfie)"
+                ]
+              },
+              {
+                "title": "Technical data:",
+                "items": [
+                  "IP address, browser, operating system",
+                  "Platform activity logs",
+                  "Blockchain transaction information (when linked to a user)"
+                ]
+              }
+            ]
+          },
+          {
+            "icon": "Gavel",
+            "title": "Legal basis for data processing (GDPR)",
+            "content": "We process your personal data under the following legal bases:",
+            "items": [
+              "Explicit consent (Art. 6.1.a)",
+              "Compliance with legal obligations (KYC/AML)",
+              "Legitimate interest (security, fraud prevention)"
+            ]
+          },
+          {
+            "icon": "FileText",
+            "title": "How we use your information",
+            "items": [
+              "Verify your identity (KYC/AML)",
+              "Process your purchases and token allocation",
+              "Comply with legal obligations in the US and EU",
+              "Analyze platform usage to improve it"
+            ]
+          },
+          {
+            "icon": "Users",
+            "title": "Who we share your data with",
+            "content": "We may share your information with:",
+            "items": [
+              "Verification providers: (e.g., Sumsub)",
+              "Payment platforms: (e.g., Coinbase Commerce)",
+              "Regulatory authorities, if required by law"
+            ],
+            "footer": "We never sell your data to third parties."
+          },
+          {
+            "icon": "Users",
+            "title": "User Rights (GDPR/CCPA)",
+            "content": "You have the right to:",
+            "items": [
+              "Access, correct, or delete your data",
+              "Object to processing or request restriction",
+              "Withdraw your consent at any time",
+              "Port your data to another provider (right to portability)",
+              "Lodge a complaint with a data protection authority"
+            ]
+          },
+          {
+            "icon": "Clock",
+            "title": "Data retention",
+            "items": [
+              "We retain your data for 5 years after the last activity for AML compliance.",
+              "Anonymized data may be used for analysis without time restrictions."
+            ]
+          },
+          {
+            "icon": "Lock",
+            "title": "Security",
+            "content": "We implement technical and organizational measures (encryption, audits, access control) to protect your data."
+          },
+          {
+            "icon": "Globe",
+            "title": "International transfers",
+            "content": "If your data is stored outside the EEA, we use standard contractual clauses approved by the European Commission and policies compliant with the CCPA in the US."
+          },
+          {
+            "icon": "Mail",
+            "title": "Contact",
+            "content": "To exercise your rights or make inquiries, contact us at:",
+            "contact": {
+              "email": "legal@engyx.io",
+              "address": "ENGYX Digital Energy Inc., Delaware, USA."
+            }
+          }
+        ]
+      },
+      "termsPage": {
+        "metaTitle": "Terms and Conditions - ENGYX",
+        "metaDescription": "Terms and Conditions of use for the ENGYX Digital Energy platform.",
+        "pageTitle": "Terms and Conditions of Use",
+        "lastUpdated": "Last updated: July 01, 2025",
+        "intro": "Welcome to <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>, a platform operated by <strong>ENGYX Digital Energy Inc</strong>, based in Delaware, USA. By accessing or using this site, you agree to comply with these Terms and Conditions of Use, as well as our Privacy Policy and any applicable regulations.",
+        "sections": [
+          {
+            "icon": "LayoutGrid",
+            "title": "1. Description of Service",
+            "content": "ENGYX offers a decentralized platform that allows the acquisition of tokens linked to renewable energy assets. Through blockchain technologies and smart contracts, users can participate in financing clean energy projects by purchasing the ENGYX token."
+          },
+          {
+            "icon": "FileText",
+            "title": "2. Nature of the Token",
+            "content": "<p class='font-bold text-emerald-300'>The ENGYX Token is not registered as a security with the SEC or any European financial authority. The sale of tokens is limited to jurisdictions where its commercialization is legally permitted.</p><p class='mt-2 text-emerald-200/80 leading-relaxed'>The ENGYX Token does not represent equity, dividends, or corporate governance rights, and should be considered a <strong>utility token</strong> or access token, unless otherwise stated under local regulations.</p>"
+          },
+          {
+            "icon": "UserCheck",
+            "title": "3. Eligibility",
+            "content": "<p class='text-emerald-200/80 leading-relaxed'>To use our services, you must:</p><ul class='list-disc list-inside mt-2 space-y-1 text-emerald-200/80 leading-relaxed'><li>Be over 18 years of age</li><li>Not reside in countries sanctioned by OFAC, the EU, or the United Nations</li><li>Not be included on AML/PEP lists</li><li>Comply with the local legal requirements of your country</li></ul><p class='mt-2 text-emerald-200/80 leading-relaxed'>We reserve the right to deny access to the platform to anyone who violates these conditions.</p>"
+          },
+          {
+            "icon": "ShieldCheck",
+            "title": "4. KYC and AML Compliance",
+            "content": "<p class='text-emerald-200/80 leading-relaxed'>All users must complete an identity verification process (<strong>KYC</strong>) provided by our partner Sumsub. This process is designed to comply with:</p><ul class='list-disc list-inside mt-2 space-y-1 text-emerald-200/80 leading-relaxed'><li><strong>The Bank Secrecy Act (BSA)</strong> and <strong>FinCEN</strong> regulations in the US.</li><li><strong>The 6th AML Directive (AMLD6)</strong> in the European Union</li><li>Sanctions checks and PEP/AML validations</li></ul><p class='mt-2 text-emerald-200/80 leading-relaxed'>ENGYX may reject applications or suspend accounts for failing these processes or providing inaccurate data.</p>"
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "5. Associated Risks",
+            "content": "<p class='text-emerald-200/80 leading-relaxed'>Acquiring tokens involves significant risks, including:</p><ul class='list-disc list-inside mt-2 space-y-1 text-emerald-200/80 leading-relaxed'><li>Total loss of investment</li><li>Crypto market volatility</li><li>Regulatory changes affecting the project's operation</li></ul><p class='mt-2 text-emerald-200/80 leading-relaxed'>We recommend conducting an independent risk assessment and, if necessary, consulting legal and financial advisors before participating.</p>"
+          },
+          {
+            "icon": "Gavel",
+            "title": "6. Jurisdiction and Regulation",
+            "content": "<p class='text-emerald-200/80 leading-relaxed'>ENGYX operates under the laws of Delaware, USA, and strives to comply with relevant regulations from:</p><ul class='list-disc list-inside mt-2 space-y-1 text-emerald-200/80 leading-relaxed'><li>🇺🇸 United States: SEC, FinCEN, IRS, CFTC</li><li>🇪🇺 European Union: MiCA, AMLD6, GDPR</li></ul><p class='mt-2 text-emerald-200/80 leading-relaxed'>However, it is your responsibility to ensure that your use of this platform does not violate the laws of your country of residence.</p>"
+          },
+          {
+            "icon": "Shield",
+            "title": "7. Data Protection Policy (Summary)",
+            "content": "<p class='text-emerald-200/80 leading-relaxed'>We are committed to protecting your personal information in accordance with:</p><ul class='list-disc list-inside mt-2 space-y-1 text-emerald-200/80 leading-relaxed'><li><strong>General Data Protection Regulation (GDPR)</strong> – EU</li><li><strong>California Consumer Privacy Act (CCPA)</strong> – US</li></ul><p class='mt-2 text-emerald-200/80 leading-relaxed'>Consult our <Link to='/privacy'>Privacy Policy</Link> for more details.</p>"
+          },
+          {
+            "icon": "ShieldOff",
+            "title": "8. Limitation of Liability",
+            "content": "<p class='text-emerald-200/80 leading-relaxed'>ENGYX is not liable for:</p><ul class='list-disc list-inside mt-2 space-y-1 text-emerald-200/80 leading-relaxed'><li>Loss of private keys or wallet access</li><li>Financial damages resulting from token purchases</li><li>Technical failures, system interruptions, or vulnerabilities in smart contracts</li></ul>"
+          },
+          {
+            "icon": "Copyright",
+            "title": "9. Intellectual Property",
+            "content": "All content, logos, source code, and documentation on the site are the property of ENGYX Digital Energy LLC, unless otherwise stated. Reproduction without authorization is prohibited."
+          },
+          {
+            "icon": "RefreshCw",
+            "title": "10. Modifications",
+            "content": "We may update these Terms and Conditions at any time. We will notify you by email or through the website. Continued use of the site after changes constitutes your acceptance."
+          },
+          {
+            "icon": "Mail",
+            "title": "11. Contact",
+            "content": "To exercise your rights or make inquiries, contact us at:",
+            "contact": {
+              "email": "legal@engyx.io",
+              "address": "ENGYX Digital Energy Inc., Delaware, USA."
+            }
+          }
+        ]
+      },
+      "cookiePolicyPage": {
+        "metaTitle": "Cookie Policy - ENGYX",
+        "metaDescription": "ENGYX Digital Energy's Cookie Policy. Understand how and why we use cookies on our site.",
+        "pageTitle": "Cookie Policy",
+        "lastUpdated": "Last updated: July 01, 2025",
+        "intro": "This Cookie Policy explains how <strong>ENGYX Digital Energy Inc.</strong> ('ENGYX', 'we', 'our') uses cookies and similar technologies on its website <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>. By continuing to browse this site, you agree to the use of cookies in accordance with this policy.",
+        "sections": [
+          {
+            "icon": "HelpCircle",
+            "title": "1. What are cookies?",
+            "content": "Cookies are small text files stored on your device when you visit a website. They allow us to recognize your browser, remember your preferences, and provide a better user experience."
+          },
+          {
+            "icon": "ListChecks",
+            "title": "2. What types of cookies do we use?",
+            "table": {
+              "headers": ["Cookie Type", "Purpose"],
+              "rows": [
+                ["Strictly Necessary", "Enable basic site functionality (e.g., secure access, navigation)"],
+                ["Performance", "Collect anonymous data on site usage to improve its performance"],
+                ["Functionality", "Remember your preferences (language, region, login)"],
+                ["Marketing and Analytics", "Allow ad personalization or user behavior analysis with tools like Google Analytics"]
+              ]
+            }
+          },
+          {
+            "icon": "Users",
+            "title": "3. Third-party cookies",
+            "content": "We may use external tools such as:",
+            "items": [
+              "Google Analytics (web analytics)",
+              "Meta Pixel (retargeting and ads)",
+              "Sumsub (for the KYC process)",
+              "Coinbase Commerce (payment processing)"
+            ],
+            "footer": "These tools may also place cookies on your device. Refer to their respective policies for more details."
+          },
+          {
+            "icon": "Settings",
+            "title": "4. Managing cookies",
+            "content": "You have the right to:",
+            "items": [
+              "Accept or reject non-essential cookies from our consent banner.",
+              "Change your preferences at any time from the cookie settings panel.",
+              "Delete cookies from your browser:"
+            ],
+            "subItems": [
+              "Chrome: Settings > Privacy and security > Cookies and other site data",
+              "Safari: Preferences > Privacy > Manage Website Data",
+              "Firefox: Options > Privacy & Security > Cookies and Site Data"
+            ]
+          },
+          {
+            "icon": "Gavel",
+            "title": "5. Legal basis (GDPR & CCPA)",
+            "items": [
+              "Under the GDPR (EU), we store non-essential cookies only with your consent.",
+              "Under the CCPA (US), California users can opt-out of the sale or sharing of data."
+            ]
+          },
+          {
+            "icon": "RefreshCw",
+            "title": "6. Changes to this policy",
+            "content": "ENGYX may modify this policy at any time. It is recommended to review this page regularly. Modifications will take effect as soon as they are published."
+          },
+          {
+            "icon": "Mail",
+            "title": "7. Contact",
+            "content": "To exercise your rights or make inquiries, contact us at:",
+            "contact": {
+              "email": "legal@engyx.io",
+              "address": "ENGYX Digital Energy Inc., Delaware, USA."
+            }
+          }
+        ]
+      },
+      "getStartedPage": {
+        "metaTitle": "Get Started - ENGYX",
+        "metaDescription": "Start your journey on ENGYX. Connect your wallet and access the future of tokenized renewable energy.",
+        "title": "Get Started",
+        "subtitle": "Join the energy revolution. Connect your wallet and start investing in a sustainable future.",
+        "stepsTitle": "Steps to Get Started",
+        "step1Title": "Install a Wallet",
+        "step1Desc": "Download and install a compatible wallet (MetaMask, Phantom, etc.)",
+        "step2Title": "Connect Your Wallet",
+        "step2Desc": "Connect your wallet to access the ENGYX platform",
+        "step3Title": "Create or access your account",
+        "step3Desc": "Register a new profile or sign in to continue",
+        "step4Title": "Start Investing",
+        "step4Desc": "Explore and purchase renewable energy tokens",
+        "allSetTitle": "All Set!",
+        "allSetDesc": "Your wallet is connected and your profile is active.",
+        "accessPlatform": "Access Platform",
+        "walletConnectedTitle": "Wallet Connected",
+        "walletConnectedDesc": "Now, create an account or sign in.",
+        "securityTitle": "Guaranteed Security",
+        "securityDesc1": "We never store your private keys",
+        "securityDesc2": "Secure connection through standard protocols",
+        "securityDesc3": "Regular security audits",
+        "whyEngyxTitle": "Why Choose ENGYX?",
+        "whyEngyxBenefit1": "Invest in real renewable energy",
+        "whyEngyxBenefit2": "Transparent and verifiable returns",
+        "whyEngyxBenefit3": "Secure blockchain technology",
+        "whyEngyxBenefit4": "Positive environmental impact"
+      }
+    }

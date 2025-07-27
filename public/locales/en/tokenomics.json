@@ -1,0 +1,64 @@
+{
+  "distributionTitle": "Token Distribution",
+  "visualDistributionTitle": "Visual Distribution",
+  "utilitiesTitle": "Token Utilities",
+  "summaryTitle": "Economic Summary",
+  "distribution": {
+    "publicPrivateSale": {
+      "category": "Public/Private Sale",
+      "description": "Public sale and private investors to finance growth"
+    },
+    "foundingTeam": {
+      "category": "Founding Team",
+      "description": "Founding team with a 4-year vesting and 1-year cliff"
+    },
+    "treasuryReserve": {
+      "category": "Treasury Reserve",
+      "description": "Treasury reserve for operations and strategic opportunities"
+    },
+    "stakingRewards": {
+      "category": "Staking Rewards",
+      "description": "Rewards for holders participating in staking"
+    },
+    "ecosystemDevelopment": {
+      "category": "Ecosystem Development",
+      "description": "Continuous ecosystem development and new features"
+    },
+    "marketingAlliances": {
+      "category": "Marketing and Alliances",
+      "description": "Global marketing campaigns and strategic alliances"
+    },
+    "liquidityFund": {
+      "category": "Liquidity Fund",
+      "description": "Liquidity funds for exchanges and trading pools"
+    },
+    "preSale": {
+      "category": "Pre-Sale",
+      "description": "Exclusive early sale with maximum discount"
+    }
+  },
+  "utilities": {
+    "energyDividends": {
+      "title": "Energy Dividends",
+      "description": "Receive automatic payments based on actual energy production"
+    },
+    "governance": {
+      "title": "Governance",
+      "description": "Vote on important protocol decisions and new projects"
+    },
+    "stakingRewards": {
+      "title": "Staking Rewards",
+      "description": "Earn additional rewards by locking your tokens"
+    },
+    "premiumAccess": {
+      "title": "Premium Access",
+      "description": "Advanced features and exclusive analysis"
+    }
+  },
+  "summary": {
+    "totalSupply": "Total Supply",
+    "presalePrice": "Pre-sale Price",
+    "publicSale": "Public Sale",
+    "exclusivePresale": "Exclusive Pre-sale"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Preguntas Frecuentes",
+  "subtitle": "Encuentra respuestas a las preguntas más comunes sobre nuestra plataforma y servicios.",
+  "items": [
+    {
+      "question": "¿Qué es Engyx?",
+      "answer": "Engyx es una plataforma Web3 que permite invertir en proyectos de energía renovable reales a través de la tokenización de activos, permitiendo acceso transparente, automatizado y seguro mediante blockchain."
+    },
+    {
+      "question": "¿Cómo funciona Engyx?",
+      "answer": "Los proyectos de energía son tokenizados como activos digitales. Los usuarios pueden invertir mediante la compra de tokens respaldados por ingresos reales. A través de smart contracts, los retornos se distribuyen automáticamente a los inversores."
+    },
+    {
+      "question": "¿Qué tipo de energía financia Engyx?",
+      "answer": "Actualmente, Engyx se enfoca en energía solar, eólica e hidrógeno verde, con proyección a expandirse a otras fuentes renovables."
+    },
+    {
+      "question": "¿Qué es un token RWA?",
+      "answer": "Un RWA (Real World Asset) es un activo del mundo real, como una planta solar, representado en la blockchain. En Engyx, estos activos son tokenizados para que cualquier persona pueda invertir en ellos de forma fraccionada."
+    },
+    {
+      "question": "¿Qué beneficios obtengo al invertir?",
+      "answer": "Participación en ingresos reales de proyectos energéticos.\nAcceso a retornos pasivos automatizados.\nPropiedad fraccionada y líquida de activos reales.\nTransparencia y seguridad gracias a la tecnología blockchain."
+    },
+    {
+      "question": "¿Qué necesito para invertir?",
+      "answer": "Solo necesitas una wallet Web3 como MetaMask, Coinbase, u otras wallets y tener tokens como USDC, EURC, para participar en las oportunidades de inversión."
+    },
+    {
+      "question": "¿Cómo recibo mis ganancias?",
+      "answer": "Los pagos se realizan automáticamente a tu wallet en tokens estables como USDT, basados en los ingresos del proyecto en el que invertiste."
+    },
+    {
+      "question": "¿Qué tan seguros son los fondos?",
+      "answer": "Engyx usa contratos inteligentes auditados, sistemas de KYC/AML para los proyectos."
+    },
+    {
+      "question": "¿Puedo vender mis tokens?",
+      "answer": "Sí. Una vez adquiridos los tokens de inversión, puedes:\n\nEsperar los pagos periódicos de retorno.\nVender tus tokens en el mercado secundario (cuando esté disponible)."
+    },
+    {
+      "question": "¿Qué es ENGYX Token?",
+      "answer": "Es el token nativo del ecosistema, acceso prioritario a inversiones, recompensas por staking."
+    },
+    {
+      "question": "¿Cómo participa la comunidad?",
+      "answer": "Los poseedores del token ENGYX podrán:\n\nAcceder a lanzamientos de forma anticipada, beneficios exclusivos por staking o tenencia."
+    },
+    {
+      "question": "¿Cuál es la diferencia entre ENGYX y los tokens de proyecto?",
+      "answer": "ENGYX: token principal del ecosistema.\n\nTokens de proyecto: representan participación específica en un activo real (por ejemplo, una planta solar específica)."
+    },
+    {
+      "question": "¿Necesito experiencia técnica para invertir?",
+      "answer": "No. Engyx está diseñado para ser fácil de usar. Solo necesitas una wallet y seguir el proceso guiado paso a paso."
+    },
+    {
+      "question": "¿Engyx es una empresa regulada?",
+      "answer": "Engyx trabaja con plataformas de tokenización que cumplen con regulaciones (como Brickken) y está estructurado legalmente para cumplir con normativas KYC/AML y requisitos financieros en cada jurisdicción."
+    },
+    {
+      "question": "¿Qué pasa si un proyecto no genera ingresos?",
+      "answer": "Los riesgos se indican en cada proyecto. En caso de bajo rendimiento, los pagos pueden ser menores o pausados. Por eso los proyectos pasan filtros de validación técnica, legal y financiera antes de ser lanzados."
+    }
+  ]
+}

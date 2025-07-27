@@ -1,0 +1,64 @@
+{
+  "distributionTitle": "Distribución de Tokens",
+  "visualDistributionTitle": "Distribución Visual",
+  "utilitiesTitle": "Utilidades del Token",
+  "summaryTitle": "Resumen Económico",
+  "distribution": {
+    "publicPrivateSale": {
+      "category": "Venta Pública/Privada",
+      "description": "Venta pública e inversores privados para financiar el crecimiento"
+    },
+    "foundingTeam": {
+      "category": "Equipo Fundador",
+      "description": "Equipo fundador con vesting de 4 años y cliff de 1 año"
+    },
+    "treasuryReserve": {
+      "category": "Reserva del Tesoro",
+      "description": "Reserva del tesoro para operaciones y oportunidades estratégicas"
+    },
+    "stakingRewards": {
+      "category": "Recompensas de Staking",
+      "description": "Recompensas para holders que participen en staking"
+    },
+    "ecosystemDevelopment": {
+      "category": "Desarrollo del Ecosistema",
+      "description": "Desarrollo continuo del ecosistema y nuevas funcionalidades"
+    },
+    "marketingAlliances": {
+      "category": "Marketing y Alianzas",
+      "description": "Campañas de marketing y alianzas estratégicas globales"
+    },
+    "liquidityFund": {
+      "category": "Fondo de Liquidez",
+      "description": "Fondos de liquidez para exchanges y pools de trading"
+    },
+    "preSale": {
+      "category": "Pre-Venta",
+      "description": "Venta anticipada exclusiva con máximo descuento"
+    }
+  },
+  "utilities": {
+    "energyDividends": {
+      "title": "Dividendos Energéticos",
+      "description": "Recibe pagos automáticos basados en la producción real de energía"
+    },
+    "governance": {
+      "title": "Gobernanza",
+      "description": "Vota en decisiones importantes del protocolo y nuevos proyectos"
+    },
+    "stakingRewards": {
+      "title": "Recompensas de Staking",
+      "description": "Gana recompensas adicionales bloqueando tus tokens"
+    },
+    "premiumAccess": {
+      "title": "Acceso Premium",
+      "description": "Funcionalidades avanzadas y análisis exclusivos"
+    }
+  },
+  "summary": {
+    "totalSupply": "Suministro Total",
+    "presalePrice": "Precio Pre-venta",
+    "publicSale": "Venta Pública",
+    "exclusivePresale": "Pre-venta Exclusiva"
+  }
+}

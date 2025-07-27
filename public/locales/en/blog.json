@@ -1,0 +1,14 @@
+{
+  "pageTitle": "Blog - ENGYX",
+  "pageDescription": "Read our latest posts on renewable energy, blockchain technology, and the future of real-world asset investment.",
+  "mainTitle": "Our Blog",
+  "mainSubtitle": "Explore articles on renewable energy, asset tokenization, and the future of decentralized finance.",
+  "noPostsTitle": "No posts yet",
+  "noPostsDescription": "Check back soon to read our articles.",
+  "authorFallback": "Engyx Team",
+  "backToBlog": "Back to Blog",
+  "errorTitle": "Error",
+  "errorNotFound": "Could not find the post.",
+  "publishedOn": "Published on",
+  "postMetaTitle": "{{title}} - ENGYX Blog"
+}

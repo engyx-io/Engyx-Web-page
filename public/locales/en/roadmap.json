@@ -1,0 +1,64 @@
+{
+  "title": "Roadmap",
+  "description": "Here is our development plan",
+  "phases": {
+    "phase1": {
+      "title": "Foundation & Tokenization",
+      "objectives": [
+        "Planning and development of investment model.",
+        "Creation of Engyx Digital Energy Inc.",
+        "Creation and configuration of the $ENGYX token.",
+        "Website launch, social media presence, whitepaper, and marketing."
+      ]
+    },
+    "phase2": {
+      "title": "Token Launch",
+      "objectives": [
+        "Pre-Sale. (Capital raised for operational expenses and initial development).",
+        "Public Sale through Launchpool. (Fundraising for project development and ecosystem expansion)."
+      ]
+    },
+    "phase3": {
+      "title": "Operational Kickoff",
+      "objectives": [
+        "Evaluation of investment opportunities, acquisition studies, or bidding for the development of a solar plant and energy storage systems. (Permits and studies)",
+        "Start of $ENGYX Staking.",
+        "Initial token listing on DEXs."
+      ]
+    },
+    "phase4": {
+      "title": "Execution & Governance",
+      "objectives": [
+        "Final investment decision (FID) and execution agreement for the solar plant project.",
+        "Development of an integrated platform for monitoring project progress."
+      ]
+    },
+    "phase5": {
+      "title": "Platform and Market Development",
+      "objectives": [
+        "Development of a platform for the sale of tokenized energy, integrated with a fiat/crypto wallet and identity verification system (KYC).",
+        "Launch of the tokenized energy market."
+      ]
+    },
+    "phase6": {
+      "title": "Operational Launch & Energy Generation",
+      "objectives": [
+        "Full operational launch of the solar plant.",
+        "Transition to commercial energy production."
+      ]
+    },
+    "phase7": {
+      "title": "Internationalization and Social Responsibility",
+      "objectives": [
+        "Strategic alliances in LATAM and Europe.",
+        "Exploration of new solar, wind, and green hydrogen energy projects.",
+        "Launch of the Corporate Social Responsibility program (RSC)."
+      ]
+    }
+  },
+  "status": {
+    "completed": "Completed",
+    "in_progress": "In Progress",
+    "upcoming": "Upcoming"
+  }
+}

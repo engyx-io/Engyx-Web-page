@@ -1,0 +1,64 @@
+{
+  "title": "Hoja de Ruta",
+  "description": "Aquí está nuestro plan de desarrollo",
+  "phases": {
+    "phase1": {
+      "title": "Fundación y Tokenización",
+      "objectives": [
+        "Planificación y desarrollo del modelo de inversión.",
+        "Creación de Engyx Digital Energy Inc.",
+        "Creación y configuración del token $ENGYX.",
+        "Lanzamiento del sitio web, presencia en redes sociales, whitepaper y marketing."
+      ]
+    },
+    "phase2": {
+      "title": "Lanzamiento del Token",
+      "objectives": [
+        "Pre-Venta. (Capital recaudado para gastos operativos y desarrollo inicial).",
+        "Venta Pública a través de Launchpool. (Recaudación de fondos para el desarrollo de proyectos y expansión del ecosistema)."
+      ]
+    },
+    "phase3": {
+      "title": "Puesta en Marcha Operativa",
+      "objectives": [
+        "Evaluación de oportunidades de inversión, estudios de adquisición o licitación para el desarrollo de una planta solar y sistemas de almacenamiento de energía. (Permisos y estudios)",
+        "Inicio del Staking de $ENGYX.",
+        "Listado inicial del token en DEXs."
+      ]
+    },
+    "phase4": {
+      "title": "Ejecución y Gobernanza",
+      "objectives": [
+        "Decisión final de inversión (FID) y acuerdo de ejecución para el proyecto de la planta solar.",
+        "Desarrollo de una plataforma integrada para el seguimiento del progreso del proyecto."
+      ]
+    },
+    "phase5": {
+      "title": "Desarrollo de Plataforma y Mercado",
+      "objectives": [
+        "Desarrollo de una plataforma para la venta de energía tokenizada, integrada con una billetera fiat/crypto y sistema de verificación de identidad (KYC).",
+        "Lanzamiento del mercado de energía tokenizada."
+      ]
+    },
+    "phase6": {
+      "title": "Lanzamiento Operacional y Generación de Energía",
+      "objectives": [
+        "Lanzamiento operacional completo de la planta solar.",
+        "Transición a la producción comercial de energía."
+      ]
+    },
+    "phase7": {
+      "title": "Internacionalización y Responsabilidad Social",
+      "objectives": [
+        "Alianzas estratégicas en LATAM y Europa.",
+        "Exploración de nuevos proyectos de energía solar, eólica e hidrógeno verde.",
+        "Lanzamiento del programa de Responsabilidad Social Corporativa (RSC)."
+      ]
+    }
+  },
+  "status": {
+    "completed": "Completado",
+    "in_progress": "En Progreso",
+    "upcoming": "Próximo"
+  }
+}
