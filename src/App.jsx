@@ -1,4 +1,5 @@
 import React, { useMemo, useEffect, Suspense, useState, useCallback } from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
     import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
     import { Toaster } from '@/components/ui/toaster';
     import { toast } from '@/components/ui/use-toast';
@@ -246,6 +247,7 @@ import React, { useMemo, useEffect, Suspense, useState, useCallback } from 'reac
                               {isLoading ? <Loader key="loader" /> : <AppContent key="content" />}
                             </AnimatePresence>
                           </LoadScript>
+                          <SpeedInsights />
                         </WalletProvider>
                       </SettingsProvider>
                     </AuthProvider>
