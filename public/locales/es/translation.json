@@ -296,7 +296,8 @@
         "exchangeTitle": "Exchange",
         "tabs": {
           "newOpportunities": "Nuevas Oportunidades",
-          "assetMarket": "Mercado de Activos"
+          "assetMarket": "Mercado de Activos",
+          "noLaunchpadProjects": "No hay proyectos en el Launchpad en este momento."
         },
         "projectStatus": {
           "soldOut": "Venta Completa",
