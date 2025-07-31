@@ -179,9 +179,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
               }
             }
             
-            if (location.pathname === '/get-started' || location.pathname === '/comenzar') {
-                navigate('/dashboard', { replace: true });
-            }
+
 
           } else {
             setAuthStatus('connected_unauthenticated');
