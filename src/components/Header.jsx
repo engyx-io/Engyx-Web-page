@@ -1,7 +1,7 @@
 import React, { useState, useMemo, memo } from 'react';
     import { motion, AnimatePresence } from 'framer-motion';
     import { Link, useLocation } from 'react-router-dom';
-    import { ChevronDown, Menu, X, BookOpen, HelpCircle } from 'lucide-react';
+import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
     import { Button } from '@/components/ui/button';
     import { useTranslation } from 'react-i18next';
     import { 
@@ -39,17 +39,15 @@ import React, { useState, useMemo, memo } from 'react';
           { name: t('header.marketplace'), path: getLocalizedPath('/marketplace') },
           { name: t('header.services'), path: getLocalizedPath('/services') },
           { name: t('header.blockchain'), path: '/blockchain' },
-          { name: t('header.contact'), path: getLocalizedPath('/contact') },
         ];
-        
         if (showPresalePage) {
           baseItems.splice(1, 0, { name: t('header.presale'), path: '/pre-sale' });
         }
-
         return baseItems;
       }, [t, showPresalePage, i18n.language]);
 
       const moreMenuItems = [
+        { name: t('header.contact'), path: getLocalizedPath('/contact'), icon: <Mail className="mr-2 h-4 w-4" /> },
         { name: t('header.blog'), path: '/blog', icon: <BookOpen className="mr-2 h-4 w-4" /> },
         { name: t('header.faqs'), path: '/faqs', icon: <HelpCircle className="mr-2 h-4 w-4" /> },
       ];

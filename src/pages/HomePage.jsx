@@ -3,7 +3,7 @@ import React from 'react';
     import { useTranslation } from 'react-i18next';
     import HeroSection from '@/components/HeroSection';
     import FeaturesSection from '@/components/FeaturesSection';
-    import ServicesSection from '@/components/ServicesSection';
+// import ServicesSection from '@/components/ServicesSection';
     import HowItWorksSection from '@/components/HowItWorksSection';
     import CTASection from '@/components/CTASection';
     import TokenizedAssetsSection from '@/components/TokenizedAssetsSection';
@@ -22,7 +22,7 @@ import React from 'react';
           <TokenizedAssetsSection />
           <FeaturesSection handleFeatureClick={handleFeatureClick} />
           <HowItWorksSection />
-          <ServicesSection handleFeatureClick={handleFeatureClick} />
+          {/* <ServicesSection handleFeatureClick={handleFeatureClick} /> */}
           <CTASection handleFeatureClick={handleFeatureClick} />
         </>
       );
