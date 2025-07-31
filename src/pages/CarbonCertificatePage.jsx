@@ -260,7 +260,7 @@ export default function CarbonCertificatePage({ handleFeatureClick }) {
         <meta name="description" content="Genere certificados para sus proyectos de energía renovable." />
       </Helmet>
 
-      <div className="pt-24 pb-20 px-6 bg-background text-foreground">
+      <div className="pt-24 pb-20 px-6 text-foreground">
         <div className="container mx-auto max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="text-center mb-12">

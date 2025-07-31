@@ -64,7 +64,13 @@ import React from 'react';
         
         return (
             <Link to={getLocalizedPath('/get-started')} className="w-full">
-              <Button style={{ backgroundColor: '#32d3a2' }} className="w-full text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300">
+              <Button
+                className="w-full text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 border-0"
+                style={{
+                  background: 'linear-gradient(135deg, #30d3a2 0%, #14b8a6 100%)',
+                  boxShadow: '0 4px 24px 0 rgba(48,211,162,0.15)',
+                }}
+              >
                 Connect Wallet
               </Button>
             </Link>
@@ -133,7 +139,13 @@ import React from 'react';
       // Not connected, not authenticated
       return (
         <Link to={getLocalizedPath('/get-started')}>
-          <Button style={{ backgroundColor: '#32d3a2' }} className="text-white font-semibold px-6 py-2 rounded-full shadow-lg transition-all duration-300">
+          <Button
+            className="text-white font-semibold px-6 py-2 rounded-full shadow-lg transition-all duration-300 border-0"
+            style={{
+              background: 'linear-gradient(135deg, #30d3a2 0%, #14b8a6 100%)',
+              boxShadow: '0 4px 24px 0 rgba(48,211,162,0.15)',
+            }}
+          >
             Connect Wallet
           </Button>
         </Link>

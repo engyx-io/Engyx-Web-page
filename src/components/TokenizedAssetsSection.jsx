@@ -34,7 +34,16 @@ export default function TokenizedAssetsSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-teal-400 bg-clip-text text-transparent">
+          <h2
+            className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent"
+            style={{
+              background: 'linear-gradient(135deg, #30d3a2 0%, #14b8a6 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent',
+            }}
+          >
             {t('tokenizedAssetsTitle')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

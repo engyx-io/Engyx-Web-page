@@ -103,7 +103,7 @@ import { Analytics } from "@vercel/analytics/react";
       }, [user, navigate]);
 
       return (
-        <div className="flex justify-center items-center h-screen bg-background">
+        <div className="flex justify-center items-center h-screen">
           <Loader />
         </div>
       );
@@ -157,10 +157,10 @@ import { Analytics } from "@vercel/analytics/react";
       }, [t]);
       
       return (
-        <div className={`min-h-screen overflow-hidden relative flex flex-col ${isFullPageLayout ? '' : 'bg-white'}`}>
+        <div className={`min-h-screen overflow-hidden relative flex flex-col`}>
           {!isFullPageLayout && location.pathname === '/' && <BlockchainNetworkBackground />}
           {!isFullPageLayout && <Header handleFeatureClick={handleFeatureClick} showPresalePage={showPresalePage} />}
-          <main className="relative z-10 flex-grow">
+          <main className="relative z-0 flex-grow">
             <AnimatePresence mode="wait">
               <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<HomePage handleFeatureClick={handleFeatureClick} />} />

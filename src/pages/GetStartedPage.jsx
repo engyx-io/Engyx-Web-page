@@ -95,7 +95,7 @@ import React from 'react';
             <meta name="description" content={t('getStartedPage.metaDescription')} />
           </Helmet>
 
-          <div className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-background">
+          <div className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8">
             <div className="container mx-auto max-w-3xl">
               <motion.div 
                 className="text-center mb-12"

@@ -201,7 +201,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 
       if (authLoading || loading) {
         return (
-          <div className="flex justify-center items-center h-screen bg-background">
+          <div className="flex justify-center items-center h-screen">
             <Loader2 className="w-8 h-8 text-primary animate-spin" />
           </div>
         );
@@ -209,7 +209,7 @@ import React, { useState, useEffect, useCallback } from 'react';
       
       if (!user) {
          return (
-             <div className="flex flex-col justify-center items-center h-screen text-center px-6 bg-background">
+             <div className="flex flex-col justify-center items-center h-screen text-center px-6">
                 <h1 className="text-3xl font-bold text-foreground title-glow mb-4">{t('profile.accessRequired')}</h1>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
                     {t('profile.accessRequiredDesc')}
@@ -230,7 +230,7 @@ import React, { useState, useEffect, useCallback } from 'react';
             <meta name="description" content={t('profile.metaDescription')} />
           </Helmet>
 
-          <div className="pt-24 pb-20 px-6 bg-background text-foreground">
+          <div className="pt-24 pb-20 px-6 text-foreground">
             <div className="container mx-auto max-w-6xl">
               <motion.div 
                 className="mb-12"

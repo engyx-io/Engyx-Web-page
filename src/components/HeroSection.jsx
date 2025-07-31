@@ -32,7 +32,7 @@ import React, { memo } from 'react';
       const { t } = useTranslation('home');
 
       return (
-        <section className="pt-40 pb-48 px-6 relative overflow-hidden bg-white">
+        <section className="pt-40 pb-48 px-6 relative overflow-hidden">
           <div className="container mx-auto text-center relative z-10">
             <motion.div
               variants={containerVariants}
@@ -40,11 +40,35 @@ import React, { memo } from 'react';
               animate="visible"
               className="max-w-4xl mx-auto mt-12"
             >
+
               <motion.h1 
                 variants={itemVariants}
                 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow"
+                style={{wordBreak: 'break-word'}}
               >
-                {t('heroTitle')}
+                {(() => {
+                  const title = t('heroTitle');
+                  // Remplaza Energy, Opportunities, Energia y Oportunidades por spans con el mismo degradado que la onda
+                  return title.split(/(Energy|Opportunities|Energia|Energía|Oportunidades)/g).map((part, idx) => {
+                    if (['Energy', 'Opportunities', 'Energia', 'Energía', 'Oportunidades'].includes(part)) {
+                      return (
+                        <span
+                          key={idx}
+                          style={{
+                            background: 'linear-gradient(135deg, #30d3a2 0%, #14b8a6 100%)',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            backgroundClip: 'text',
+                            color: 'transparent',
+                          }}
+                        >
+                          {part}
+                        </span>
+                      );
+                    }
+                    return part;
+                  });
+                })()}
               </motion.h1>
               
               <motion.p 
@@ -59,7 +83,14 @@ import React, { memo } from 'react';
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               >
                 <Link to="/comenzar">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 rounded-full text-lg shadow-soft-lg hover:shadow-primary/30 transition-all duration-300 transform hover:scale-105">
+                  <Button
+                    size="lg"
+                    className="text-white font-bold px-8 py-4 rounded-full text-lg shadow-soft-lg transition-all duration-300 transform hover:scale-105 border-0"
+                    style={{
+                      background: 'linear-gradient(135deg, #30d3a2 0%, #14b8a6 100%)',
+                      boxShadow: '0 4px 24px 0 rgba(48,211,162,0.15)',
+                    }}
+                  >
                     {t('heroButtonAccess')}
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>

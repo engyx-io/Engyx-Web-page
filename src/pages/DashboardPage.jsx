@@ -198,7 +198,7 @@ import React, { useState, useEffect, useCallback } from 'react';
             <meta name="description" content={t('dashboard.metaDescription')} />
           </Helmet>
 
-          <div className="pt-24 pb-20 px-6 min-h-screen bg-background">
+          <div className="pt-24 pb-20 px-6 min-h-screen">
             <div className="container mx-auto max-w-7xl">
               <motion.div className="mb-8" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">

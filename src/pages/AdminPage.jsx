@@ -178,7 +178,7 @@ import React, { useState, useEffect, useCallback } from 'react';
             <meta name="description" content="Gestión de activos digitales de Engyx." />
           </Helmet>
 
-          <div className="min-h-screen bg-background text-foreground">
+          <div className="min-h-screen text-foreground">
             <div className="flex">
               <AdminSidebar menuItems={menuItems} activeTab={activeTab} onTabChange={handleTabChange} />
               
