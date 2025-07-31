@@ -29,10 +29,18 @@ import { useWallet } from '@/contexts/WalletContext';
       const handleMarketplaceClick = (e) => {
         e.preventDefault();
         if (!isConnected || authStatus !== 'authenticated') {
-          window.location.href = '/comenzar';
+          if (currentLang === 'es') {
+            window.location.href = '/comenzar';
+          } else {
+            window.location.href = '/get-started';
+          }
           return;
         }
-        window.location.href = '/mercado';
+        if (currentLang === 'es') {
+          window.location.href = '/mercado';
+        } else {
+          window.location.href = '/marketplace';
+        }
       };
 
       const footerLinks = {
@@ -56,7 +64,7 @@ import { useWallet } from '@/contexts/WalletContext';
         { icon: XIcon, name: "X", href: "https://x.com/engyx_io" },
         { icon: Send, name: "Telegram Community", href: "https://t.me/engyx_community" },
         { icon: Send, name: "Telegram Channel", href: "https://t.me/engyx_announcement" },
-        { icon: Github, name: "GitHub", href: "#" },
+        { icon: Github, name: "GitHub", href: "https://github.com/orgs/engyx-io" },
       ];
 
       return (

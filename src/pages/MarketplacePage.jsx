@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { useWallet } from '@/contexts/WalletContext';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { motion, AnimatePresence } from 'framer-motion';
 import { supabase } from '@/lib/customSupabaseClient';
@@ -16,6 +18,20 @@ export default function MarketplacePage({ handleFeatureClick }) {
   const [forSaleProjects, setForSaleProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { isConnected, authStatus } = useWallet();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // Protección para /marketplace
+    if (location.pathname === '/marketplace' && (!isConnected || authStatus !== 'authenticated')) {
+      navigate('/get-started', { replace: true });
+    }
+    // Protección para /mercado
+    if (location.pathname === '/mercado' && (!isConnected || authStatus !== 'authenticated')) {
+      navigate('/comenzar', { replace: true });
+    }
+  }, [isConnected, authStatus, navigate, location]);
 
   const fetchProjects = useCallback(async () => {
     setLoading(true);
