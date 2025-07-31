@@ -76,6 +76,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
         });
         
         navigate('/');
+        window.location.reload();
       }, [activeWallet, wagmiDisconnect, solanaDisconnect, signOut, navigate, t, user, handleDisconnect]);
 
       const getSignerAddress = async () => {
