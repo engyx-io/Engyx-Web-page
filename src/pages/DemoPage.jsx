@@ -139,36 +139,7 @@ import React, { useState, useEffect, useCallback } from 'react';
                 {renderDemoContent()}
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-center mt-12"
-              >
-                <div className="glass-card p-8 rounded-xl tech-border bg-gradient-to-r from-primary/10 to-teal-500/10">
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
-                    {t('cta.title')}
-                  </h3>
-                  <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                    {t('cta.description')}
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button 
-                      onClick={() => window.location.href = (i18n.language === 'es' ? '/comenzar' : '/get-started')}
-                      className="bg-gradient-to-r from-primary to-teal-500 hover:from-primary/90 hover:to-teal-600 text-white font-bold px-8 py-3 rounded-full"
-                    >
-                      {t('cta.startNow')}
-                    </Button>
-                    <Button 
-                      onClick={handleFeatureClick}
-                      variant="outline"
-                      className="border-primary/50 text-primary hover:bg-primary/10 px-8 py-3 rounded-full"
-                    >
-                      {t('cta.contactSales')}
-                    </Button>
-                  </div>
-                </div>
-              </motion.div>
+
             </div>
           </div>
         </>
