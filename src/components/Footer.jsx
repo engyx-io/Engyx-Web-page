@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useWallet } from '@/contexts/WalletContext';
     import { Link } from 'react-router-dom';
     import { Linkedin, Send, Github } from 'lucide-react';
     import { XIcon } from '@/components/icons/XIcon';
@@ -8,12 +9,36 @@ import React, { memo } from 'react';
       const { i18n } = useTranslation();
       const currentLang = i18n.language;
 
+      const { isConnected, authStatus, connectEvm } = useWallet();
+
+      // Handler para el acceso seguro a Monitoring
+      const handleMonitoringClick = (e) => {
+        e.preventDefault();
+        if (!isConnected) {
+          connectEvm();
+          return;
+        }
+        if (authStatus !== 'authenticated') {
+          window.location.href = currentLang === 'es' ? '/login' : '/login';
+          return;
+        }
+        window.location.href = '/dashboard';
+      };
+
+      // Handler para el acceso seguro a Marketplace
+      const handleMarketplaceClick = (e) => {
+        e.preventDefault();
+        if (!isConnected || authStatus !== 'authenticated') {
+          window.location.href = '/comenzar';
+          return;
+        }
+        window.location.href = '/mercado';
+      };
+
       const footerLinks = {
         "Services": [
-          { name: "Tokenization", path: currentLang === 'es' ? "/servicios" : "/services" },
-          { name: "Marketplace", path: "/mercado" },
-          { name: "Smart Contracts", onClick: handleFeatureClick },
-          { name: "Monitoring", path: "/dashboard" },
+          { name: "Marketplace", onClick: handleMarketplaceClick },
+          { name: "Monitoring", onClick: handleMonitoringClick },
         ],
         "Company": [
           { name: "About Us", path: currentLang === 'es' ? "/sobre-nosotros" : "/about-us" },
@@ -64,7 +89,7 @@ import React, { memo } from 'react';
                   <ul className="space-y-3">
                     {links.map((link, linkIndex) => (
                       <li key={linkIndex}>
-                        {link.path ? 
+                        {link.path && !link.onClick ? 
                           <Link to={link.path} className="text-muted-foreground hover:text-foreground transition-all duration-300 text-sm hover:translate-x-1 block">
                             <span className="text-primary/50 mr-2">›</span>
                             {link.name}

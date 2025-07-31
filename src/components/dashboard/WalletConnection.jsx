@@ -85,13 +85,13 @@ import React from 'react';
       }
 
       return (
-        <Card className="bg-slate-900/50 border-slate-800 text-white">
+        <Card className="bg-gradient-to-br from-primary to-teal-500 text-white border-none shadow-lg">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-emerald-300">
+            <CardTitle className="flex items-center gap-2 text-white">
               <Wallet className="w-6 h-6"/>
               <span>{t('wallets.connectTitle')}</span>
             </CardTitle>
-            <CardDescription className="text-slate-400">
+            <CardDescription className="text-white">
               {t('wallets.connectDescription')}
             </CardDescription>
           </CardHeader>

@@ -62,40 +62,41 @@ export default function RoadmapSection() {
         const Icon = item.icon;
 
         return (
-          <div key={index} className={`relative flex items-center w-full mb-12 ${isLeft ? 'justify-start' : 'justify-end'}`}>
-            <div className={`w-1/2 ${isLeft ? 'pr-8' : 'pl-8'}`}>
-              <motion.div
-                initial={{ opacity: 0, x: isLeft ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className={`bg-card p-6 rounded-xl tech-border ${styles.borderColor}`}
-              >
-                <div className="flex justify-between items-center mb-3">
-                  <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
-                  <span className={`text-xs font-bold uppercase ${styles.textColor}`}>{t(`status.${item.status}`)}</span>
-                </div>
-                <p className="text-sm text-muted-foreground mb-4">{item.period}</p>
-                <ul className="space-y-3">
-                  {Array.isArray(item.objectives) && item.objectives.map((obj, objIndex) => (
-                    <li key={objIndex} className="flex items-start space-x-3">
-                      <CheckCircle className={`w-5 h-5 ${styles.iconColor} mt-0.5 flex-shrink-0`} />
-                      <span className="text-muted-foreground text-sm">{obj}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            </div>
-            
+          <div key={index} className="relative flex flex-col items-center w-full mb-16">
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, type: 'spring', stiffness: 260, damping: 20 }}
-              className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-16 h-16 rounded-full flex items-center justify-center ${styles.iconBg} border-2 ${styles.borderColor}`}
+              className={`z-10 w-16 h-16 rounded-full flex items-center justify-center ${styles.iconBg} border-2 ${styles.borderColor} mb-4`}
             >
               <Icon className={`w-8 h-8 ${styles.iconColor}`} />
             </motion.div>
+            <div className="w-full flex justify-center">
+              <div className="w-full max-w-2xl">
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className={`bg-card p-6 rounded-xl tech-border ${styles.borderColor}`}
+                >
+                  <div className="flex justify-between items-center mb-3">
+                    <h3 className="text-xl font-bold text-foreground">{item.title}</h3>
+                    <span className={`text-xs font-bold uppercase ${styles.textColor}`}>{t(`status.${item.status}`)}</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-4">{item.period}</p>
+                  <ul className="space-y-3">
+                    {Array.isArray(item.objectives) && item.objectives.map((obj, objIndex) => (
+                      <li key={objIndex} className="flex items-start space-x-3">
+                        <CheckCircle className={`w-5 h-5 ${styles.iconColor} mt-0.5 flex-shrink-0`} />
+                        <span className="text-muted-foreground text-sm">{obj}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </div>
+            </div>
           </div>
         );
       })}
