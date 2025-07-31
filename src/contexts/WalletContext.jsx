@@ -1,17 +1,14 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
-    import { toast } from '@/components/ui/use-toast';
-    import { supabase } from '@/lib/customSupabaseClient';
-    import { useAuth } from '@/contexts/SupabaseAuthContext';
-    import { useNavigate, useLocation } from 'react-router-dom';
-    import { useTranslation } from 'react-i18next';
-    import { ethers } from "ethers";
-    import { sepoliaCustom } from '@/config';
-
-    import { useAccount, useDisconnect as useWagmiDisconnect, useSwitchNetwork } from 'wagmi';
-    import { useWeb3Modal } from '@web3modal/wagmi/react';
-
-    import { useWallet as useSolanaWallet } from '@solana/wallet-adapter-react';
-    import { useWalletModal } from '@solana/wallet-adapter-react-ui';
+import { toast } from '@/components/ui/use-toast';
+import { supabase } from '@/lib/customSupabaseClient';
+import { useAuth } from '@/contexts/SupabaseAuthContext';
+import { useTranslation } from 'react-i18next';
+import { ethers } from 'ethers';
+import { sepoliaCustom } from '@/config';
+import { useAccount, useDisconnect as useWagmiDisconnect, useSwitchNetwork } from 'wagmi';
+import { useWeb3Modal } from '@web3modal/wagmi/react';
+import { useWallet as useSolanaWallet } from '@solana/wallet-adapter-react';
+import { useWalletModal } from '@solana/wallet-adapter-react-ui';
 
     const WalletContext = createContext(null);
 
@@ -25,8 +22,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 
     export const WalletProvider = ({ children }) => {
       const { user, isAdmin, signOut } = useAuth();
-      const navigate = useNavigate();
-      const location = useLocation();
+      // Eliminados navigate y location, no se usan para redirección ni lógica
       const { t } = useTranslation('common');
       const [activeWallet, setActiveWallet] = useState(null);
       const [walletAddress, setWalletAddress] = useState('');
@@ -76,7 +72,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
         });
         
         window.location.href = '/';
-      }, [activeWallet, wagmiDisconnect, solanaDisconnect, signOut, navigate, t, user, handleDisconnect]);
+      }, [activeWallet, wagmiDisconnect, solanaDisconnect, signOut, t, user, handleDisconnect]);
 
       const getSignerAddress = async () => {
         if (typeof window.ethereum !== 'undefined' && isEvmConnected) {
@@ -187,7 +183,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
         };
 
         syncAndValidate();
-      }, [user, isConnected, walletAddress, networkType, navigate, location, disconnectWallet]);
+      }, [user, isConnected, walletAddress, networkType, disconnectWallet]);
 
       const connectEvm = useCallback(() => {
         openWeb3Modal();

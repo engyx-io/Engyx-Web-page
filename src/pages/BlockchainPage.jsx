@@ -206,34 +206,7 @@ export default function BlockchainPage({
             </Accordion>
           </motion.div>
 
-          <motion.div initial={{
-          opacity: 0,
-          y: 30
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          duration: 1.0
-        }} className="text-center">
-            <Card className="p-8 shadow-soft-lg bg-gradient-to-r from-primary/5 to-teal-500/5">
-              <h2 className="text-3xl font-bold text-foreground mb-4">
-                {t('blockchainPage.ctaTitle')}
-              </h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                {t('blockchainPage.ctaDesc')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button onClick={() => navigate('/pre-sale')} className="bg-gradient-to-r from-primary to-teal-500 hover:from-primary/90 hover:to-teal-600 text-white">
-                  <ArrowRight className="w-5 h-5 mr-2" />
-                  {t('blockchainPage.joinPresale')}
-                </Button>
-                <Button onClick={() => navigate('/comenzar')} variant="outline">
-                  <ArrowRight className="w-5 h-5 mr-2" />
-                  {t('blockchainPage.accessPlatform')}
-                </Button>
-              </div>
-            </Card>
-          </motion.div>
+
         </div>
       </div>
     </>;

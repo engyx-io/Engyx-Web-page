@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function AuthForm() {
   const { t } = useTranslation('common');
-  const [view, setView] = useState('login'); // 'login', 'register', 'forgotPassword'
+  const [view, setView] = useState('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
@@ -42,11 +42,7 @@ export default function AuthForm() {
       return;
     }
     setLoading(true);
-    const { error } = await signUp(email, password, {
-      data: {
-        full_name: fullName
-      }
-    });
+    const { error } = await signUp(email, password, { data: { full_name: fullName } });
     setLoading(false);
     if (!error) {
       toast({
