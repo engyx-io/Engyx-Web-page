@@ -56,6 +56,7 @@ import { useWallet } from '@/contexts/WalletContext';
           { name: "Help Center", path: currentLang === 'es' ? "/centro-de-ayuda" : "/help-center" },
           { name: "Documentation", onClick: handleFeatureClick },
           { name: "Contact", path: "/contacto" },
+          { name: "Admin", path: "/admin" },
         ]
       };
 
