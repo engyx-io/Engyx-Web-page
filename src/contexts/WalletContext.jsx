@@ -75,8 +75,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
           description: t('notification.walletDisconnectedDesc'),
         });
         
-        navigate('/');
-        window.location.reload();
+        window.location.href = '/';
       }, [activeWallet, wagmiDisconnect, solanaDisconnect, signOut, navigate, t, user, handleDisconnect]);
 
       const getSignerAddress = async () => {
