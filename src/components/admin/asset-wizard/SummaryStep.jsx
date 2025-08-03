@@ -1,19 +1,14 @@
 import React from 'react';
 import { networkOptions } from '@/components/admin/asset-wizard/constants';
 
+// Solo props mínimos: formData
 const SummaryStep = ({ formData }) => (
   <div className="space-y-4 text-white">
     <h3 className="text-lg font-bold text-emerald-400">Resumen de la Emisión</h3>
     <ul className="space-y-2 text-sm grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
       <li><strong>Nombre:</strong> {formData.assetName || 'N/A'}</li>
       <li><strong>Símbolo:</strong> {formData.assetSymbol || 'N/A'}</li>
-      <li><strong>Tipo:</strong> {formData.tokenType || 'N/A'}</li>
       <li><strong>Suministro Total:</strong> {formData.totalSupply || 'N/A'}</li>
-      <li><strong>Precio (USDC):</strong> {formData.price || 'N/A'}</li>
-      <li><strong>Soft Cap (USDC):</strong> {formData.softCap || 'N/A'}</li>
-      <li><strong>Hard Cap (USDC):</strong> {formData.hardCap || 'N/A'}</li>
-      <li><strong>Inversión Mín/Máx:</strong> {formData.minInvestment} / {formData.maxInvestment}</li>
-      <li><strong>Fechas:</strong> {new Date(formData.startDate).toLocaleString()} a {new Date(formData.endDate).toLocaleString()}</li>
       <li><strong>Wallet Emisora:</strong> <span className="break-all">{formData.walletAddress || 'N/A'}</span></li>
       <li><strong>Red:</strong> {networkOptions.find(n => n.value === formData.network)?.label || 'N/A'} (ChainId: {formData.chainId})</li>
       <li><strong>Tokens Pago:</strong> {formData.paymentTokens.join(', ')}</li>

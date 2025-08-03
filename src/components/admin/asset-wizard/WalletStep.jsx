@@ -1,8 +1,7 @@
 import React from 'react';
 import WalletConnection from '@/components/dashboard/WalletConnection';
 
-const WalletStep = () => (
-  <WalletConnection />
-);
+// No props necesarios, solo muestra el componente de conexión de wallet
+const WalletStep = () => <WalletConnection />;
 
 export default WalletStep;

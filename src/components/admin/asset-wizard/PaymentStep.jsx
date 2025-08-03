@@ -3,6 +3,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { paymentTokenOptions } from '@/components/admin/asset-wizard/constants';
 
+// Solo props mínimos: formData, handlePaymentTokenChange
 const PaymentStep = ({ formData, handlePaymentTokenChange }) => (
   <div className="space-y-4">
     <Label className="text-emerald-200">Tokens de Pago Habilitados</Label>

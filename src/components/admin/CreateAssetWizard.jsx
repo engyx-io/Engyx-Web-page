@@ -13,7 +13,7 @@ import React, { useState, useEffect } from 'react';
     import PaymentStep from '@/components/admin/asset-wizard/PaymentStep';
     import WalletStep from '@/components/admin/asset-wizard/WalletStep';
     import AssetInfoStep from '@/components/admin/asset-wizard/AssetInfoStep';
-    import OfferInfoStep from '@/components/admin/asset-wizard/OfferInfoStep';
+    // import OfferInfoStep eliminado
     import LegalDocsStep from '@/components/admin/asset-wizard/LegalDocsStep';
     import SummaryStep from '@/components/admin/asset-wizard/SummaryStep';
     import { STEPS, networkOptions } from '@/components/admin/asset-wizard/constants';
@@ -27,22 +27,13 @@ import React, { useState, useEffect } from 'react';
         network: 'sepolia',
         paymentTokens: ['USDC'],
         walletAddress: '',
-        assetName: 'ENGYX Token Offering',
+        assetName: '',
         assetSymbol: '',
-        totalSupply: '50000000',
-        decimals: '18',
-        tokenType: 'security',
-        price: '0.1',
-        softCap: '1000000',
-        hardCap: '5000000',
-        minInvestment: '100',
-        maxInvestment: '1000000',
-        startDate: '2025-12-01T00:00',
-        endDate: '2025-12-31T00:00',
+        totalSupply: '',
         logoFile: null,
         legalDocFile: null,
         chainId: 'aa36a7',
-        documentationUrl: 'https://engyx.io/docs/token-info.pdf'
+        documentationUrl: '',
       });
       const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -214,15 +205,21 @@ import React, { useState, useEffect } from 'react';
       };
 
       const renderStepContent = () => {
-        const props = { formData, handleInputChange, handleSelectChange, handlePaymentTokenChange, handleFileChange, networkOptions };
+        const stepProps = {
+          formData,
+          handleInputChange,
+          handleSelectChange,
+          handlePaymentTokenChange,
+          handleFileChange,
+          networkOptions
+        };
         switch (currentStep) {
-          case 'network': return <NetworkStep {...props} />;
-          case 'payment': return <PaymentStep {...props} />;
-          case 'wallet': return <WalletStep />;
-          case 'assetInfo': return <AssetInfoStep {...props} />;
-          case 'offerInfo': return <OfferInfoStep {...props} />;
-          case 'legalDocs': return <LegalDocsStep {...props} />;
-          case 'summary': return <SummaryStep {...props} />;
+          case 'network': return <NetworkStep formData={formData} handleSelectChange={handleSelectChange} networkOptions={networkOptions} />;
+          case 'payment': return <PaymentStep formData={formData} handlePaymentTokenChange={handlePaymentTokenChange} />;
+          case 'wallet': return <WalletStep formData={formData} />;
+          case 'assetInfo': return <AssetInfoStep formData={formData} handleInputChange={handleInputChange} />;
+          case 'legalDocs': return <LegalDocsStep formData={formData} handleFileChange={handleFileChange} />;
+          case 'summary': return <SummaryStep formData={formData} />;
           default: return null;
         }
       };
@@ -230,13 +227,13 @@ import React, { useState, useEffect } from 'react';
       return (
         <div className="glass-card text-white p-6 rounded-lg">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl text-blue-400 flex items-center gap-2"><Sparkles /> Crear Oferta de Token</h2>
+            <h2 className="text-2xl text-blue-400 flex items-center gap-2"><Sparkles /> Emisión de Activo Digital</h2>
             <Button variant="ghost" size="icon" onClick={onCancel} className="text-slate-400 hover:text-white hover:bg-slate-700/50">
               <X size={20} />
             </Button>
           </div>
           <p className="text-blue-200/70 mb-6">
-            Sigue los pasos para emitir una nueva oferta de token en la plataforma.
+            Sigue los pasos para emitir un nuevo activo digital en la plataforma.
           </p>
           
           <div className="py-6">

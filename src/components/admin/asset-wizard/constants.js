@@ -1,14 +1,13 @@
 import { FileText, Wallet, Info, Network, CircleDollarSign, Check } from 'lucide-react';
 
-    export const STEPS = [
-      { id: 'network', title: 'Seleccionar Red Blockchain', icon: Network },
-      { id: 'payment', title: 'Seleccionar Token de Pago', icon: CircleDollarSign },
-      { id: 'wallet', title: 'Conectar Wallet', icon: Wallet },
-      { id: 'assetInfo', title: 'Información del Activo', icon: Info },
-      { id: 'offerInfo', title: 'Información de la Oferta', icon: CircleDollarSign },
-      { id: 'legalDocs', title: 'Documentación Legal', icon: FileText },
-      { id: 'summary', title: 'Resumen y Emisión', icon: Check },
-    ];
+export const STEPS = [
+  { id: 'network', title: 'Seleccionar Red Blockchain', icon: Network },
+  { id: 'payment', title: 'Seleccionar Token de Pago', icon: CircleDollarSign },
+  { id: 'wallet', title: 'Conectar Wallet', icon: Wallet },
+  { id: 'assetInfo', title: 'Información del Activo', icon: Info },
+  { id: 'legalDocs', title: 'Documentación Legal', icon: FileText },
+  { id: 'summary', title: 'Resumen y Emisión', icon: Check },
+];
 
     export const networkOptions = [
         { 
