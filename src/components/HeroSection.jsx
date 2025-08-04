@@ -48,9 +48,9 @@ import React, { memo } from 'react';
               >
                 {(() => {
                   const title = t('heroTitle');
-                  // Remplaza Energy, Opportunities, Energia y Oportunidades por spans con el mismo degradado que la onda
-                  return title.split(/(Energy|Opportunities|Energia|Energía|Oportunidades)/g).map((part, idx) => {
-                    if (['Energy', 'Opportunities', 'Energia', 'Energía', 'Oportunidades'].includes(part)) {
+                  // Remplaza Sustainable, Opportunities, Sustentabilidad y Oportunidades por spans con el mismo degradado que la onda
+                  return title.split(/(Sustainable|Opportunities|Sustentabilidad|Oportunidades)/g).map((part, idx) => {
+                    if (['Sustainable', 'Opportunities', 'Sustentabilidad', 'Oportunidades'].includes(part)) {
                       return (
                         <span
                           key={idx}
