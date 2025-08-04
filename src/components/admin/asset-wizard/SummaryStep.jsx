@@ -10,7 +10,7 @@ const SummaryStep = ({ formData }) => (
       <li><strong>Símbolo:</strong> {formData.assetSymbol || 'N/A'}</li>
       <li><strong>Suministro Total:</strong> {formData.totalSupply || 'N/A'}</li>
       <li><strong>Wallet Emisora:</strong> <span className="break-all">{formData.walletAddress || 'N/A'}</span></li>
-      <li><strong>Red:</strong> {networkOptions.find(n => n.value === formData.network)?.label || 'N/A'} (ChainId: {formData.chainId})</li>
+      <li><strong>Red:</strong> {networkOptions.find(n => n.chainId === formData.chainId)?.label || 'N/A'} (ChainId: {formData.chainId})</li>
       <li><strong>Tokens Pago:</strong> {formData.paymentTokens.join(', ')}</li>
       <li><strong>URL Documentación:</strong> <span className="break-all">{formData.documentationUrl || 'N/A'}</span></li>
       <li><strong>Logo:</strong> {formData.logoFile?.name || 'No cargado'}</li>

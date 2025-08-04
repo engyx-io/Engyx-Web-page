@@ -24,7 +24,6 @@ import React, { useState, useEffect } from 'react';
       const { getSignerAddress, walletAddress: connectedWalletAddress } = useWallet();
       const [currentStep, setCurrentStep] = useState('network');
       const [formData, setFormData] = useState({
-        network: 'sepolia',
         paymentTokens: ['USDC'],
         walletAddress: '',
         assetName: '',
@@ -32,7 +31,7 @@ import React, { useState, useEffect } from 'react';
         totalSupply: '',
         logoFile: null,
         legalDocFile: null,
-        chainId: 'aa36a7',
+        chainId: 'aa36a7', // ChainId decimal para Sepolia
         documentationUrl: '',
       });
       const [isSubmitting, setIsSubmitting] = useState(false);
@@ -103,18 +102,27 @@ import React, { useState, useEffect } from 'react';
         }
 
         try {
-            const selectedNetwork = networkOptions.find(opt => opt.chainId === formData.chainId);
-            const blockchainName = selectedNetwork?.value;
+            // Validación de campos requeridos
+            const requiredFields = ['assetName', 'assetSymbol', 'totalSupply', 'documentationUrl'];
+            for (const field of requiredFields) {
+              if (!formData[field]) {
+                toast({ title: "Error", description: `Falta completar el campo: ${field}`, variant: "destructive" });
+                setIsSubmitting(false);
+                return;
+              }
+            }
 
-            if (!blockchainName) {
-                throw new Error("No se pudo determinar el nombre de la blockchain a partir del Chain ID.");
+            // ChainId en formato string para Sepolia
+            let chainId = formData.chainId;
+            // Si la red seleccionada es Sepolia, forzar 'aa36a7' (string)
+            if (chainId === 11155111 || chainId === '11155111' || chainId === 'sepolia') {
+              chainId = 'aa36a7';
             }
 
             const prepareBody = {
                 method: "newTokenization",
                 signerAddress: signerAddress,
-                chainId: formData.chainId,
-                blockchain: blockchainName,
+                chainId: chainId,
                 name: formData.assetName,
                 tokenizerEmail: "exequiel@engyx.io",
                 symbol: formData.assetSymbol,
@@ -143,6 +151,8 @@ import React, { useState, useEffect } from 'react';
 
             for (const tx of transactionsToSign) {
                 const txToSign = { ...tx };
+                // Asegura que chainId sea decimal para firmar
+                txToSign.chainId = 11155111;
                 delete txToSign.from;
                 const signedTx = await signer.signTransaction(txToSign);
                 signedTransactions.push(signedTx);
@@ -154,7 +164,18 @@ import React, { useState, useEffect } from 'react';
             });
             
             const sendBody = {
-                signedTransactions: signedTransactions
+                signedTransactions: signedTransactions,
+                chainId: chainId,
+                method: 'newTokenization',
+                tokenName: formData.assetName,
+                tokenSymbol: formData.assetSymbol,
+                supplyCap: formData.totalSupply,
+                tokenizerEmail: "exequiel@engyx.io",
+                tokenizerAddress: formData.walletAddress,
+                tokenizerCompanyName: 'Engyx',
+                tokenizerName: 'Exequiel',
+                tokenizerSurname: 'Inaipil'
+                // rpcUrl: '...' // solo si Brickken lo requiere explícitamente
             };
 
             const { data: sendData, error: sendError } = await supabase.functions.invoke('send-api-transaction', {
@@ -178,7 +199,7 @@ import React, { useState, useEffect } from 'react';
                 user_id: user.id,
                 asset_name: formData.assetName,
                 asset_symbol: formData.assetSymbol,
-                network: formData.chainId,
+                chainId: formData.chainId,
                 payment_tokens: formData.paymentTokens,
                 wallet_address: formData.walletAddress,
                 logo_url: logoUrl,
@@ -217,7 +238,7 @@ import React, { useState, useEffect } from 'react';
           case 'network': return <NetworkStep formData={formData} handleSelectChange={handleSelectChange} networkOptions={networkOptions} />;
           case 'payment': return <PaymentStep formData={formData} handlePaymentTokenChange={handlePaymentTokenChange} />;
           case 'wallet': return <WalletStep formData={formData} />;
-          case 'assetInfo': return <AssetInfoStep formData={formData} handleInputChange={handleInputChange} />;
+          case 'assetInfo': return <AssetInfoStep formData={formData} handleInputChange={handleInputChange} handleFileChange={handleFileChange} />;
           case 'legalDocs': return <LegalDocsStep formData={formData} handleFileChange={handleFileChange} />;
           case 'summary': return <SummaryStep formData={formData} />;
           default: return null;

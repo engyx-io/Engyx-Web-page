@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const NetworkStep = ({ formData, handleSelectChange, networkOptions }) => (
   <div className="space-y-4">
     <Label htmlFor="network" className="text-emerald-200">Selecciona la Red Blockchain</Label>
-    <Select name="network" value={formData.network} onValueChange={value => handleSelectChange('network', value)}>
+    <Select name="network" value={networkOptions.find(n => n.chainId === formData.chainId)?.value || ''} onValueChange={value => handleSelectChange('network', value)}>
       <SelectTrigger className="w-full bg-black/50 border-emerald-500/30 focus:border-emerald-400">
         <SelectValue placeholder="Elige una red..." />
       </SelectTrigger>
