@@ -10,7 +10,7 @@ import React from 'react';
         {
           icon: LayoutGrid,
           title: "1. Descripción del Servicio",
-          content: <p className="text-foreground leading-relaxed">ENGYX ofrece una plataforma descentralizada que permite la adquisición de tokens vinculados a activos de energía renovable. A través de tecnologías blockchain y contratos inteligentes, los usuarios pueden participar en la financiación de proyectos de energía limpia mediante la compra del token ENGYX.</p>
+          content: <p className="text-foreground leading-relaxed">ENGYX ofrece una plataforma descentralizada que permite la adquisición de tokens vinculados a activos sustentables. A través de tecnologías blockchain y contratos inteligentes, los usuarios pueden participar en la financiación de proyectos de energía limpia, créditos de carbono y otros activos digitales.</p>
         },
         {
           icon: FileText,
@@ -113,7 +113,7 @@ import React from 'react';
         {
           icon: Copyright,
           title: "9. Propiedad Intelectual",
-          content: <p className="text-foreground leading-relaxed">Todo el contenido, logotipos, código fuente y documentación en el sitio son propiedad de ENGYX Digital Energy LLC, salvo que se indique lo contrario. Está prohibida su reproducción sin autorización.</p>
+          content: <p className="text-foreground leading-relaxed">Todo el contenido, logotipos, código fuente y documentación en el sitio son propiedad de ENGYX Digital Assets Inc., salvo que se indique lo contrario. Está prohibida su reproducción sin autorización.</p>
         },
         {
           icon: RefreshCw,
@@ -126,7 +126,7 @@ import React from 'react';
           content: <p className="text-foreground leading-relaxed">Para ejercer tus derechos o realizar consultas, contáctanos en:</p>,
           contact: {
             email: "legal@engyx.io",
-            address: "ENGYX Digital Energy Inc., Delaware, USA."
+            address: "ENGYX Digital Assets Inc., Delaware, USA."
           }
         }
       ];

@@ -245,11 +245,11 @@
         "metaTitle": "Blockchain - ENGYX",
         "metaDescription": "Discover ENGYX's blockchain technology, full whitepaper, and the tokenomics of the $ENGYX token.",
         "title": "Blockchain",
-        "subtitle": "Decentralized technology to democratize investment in energy asset revenues",
+        "subtitle": "Decentralized technology that empowers global access to sustainable investment",
         "securityTitle": "Security",
         "securityDesc": "Audited smart contracts and enterprise-grade security protocols",
         "decentralizationTitle": "Decentralization",
-        "decentralizationDesc": "Community governance and transparent operations without intermediaries",
+        "decentralizationDesc": "Transparent operations without intermediaries",
         "scalabilityTitle": "Scalability",
         "scalabilityDesc": "Optimized architecture to handle a global ecosystem of assets",
         "whitepaperTitle": "Whitepaper",
@@ -271,17 +271,17 @@
         "viewFullWhitepaper": "View Full Whitepaper",
         "whitepaper": {
           "s1_title": "1. Executive Summary",
-          "s1_content": "ENGYX revolutionizes the energy sector by digitizing revenue streams from renewable energy assets. Our platform allows global investors to participate in the profits of clean energy projects, generating sustainable and measurable returns.",
+          "s1_content": "At Engyx, we connect the capital of the future with the assets driving the transformation of our planet. We tokenize renewable energy projects, carbon credits, and sustainable infrastructure, giving global investors access to real, traceable opportunities aligned with the transition to a low-carbon economy.",
           "s2_title": "2. Problem and Opportunity",
-          "s2_content": "The traditional energy sector faces high entry barriers, a lack of transparency, and limited access for small investors. ENGYX democratizes investment in renewable energy, creating a transparent and accessible ecosystem.",
+          "s2_content": "The traditional energy sector faces high entry barriers, low transparency, and limited access for investors. At Engyx, we break this paradigm by tokenizing renewable energy projects, carbon credits, and sustainable infrastructure. We create an open, traceable, and accessible financial ecosystem that democratizes investment in real assets with positive environmental impact.",
           "s3_title": "3. Technological Solution",
-          "s3_content": "We use smart contracts on Ethereum to digitize the revenues of renewable energy plants. Each token represents a share of the generated income, with dividends automatically distributed based on actual production.",
+          "s3_content": "We use smart contracts to tokenize and digitize real assets in renewable energy, carbon credits, and sustainable infrastructure. Each token represents a transparent and verifiable stake, with dividends automatically distributed based on the actual production or performance of the projects, ensuring traceability and fairness for investors.",
           "s4_title": "4. Blockchain Architecture",
-          "s4_content": "Audited smart contracts, oracles for real-time energy production data, a decentralized governance system, and staking mechanisms for additional rewards.",
+          "s4_content": "Audited smart contracts, oracles providing real-time data on energy production, carbon credits, or revenue streams from sustainable infrastructure; alongside a staking system that offers rewards to participants.",
           "s5_title": "5. Business Model",
-          "s5_content": "Commissions from digitizing plant revenues, transaction fees on the platform, and premium analytics services for project developers.",
+          "s5_content": "We generate revenue through commissions for the digitization and tokenization of energy plants, carbon credits, and sustainable infrastructure projects. Additionally, we charge fees for platform transactions and offer analysis and consulting services for project developers.",
           "s6_title": "6. Roadmap and Development",
-          "s6_content": "Q1 2025: Pre-sale launch and MVP. Q2 2025: First plant with digitized revenues. Q3 2025: Expansion to 5 countries. Q4 2025: Launch of decentralized governance."
+          "s6_content": "Q1 2025: Pre-sale launch and MVP. Q2 2025: First plant with digitized revenues. Q3 2025: Expansion to 5 countries."
         }
       },
       "main": {
@@ -290,8 +290,8 @@
       "marketplace": {
         "metaTitle": "Marketplace - ENGYX",
         "metaDescription": "Explore and trade revenue-sharing tokens from renewable energy projects on the ENGYX marketplace.",
-        "title": "Digital Energy Market",
-        "subtitle": "Discover investment opportunities on our Launchpad and trade revenue tokens on our Exchange.",
+        "title": "Digital Assets",
+        "subtitle": "Discover our investment opportunities.",
         "launchpadTitle": "Launchpad",
         "exchangeTitle": "Exchange",
         "tabs": {
@@ -352,12 +352,12 @@
         }
       },
       "servicesPage": {
-        "metaTitle": "Services - Engyx Digital Energy",
+        "metaTitle": "Services - Engyx Digital Assets",
         "metaDescription": "Discover our services for asset tokenization, decentralized marketplace, smart contracts, and on-chain monitoring.",
         "title": "Our Services",
         "subtitle": "Comprehensive solutions for the tokenization and trading of digital assets.",
-        "service1Title": "Energy Asset Tokenization",
-        "service1Desc": "We convert renewable energy plants, software licenses, and other digital assets into tradable tokens, opening new avenues for investment and liquidity.",
+        "service1Title": "Sustainable Asset Tokenization",
+        "service1Desc": "Renewable energy plants, carbon credits, and sustainable infrastructure projects are transformed into digital investment opportunities. ",
         "service2Title": "Decentralized Marketplace",
         "service2Desc": "A secure and transparent platform to buy, sell, and trade digital asset tokens, driven by the community.",
         "service3Title": "Automated Smart Contracts",
@@ -524,16 +524,16 @@
       },
       "aboutPage": {
         "metaTitle": "About Us - ENGYX",
-        "metaDescription": "Learn about the mission, vision, and team behind ENGYX, the platform revolutionizing renewable energy investment.",
+        "metaDescription": "Learn about the mission, vision, and team behind ENGYX, the platform revolutionizing investment in sustainable assets.",
         "title": "About ENGYX",
-        "subtitle": "We are redefining the future of energy, making it more accessible, transparent, and sustainable for everyone.",
+        "subtitle": "At Engyx, we are revolutionizing the way investments are made in energy and sustainability through the tokenization of real-world assets. Our platform connects investors with renewable energy projects, carbon credits, and green infrastructure, promoting transparency, accessibility, and positive environmental impact through innovative blockchain technology.",
         "mission": {
           "title": "Our Mission",
-          "description": "To democratize access to investment in renewable energy through the tokenization of energy assets. We create a bridge between energy producers and investors worldwide, fostering sustainable growth and a positive environmental impact."
+          "description": "Democratizing access to sustainable investments through the tokenization of real assets in renewable energy, carbon credits, and green infrastructure, generating positive environmental impact and transparent, accessible financial returns for all."
         },
         "vision": {
           "title": "Our Vision",
-          "description": "To be the leading global platform for the tokenization of renewable energy assets, driving the global transition to a 100% clean and decentralized energy future, where every individual can participate in and benefit from the green revolution."
+          "description": "To be the global reference platform for the digitization and financing of sustainable projects, driving the transition to a low-carbon economy through innovative and accessible technological solutions."
         },
         "values": {
           "title": "Our Values",
@@ -615,14 +615,14 @@
       },
       "privacyPolicyPage": {
         "metaTitle": "Privacy Policy - ENGYX",
-        "metaDescription": "ENGYX Digital Energy's Privacy Policy. Learn how we protect and manage your personal data.",
+        "metaDescription": "ENGYX Digital Assets's Privacy Policy. Learn how we protect and manage your personal data.",
         "pageTitle": "Privacy Policy",
         "lastUpdated": "Last updated: July 01, 2025",
         "sections": [
           {
             "icon": "Shield",
             "title": "Introduction",
-            "content": "ENGYX Digital Energy (“we”, “our”) is committed to protecting your privacy. This policy outlines how we collect, use, and protect your personal information when you interact with our services at https://engyx.io, and how we comply with the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States."
+            "content": "ENGYX Digital Assets (“we”, “our”) is committed to protecting your privacy. This policy outlines how we collect, use, and protect your personal information when you interact with our services at https://engyx.io, and how we comply with the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States."
           },
           {
             "icon": "Database",
@@ -717,17 +717,17 @@
             "content": "To exercise your rights or make inquiries, contact us at:",
             "contact": {
               "email": "legal@engyx.io",
-              "address": "ENGYX Digital Energy Inc., Delaware, USA."
+              "address": "ENGYX Digital Assets Inc., Delaware, USA."
             }
           }
         ]
       },
       "termsPage": {
         "metaTitle": "Terms and Conditions - ENGYX",
-        "metaDescription": "Terms and Conditions of use for the ENGYX Digital Energy platform.",
+        "metaDescription": "Terms and Conditions of use for the ENGYX Digital Assets platform.",
         "pageTitle": "Terms and Conditions of Use",
         "lastUpdated": "Last updated: July 01, 2025",
-        "intro": "Welcome to <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>, a platform operated by <strong>ENGYX Digital Energy Inc</strong>, based in Delaware, USA. By accessing or using this site, you agree to comply with these Terms and Conditions of Use, as well as our Privacy Policy and any applicable regulations.",
+        "intro": "Welcome to <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>, a platform operated by <strong>ENGYX Digital Assets Inc</strong>, based in Delaware, USA. By accessing or using this site, you agree to comply with these Terms and Conditions of Use, as well as our Privacy Policy and any applicable regulations.",
         "sections": [
           {
             "icon": "LayoutGrid",
@@ -785,17 +785,17 @@
             "content": "To exercise your rights or make inquiries, contact us at:",
             "contact": {
               "email": "legal@engyx.io",
-              "address": "ENGYX Digital Energy Inc., Delaware, USA."
+              "address": "ENGYX Digital Assets Inc., Delaware, USA."
             }
           }
         ]
       },
       "cookiePolicyPage": {
         "metaTitle": "Cookie Policy - ENGYX",
-        "metaDescription": "ENGYX Digital Energy's Cookie Policy. Understand how and why we use cookies on our site.",
+        "metaDescription": "ENGYX Digital Assets's Cookie Policy. Understand how and why we use cookies on our site.",
         "pageTitle": "Cookie Policy",
         "lastUpdated": "Last updated: July 01, 2025",
-        "intro": "This Cookie Policy explains how <strong>ENGYX Digital Energy Inc.</strong> ('ENGYX', 'we', 'our') uses cookies and similar technologies on its website <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>. By continuing to browse this site, you agree to the use of cookies in accordance with this policy.",
+        "intro": "This Cookie Policy explains how <strong>ENGYX Digital Assets Inc.</strong> ('ENGYX', 'we', 'our') uses cookies and similar technologies on its website <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>. By continuing to browse this site, you agree to the use of cookies in accordance with this policy.",
         "sections": [
           {
             "icon": "HelpCircle",
@@ -861,7 +861,7 @@
             "content": "To exercise your rights or make inquiries, contact us at:",
             "contact": {
               "email": "legal@engyx.io",
-              "address": "ENGYX Digital Energy Inc., Delaware, USA."
+              "address": "ENGYX Digital Assets Inc., Delaware, USA."
             }
           }
         ]

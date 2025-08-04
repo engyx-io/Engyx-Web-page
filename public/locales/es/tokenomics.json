@@ -39,12 +39,12 @@
   },
   "utilities": {
     "energyDividends": {
-      "title": "Dividendos Energéticos",
-      "description": "Recibe pagos automáticos basados en la producción real de energía"
+      "title": "Pago de tarifas dentro de la plataforma",
+      "description": "El token ENGYX se utiliza para pagar comisiones y servicios en la plataforma, incentivando su uso y circulación."
     },
     "governance": {
-      "title": "Gobernanza",
-      "description": "Vota en decisiones importantes del protocolo y nuevos proyectos"
+      "title": "Incentivos para referidos y promociones",
+      "description": "ENGYX se usa para recompensar a usuarios que refieran nuevos inversores o participen en campañas promocionales, ampliando la comunidad."
     },
     "stakingRewards": {
       "title": "Recompensas de Staking",

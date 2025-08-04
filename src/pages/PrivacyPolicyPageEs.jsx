@@ -9,7 +9,7 @@ import React from 'react';
         {
           icon: Shield,
           title: "Introducción",
-          content: "ENGYX Digital Energy (“nosotros”, “nuestro”) se compromete a proteger tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos tu información personal cuando interactúas con nuestros servicios en https://engyx.io, y cómo cumplimos con el Reglamento General de Protección de Datos (GDPR) en Europa y la Ley de Privacidad del Consumidor de California (CCPA) en Estados Unidos."
+          content: "ENGYX Digital Assets (“nosotros”, “nuestro”) se compromete a proteger tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos tu información personal cuando interactúas con nuestros servicios en https://engyx.io."
         },
         {
           icon: Database,
@@ -104,7 +104,7 @@ import React from 'react';
           content: "Para ejercer tus derechos o realizar consultas, contáctanos en:",
           contact: {
             email: "legal@engyx.io",
-            address: "ENGYX Digital Energy Inc., Delaware, USA."
+            address: "ENGYX Digital Assets Inc., Delaware, USA."
           }
         }
       ];

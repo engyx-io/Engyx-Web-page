@@ -14,7 +14,7 @@ import React from 'react';
       return (
         <>
           <Helmet>
-            <title>{t('metaTitle')} - Engyx Digital Energy</title>
+            <title>{t('metaTitle')} - Engyx Digital Assets</title>
             <meta name="description" content={t('metaDescription')} />
           </Helmet>
 

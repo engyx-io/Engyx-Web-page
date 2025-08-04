@@ -245,11 +245,11 @@
         "metaTitle": "Blockchain - ENGYX",
         "metaDescription": "Descubre la tecnología blockchain de ENGYX, whitepaper completo y tokenomics del token $ENGYX.",
         "title": "Blockchain",
-        "subtitle": "Tecnología descentralizada para democratizar la inversión en los ingresos de activos energéticos",
+        "subtitle": "Tecnología descentralizada que potencia el acceso global a la inversión sostenible",
         "securityTitle": "Seguridad",
         "securityDesc": "Contratos inteligentes auditados y protocolos de seguridad de nivel empresarial",
         "decentralizationTitle": "Descentralización",
-        "decentralizationDesc": "Gobernanza comunitaria y operaciones transparentes sin intermediarios",
+        "decentralizationDesc": "Operaciones transparentes sin intermediarios",
         "scalabilityTitle": "Escalabilidad",
         "scalabilityDesc": "Arquitectura optimizada para manejar un ecosistema global de activos",
         "whitepaperTitle": "Whitepaper",
@@ -271,17 +271,17 @@
         "viewFullWhitepaper": "Ver Whitepaper Completo",
         "whitepaper": {
           "s1_title": "1. Resumen Ejecutivo",
-          "s1_content": "ENGYX revoluciona el sector energético mediante la digitalización de los flujos de ingresos de activos de energía renovable. Nuestra plataforma permite a inversores globales participar en las ganancias de proyectos de energía limpia, generando rendimientos sostenibles y medibles.",
+          "s1_content": "En Engyx conectamos el capital del futuro con los activos que están impulsando la transformación del planeta. Tokenizamos proyectos de energía renovable, créditos de carbono e infraestructura sostenible, abriendo a inversores globales el acceso a oportunidades reales, trazables y alineadas con la transición hacia una economía baja en carbono.",
           "s2_title": "2. Problema y Oportunidad",
-          "s2_content": "El sector energético tradicional enfrenta barreras de entrada altas, falta de transparencia y acceso limitado para pequeños inversores. ENGYX democratiza la inversión en energía renovable, creando un ecosistema transparente y accesible.",
+          "s2_content": "El sector energético tradicional presenta altas barreras de entrada, baja transparencia y acceso limitado para los inversores. En Engyx rompemos ese paradigma mediante la tokenización de proyectos de energía renovable, créditos de carbono e infraestructura sostenible. Creamos un ecosistema financiero abierto, trazable y accesible, que democratiza la inversión en activos reales con impacto ambiental positivo.",
           "s3_title": "3. Solución Tecnológica",
-          "s3_content": "Utilizamos contratos inteligentes en Ethereum para digitalizar los ingresos de plantas de energía renovable. Cada token representa una participación en los ingresos generados, con dividendos distribuidos automáticamente basados en la producción real.",
+          "s3_content": "Utilizamos contratos inteligentes para tokenizar y digitalizar los activos reales en energía renovable, créditos de carbono e infraestructura sostenible. Cada token representa una participación transparente y verificable, con dividendos distribuidos automáticamente según la producción o desempeño real de los proyectos, garantizando trazabilidad y equidad para los inversores.",
           "s4_title": "4. Arquitectura Blockchain",
-          "s4_content": "Smart contracts auditados, oráculos para datos en tiempo real de producción energética, sistema de gobernanza descentralizada y mecanismos de staking para recompensas adicionales.",
+          "s4_content": "Smart contracts auditados, oráculos que proporcionan datos en tiempo real sobre producción energética, créditos de carbono o flujos de ingresos de infraestructura sostenible; junto con un sistema de staking que ofrece recompensas a los participantes.",
           "s5_title": "5. Modelo de Negocio",
-          "s5_content": "Comisiones por la digitalización de ingresos de plantas, fees de transacción en la plataforma, y servicios premium de análisis para desarrolladores de proyectos.",
+          "s5_content": "Generamos ingresos a través de comisiones por la digitalización y tokenización de plantas de energía, créditos de carbono e ingresos por proyectos de infraestructura sostenible. Además, cobramos tarifas por transacciones en la plataforma y ofrecemos servicios de análisis y consultoría para desarrolladores de proyectos.",
           "s6_title": "6. Roadmap y Desarrollo",
-          "s6_content": "Q1 2025: Lanzamiento de pre-sale y MVP. Q2 2025: Primera planta con ingresos digitalizados. Q3 2025: Expansión a 5 países. Q4 2025: Lanzamiento de gobernanza descentralizada."
+          "s6_content": "Q1 2025: Lanzamiento de pre-sale y MVP. Q2 2025: Primera planta con ingresos digitalizados. Q3 2025: Expansión a 5 países."
         }
       },
       "main": {
@@ -290,8 +290,8 @@
       "marketplace": {
         "metaTitle": "Mercado - ENGYX",
         "metaDescription": "Explora y comercia tokens de participación de ingresos de proyectos de energía renovable en el mercado de ENGYX.",
-        "title": "Mercado de Energía Digital",
-        "subtitle": "Descubre oportunidades de inversión en nuestro Launchpad y comercia tokens de ingresos en nuestro Exchange.",
+        "title": "Activos Digitales",
+        "subtitle": "Descubre nuestras oportunidades de inversión.",
         "launchpadTitle": "Launchpad",
         "exchangeTitle": "Exchange",
         "tabs": {
@@ -352,12 +352,12 @@
         }
       },
       "servicesPage": {
-        "metaTitle": "Servicios - Engyx Digital Energy",
+        "metaTitle": "Servicios - Engyx Digital Assets",
         "metaDescription": "Descubre nuestros servicios de tokenización de activos, marketplace descentralizado, smart contracts y monitoreo on-chain.",
         "title": "Nuestros Servicios",
         "subtitle": "Soluciones integrales para la tokenización y comercialización de activos digitales.",
-        "service1Title": "Tokenización de Activos Energéticos",
-        "service1Desc": "Convertimos plantas de energía renovable, licencias de software y otros activos digitales en tokens negociables, abriendo nuevas vías de inversión y liquidez.",
+        "service1Title": "Tokenización de Activos Sustentables",
+        "service1Desc": "Plantas de energía renovable, créditos de carbono y proyectos de infraestructura sostenible, transformando activos del mundo real en oportunidades de inversión digital.",
         "service2Title": "Marketplace Descentralizado",
         "service2Desc": "Una plataforma segura y transparente para comprar, vender e intercambiar tokens de activos digitales, impulsada por la comunidad.",
         "service3Title": "Smart Contracts Automatizados",
@@ -524,16 +524,16 @@
       },
       "aboutPage": {
         "metaTitle": "Sobre Nosotros - ENGYX",
-        "metaDescription": "Conoce la misión, visión y el equipo detrás de ENGYX, la plataforma que revoluciona la inversión en energía renovable.",
+        "metaDescription": "Conoce la misión, visión y el equipo detrás de ENGYX, la plataforma que revoluciona la inversión en activos sustentables.",
         "title": "Sobre ENGYX",
-        "subtitle": "Estamos redefiniendo el futuro de la energía, haciéndola más accesible, transparente y sostenible para todos.",
+        "subtitle": "En Engyx, revolucionamos la forma de invertir en energía y sostenibilidad mediante la tokenización de activos reales. Nuestra plataforma conecta a inversores con proyectos de energía renovable, créditos de carbono e infraestructura verde, promoviendo la transparencia, la accesibilidad y el impacto ambiental positivo a través de tecnología blockchain innovadora.",
         "mission": {
           "title": "Nuestra Misión",
-          "description": "Democratizar el acceso a la inversión en energía renovable a través de la tokenización de activos energéticos. Creamos un puente entre los productores de energía y los inversores de todo el mundo, fomentando un crecimiento sostenible y un impacto ambiental positivo."
+          "description": "Democratizar el acceso a inversiones sostenibles mediante la tokenización de activos reales en energía renovable, créditos de carbono e infraestructura verde, generando impacto ambiental positivo y retornos financieros transparentes y accesibles para todos."
         },
         "vision": {
           "title": "Nuestra Visión",
-          "description": "Ser la plataforma líder a nivel mundial en la tokenización de activos de energía renovable, impulsando la transición global hacia un futuro energético 100% limpio y descentralizado, donde cada individuo pueda participar y beneficiarse de la revolución verde."
+          "description": "SSer la plataforma global de referencia en la digitalización y financiamiento de proyectos sostenibles, impulsando la transición hacia una economía baja en carbono mediante soluciones tecnológicas innovadoras y accesibles."
         },
         "values": {
           "title": "Nuestros Valores",
