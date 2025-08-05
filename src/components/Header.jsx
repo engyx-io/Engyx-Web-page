@@ -1,4 +1,4 @@
-import React, { useState, useMemo, memo } from 'react';
+import React, { useState, useMemo, memo, useEffect, useRef } from 'react';
     import { motion, AnimatePresence } from 'framer-motion';
     import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
@@ -14,9 +14,31 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
     import AuthNavButton from '@/components/AuthNavButton';
 
     const Header = ({ handleFeatureClick, showPresalePage }) => {
+
       const location = useLocation();
       const { t, i18n } = useTranslation('common');
       const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+      const [showHeader, setShowHeader] = useState(true);
+      const lastScrollY = useRef(window.scrollY);
+
+      useEffect(() => {
+        const handleScroll = () => {
+          const currentScrollY = window.scrollY;
+          if (currentScrollY < 40) {
+            setShowHeader(true);
+            lastScrollY.current = currentScrollY;
+            return;
+          }
+          if (currentScrollY > lastScrollY.current) {
+            setShowHeader(false); // scrolling down
+          } else {
+            setShowHeader(true); // scrolling up
+          }
+          lastScrollY.current = currentScrollY;
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
 
       const getLocalizedPath = (path) => {
         if (i18n.language === 'es') {
@@ -163,9 +185,10 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
       return (
         <motion.header
           initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          animate={{ y: showHeader ? 0 : -120, opacity: showHeader ? 1 : 0 }}
+          transition={{ duration: 0.4 }}
           className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md"
+          style={{ pointerEvents: showHeader ? 'auto' : 'none' }}
         >
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center h-20">
             <motion.div 
