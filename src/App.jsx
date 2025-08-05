@@ -36,7 +36,7 @@ import { Analytics } from "@vercel/analytics/react";
     import FaqsPage from '@/pages/FaqsPage';
     import SumsubWebhooksPage from '@/pages/SumsubWebhooksPage';
     import CarbonCertificatePage from '@/pages/CarbonCertificatePage';
-    import BlockchainNetworkBackground from '@/components/BlockchainNetworkBackground';
+
     import { useTranslation } from 'react-i18next';
     import Loader from '@/components/Loader';
     import { AnimatePresence } from 'framer-motion';
@@ -158,7 +158,7 @@ import { Analytics } from "@vercel/analytics/react";
       
       return (
         <div className={`min-h-screen overflow-hidden relative flex flex-col`}>
-          {!isFullPageLayout && location.pathname === '/' && <BlockchainNetworkBackground />}
+
           {!isFullPageLayout && <Header handleFeatureClick={handleFeatureClick} showPresalePage={showPresalePage} />}
           <main className="relative z-0 flex-grow">
             <AnimatePresence mode="wait">

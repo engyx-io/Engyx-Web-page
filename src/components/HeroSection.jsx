@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useRef, useEffect } from 'react';
     import { Link } from 'react-router-dom';
     import { motion } from 'framer-motion';
     import { ArrowRight } from 'lucide-react';
@@ -30,9 +30,32 @@ import React, { memo } from 'react';
 
     const HeroSection = () => {
       const { t } = useTranslation('home');
+      const videoRef = useRef(null);
+
+      useEffect(() => {
+        const video = videoRef.current;
+        if (video) {
+          video.muted = true; // silenciar video
+        }
+      }, []);
 
       return (
         <section className="pt-40 pb-48 px-6 relative overflow-hidden">
+          {/* Video de fondo bosque */}
+          <video
+            ref={videoRef}
+            className="absolute inset-0 w-full h-full object-cover z-0 select-none pointer-events-none"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            poster="/Videos/foresttrees.jpg"
+            style={{ minHeight: '100%', minWidth: '100%', maxHeight: 'none', maxWidth: 'none' }}
+          >
+            <source src="/Videos/foresttrees.mp4" type="video/mp4" />
+          </video>
+          {/* Contenido principal sin ondas de fondo */}
           <div className="container mx-auto text-center relative z-10">
             <motion.div
               variants={containerVariants}
@@ -40,7 +63,6 @@ import React, { memo } from 'react';
               animate="visible"
               className="max-w-4xl mx-auto mt-12"
             >
-
               <motion.h1 
                 variants={itemVariants}
                 className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow"
@@ -48,14 +70,14 @@ import React, { memo } from 'react';
               >
                 {(() => {
                   const title = t('heroTitle');
-                  // Remplaza Sustainable, Opportunities, Sustentabilidad y Oportunidades por spans con el mismo degradado que la onda
-                  return title.split(/(Sustainable|Opportunities|Sustentabilidad|Oportunidades)/g).map((part, idx) => {
-                    if (['Sustainable', 'Opportunities', 'Sustentabilidad', 'Oportunidades'].includes(part)) {
+                  // Aplica color blanco a "We Transform" y "Transformamos", color por defecto a "Into" y "En", y degradado a las palabras clave
+                  return title.split(/(We Transform|Transformamos|Into|En|Sustainable|Opportunities|Sustentabilidad|Oportunidades)/g).map((part, idx) => {
+                    if (["Sustainable", "Opportunities", "Sustentabilidad", "Oportunidades"].includes(part)) {
                       return (
                         <span
                           key={idx}
                           style={{
-                            background: 'linear-gradient(135deg, #30d3a2 0%, #14b8a6 100%)',
+                            background: 'linear-gradient(135deg, #14b8a6 0%, #30d3a2 100%)',
                             WebkitBackgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
                             backgroundClip: 'text',
@@ -66,18 +88,27 @@ import React, { memo } from 'react';
                         </span>
                       );
                     }
+                    if (["We Transform", "Transformamos"].includes(part)) {
+                      return (
+                        <span key={idx} style={{ color: '#fff' }}>{part}</span>
+                      );
+                    }
+                    if (["Into", "En"].includes(part)) {
+                      return (
+                        <span key={idx} style={{ color: '#fff' }}>{part}</span>
+                      );
+                    }
                     return part;
                   });
                 })()}
               </motion.h1>
-              
               <motion.p 
                 variants={itemVariants}
-                className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
+                className="text-xl md:text-2xl mb-12 leading-relaxed"
+                style={{ color: '#fff' }}
               >
                 {t('heroSubtitle')}
               </motion.p>
-              
               <motion.div 
                 variants={itemVariants}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -95,7 +126,6 @@ import React, { memo } from 'react';
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
-                
                 <Link to="/demo">
                   <Button size="lg" variant="outline" className="border-2 border-primary/50 text-primary hover:bg-primary/10 hover:text-primary/90 font-bold px-8 py-4 rounded-full text-lg transition-all duration-300 shadow-soft-md hover:shadow-soft-lg">
                     {t('heroButtonDemo')}

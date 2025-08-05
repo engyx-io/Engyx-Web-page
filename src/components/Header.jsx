@@ -69,13 +69,26 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
             >
               <Link
                 to={item.path}
-                className={`transition-colors duration-300 font-medium ${
-                  item.path === '/pre-sale'
-                    ? 'text-primary font-bold'
-                    : location.pathname === item.path
-                      ? 'text-primary'
-                      : 'text-foreground/70 hover:text-primary'
-                }`}
+                className={`transition-colors duration-300 font-medium`}
+                style={{
+                  color:
+                    location.pathname === item.path && item.path !== '/pre-sale'
+                      ? '#32d3a2'
+                      : location.pathname === '/'
+                        ? '#FFFFFF'
+                        : '#071C38',
+                  ...(location.pathname !== item.path && item.path !== '/pre-sale' ? { transition: 'color 0.3s' } : {}),
+                }}
+                onMouseEnter={e => {
+                  if (item.path !== '/pre-sale' && location.pathname !== item.path) {
+                    e.target.style.color = location.pathname === '/' ? '#32d3a2' : '#32d3a2';
+                  }
+                }}
+                onMouseLeave={e => {
+                  if (item.path !== '/pre-sale' && location.pathname !== item.path) {
+                    e.target.style.color = location.pathname === '/' ? '#fff' : '#071c38';
+                  }
+                }}
               >
                 {item.name}
               </Link>
@@ -90,7 +103,7 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navItems.length * 0.1 + 0.5 }}
               >
-                <Button variant="ghost" className="transition-colors duration-300 font-medium text-foreground/70 hover:text-primary hover:bg-transparent p-0">
+                <Button variant="ghost" className={`transition-colors duration-300 font-medium hover:text-primary hover:bg-transparent p-0 ${location.pathname === '/' ? 'text-white/80' : ''}`} style={location.pathname !== '/' ? { color: '#071C38' } : {}}>
                   {t('header.more')}
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Button>
@@ -113,11 +126,27 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
       const renderMobileNav = () => (
         <>
           {navItems.map((item) => (
-            <Link key={item.name} to={item.path} onClick={handleNavClick} className={`text-2xl transition-colors ${location.pathname === item.path ? 'text-primary' : 'text-foreground hover:text-primary'}`}>
+            <Link key={item.name} to={item.path} onClick={handleNavClick} className={`text-2xl transition-colors`}
+              style={{
+                color:
+                  location.pathname === item.path
+                    ? '#32d3a2'
+                    : location.pathname === '/'
+                      ? '#fff'
+                      : '#071c38',
+                transition: 'color 0.3s',
+              }}
+              onMouseEnter={e => {
+                if (location.pathname !== item.path) e.target.style.color = location.pathname === '/' ? '#32d3a2' : '#32d3a2';
+              }}
+              onMouseLeave={e => {
+                if (location.pathname !== item.path) e.target.style.color = location.pathname === '/' ? '#fff' : '#071c38';
+              }}
+            >
               {item.name}
             </Link>
           ))}
-          <div className="text-2xl text-foreground w-full text-center">
+          <div className={`text-2xl w-full text-center ${location.pathname === '/' ? 'text-white/80' : ''}`} style={location.pathname !== '/' && location.pathname !== '/pre-sale' ? { color: '#32d3a2' } : {}}>
             <h3 className="mb-4">{t('header.more')}</h3>
             <div className="flex flex-col items-center space-y-4">
               {moreMenuItems.map(item => (
@@ -136,7 +165,7 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200/80"
+          className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md"
         >
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center h-20">
             <motion.div 
@@ -144,11 +173,19 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
               whileHover={{ scale: 1.05 }}
             >
               <Link to="/" className="flex items-center space-x-2 h-full">
-                <img 
-                  src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Azul%20Sin%20Margen.png" 
-                  alt="ENGYX Logo" 
-                  className="h-12 w-auto object-contain" 
-                />
+                {location.pathname === '/' ? (
+                  <img
+                    src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Blanco%20Sin%20Margen%20Pequeno.png"
+                    alt="ENGYX Logo"
+                    className="h-16 w-auto object-contain"
+                  />
+                ) : (
+                  <img
+                    src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Azul%20Sin%20Margen%20Pequeno.png"
+                    alt="ENGYX Logo"
+                    className="h-16 w-auto object-contain"
+                  />
+                )}
               </Link>
             </motion.div>
             
@@ -187,7 +224,11 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
                 >
                   <div className="flex justify-between items-center mb-16">
                     <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-                       <img src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Azul%20Sin%20Margen.png" alt="ENGYX Logo" className="h-12 w-auto object-contain" />
+                       {location.pathname === '/' ? (
+                         <img src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Blanco%20Sin%20Margen%20Pequeno.png" alt="ENGYX Logo" className="h-16 w-auto object-contain" />
+                       ) : (
+                         <img src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Azul%20Sin%20Margen%20Pequeno.png" alt="ENGYX Logo" className="h-12 w-auto object-contain" />
+                       )}
                     </Link>
                     <Button onClick={() => setIsMobileMenuOpen(false)} variant="ghost" size="icon">
                       <X className="w-6 h-6 text-foreground" />
