@@ -48,10 +48,10 @@ import React from 'react';
         if (authStatus === 'authenticated') {
           return (
             <div className="text-center w-full">
-              <p className="text-emerald-300 text-sm mono flex items-center justify-center space-x-2">
+              <div className="flex items-center justify-center gap-2 w-full bg-white/40 backdrop-blur-md rounded-lg py-3 px-4 mb-2 border border-emerald-500/30" style={{ color: '#32d3a2' }}>
                 <span className="text-lg">{getNetworkIcon()}</span>
-                <span>{`${walletAddress.slice(0, 8)}...${walletAddress.slice(-6)}`}</span>
-              </p>
+                <span className="font-mono text-base font-semibold">{`${walletAddress.slice(0, 8)}...${walletAddress.slice(-6)}`}</span>
+              </div>
               {userMenuItems.map(item => (
                  <Link key={item.name} to={item.path} className="w-full mt-4 block">
                    <Button variant="outline" className="w-full border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10">{item.name}</Button>
@@ -61,7 +61,6 @@ import React from 'react';
             </div>
           );
         }
-        
         return (
             <Link to={getLocalizedPath('/get-started')} className="w-full">
               <Button
@@ -91,15 +90,15 @@ import React from 'react';
         return (
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="glass-card p-2 rounded-lg flex items-center justify-between gap-2 border border-emerald-500/30 text-emerald-100 hover:bg-emerald-500/20 pr-3">
+              <Button variant="outline" className="bg-white/40 backdrop-blur-md border border-emerald-500/30 text-emerald-400 rounded-lg flex items-center justify-between gap-2 pr-3 py-2 px-4 hover:bg-emerald-500/10 transition-all">
                  <div className="flex items-center gap-2 overflow-hidden">
                     <span className="text-xl flex-shrink-0">{getNetworkIcon()}</span>
                     <div className="overflow-hidden text-left">
                       <p className="text-xs text-slate-400 truncate">{networkType === 'solana' ? 'Solana' : 'EVM'} Wallet</p>
-                      <p className="font-mono text-sm text-emerald-300 truncate">{`${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`}</p>
+                      <p className="font-mono text-sm text-emerald-400 truncate">{`${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}`}</p>
                     </div>
                   </div>
-                <ChevronDown className="w-4 h-4 text-emerald-300" />
+                <ChevronDown className="w-4 h-4 text-emerald-400" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56" align="end">

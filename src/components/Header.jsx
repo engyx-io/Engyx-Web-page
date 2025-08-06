@@ -217,7 +217,7 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <LanguageSwitcher />
+              <LanguageSwitcher color={location.pathname === '/' ? '#fff' : '#071c38'} />
               <AuthNavButton />
             </div>
 
@@ -263,7 +263,7 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
                   </div>
 
                   <div className="w-full border-t border-gray-200 pt-8 mt-8 flex flex-col items-center space-y-6">
-                    <LanguageSwitcher />
+                    <LanguageSwitcher color={location.pathname === '/' ? '#fff' : '#071c38'} />
                     <div className="w-full px-4">
                       <AuthNavButton variant="mobile" />
                     </div>

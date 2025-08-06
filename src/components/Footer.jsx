@@ -74,7 +74,7 @@ import { useWallet } from '@/contexts/WalletContext';
             <div className="grid md:grid-cols-4 gap-8">
               <div className="space-y-6">
                 <Link to="/" className="flex items-center space-x-3">
-                  <img  alt="ENGYX Logo" className="w-16 h-16 object-contain" src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Azul%20Sin%20Margen.png" />
+                  <img  alt="ENGYX Logo" className="w-24 h-24 object-contain" src="https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Azul%20Sin%20Margen%20Pequeno.png" />
                 </Link>
                 
                 <p className="text-muted-foreground text-sm leading-relaxed">

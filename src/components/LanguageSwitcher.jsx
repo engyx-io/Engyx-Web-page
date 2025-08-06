@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ color }) => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          <Globe className="h-[1.2rem] w-[1.2rem] text-foreground" />
+          <Globe className="h-[1.2rem] w-[1.2rem]" style={{ color: color || '#071c38' }} />
           <span className="sr-only">Change language</span>
         </Button>
       </DropdownMenuTrigger>
