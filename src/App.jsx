@@ -200,6 +200,14 @@ import { Analytics } from "@vercel/analytics/react";
                 <Route path="/faqs" element={<FaqsPage />} />
                 <Route path="/webhooks" element={<AdminRoute><SumsubWebhooksPage /></AdminRoute>} />
                 <Route path="/certify-carbon" element={<PrivateRoute><CarbonCertificatePage handleFeatureClick={handleFeatureClick} /></PrivateRoute>} />
+                {/* Ruta 404 amigable */}
+                <Route path="*" element={
+                  <div style={{minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', color: '#888'}}>
+                    <span style={{fontSize: '4rem'}}>404</span>
+                    <span>Page not found</span>
+                    <a href="/" style={{marginTop: 24, color: '#32d3a2', textDecoration: 'underline'}}>Home</a>
+                  </div>
+                } />
               </Routes>
             </AnimatePresence>
           </main>
