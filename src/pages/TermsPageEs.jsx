@@ -150,7 +150,7 @@ import React from 'react';
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6">Última actualización: 01 de julio de 2025</p>
                 <p className="text-foreground max-w-3xl mx-auto">
-                  Bienvenido a <a href="https://engyx.io" className="text-primary hover:underline">https://engyx.io</a>, una plataforma operada por <strong>ENGYX Digital Energy Inc</strong>, con sede en Delaware, Estados Unidos. Al acceder o utilizar este sitio, aceptas cumplir estos Términos y Condiciones de Uso, así como nuestra Política de Privacidad y cualquier normativa aplicable.
+                  Bienvenido a <a href="https://engyx.io" className="text-primary hover:underline">https://engyx.io</a>, una plataforma operada por <strong>ENGYX Digital Assets Inc</strong>, con sede en Delaware, Estados Unidos. Al acceder o utilizar este sitio, aceptas cumplir estos Términos y Condiciones de Uso, así como nuestra Política de Privacidad y cualquier normativa aplicable.
                 </p>
               </motion.div>
 

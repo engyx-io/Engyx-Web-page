@@ -65,37 +65,21 @@ import React, { memo, useRef, useEffect } from 'react';
             >
               <motion.h1 
                 variants={itemVariants}
-                className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow"
-                style={{wordBreak: 'break-word'}}
+                className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow whitespace-pre-line"
+                style={{wordBreak: 'break-word', color: '#fff'}}
               >
                 {(() => {
                   const title = t('heroTitle');
-                  // Aplica color blanco a "We Transform" y "Transformamos", color por defecto a "Into" y "En", y degradado a las palabras clave
-                  return title.split(/(We Transform|Transformamos|Into|En|Sustainable|Opportunities|Sustentabilidad|Oportunidades)/g).map((part, idx) => {
-                    if (["Sustainable", "Opportunities", "Sustentabilidad", "Oportunidades"].includes(part)) {
+                  // Solo resaltar la palabra 'sustainable' (inglés) o 'sustentable' (español)
+                  return title.split(/(sustainable|sustentable)/i).map((part, idx) => {
+                    if (/^sustainable$/i.test(part)) {
                       return (
-                        <span
-                          key={idx}
-                          style={{
-                            background: 'linear-gradient(135deg, #14b8a6 0%, #30d3a2 100%)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                            backgroundClip: 'text',
-                            color: 'transparent',
-                          }}
-                        >
-                          {part}
-                        </span>
+                        <span key={idx} className="bg-gradient-to-br from-primary to-teal-500 bg-clip-text text-transparent">{part}</span>
                       );
                     }
-                    if (["We Transform", "Transformamos"].includes(part)) {
+                    if (/^sustentable$/i.test(part)) {
                       return (
-                        <span key={idx} style={{ color: '#fff' }}>{part}</span>
-                      );
-                    }
-                    if (["Into", "En"].includes(part)) {
-                      return (
-                        <span key={idx} style={{ color: '#fff' }}>{part}</span>
+                        <span key={idx} className="bg-gradient-to-br from-primary to-teal-500 bg-clip-text text-transparent">{part}</span>
                       );
                     }
                     return part;
