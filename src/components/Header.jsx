@@ -187,7 +187,7 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: showHeader ? 0 : -120, opacity: showHeader ? 1 : 0 }}
           transition={{ duration: 0.4 }}
-          className="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md"
+          className="fixed top-0 w-full z-50 bg-transparent"
           style={{ pointerEvents: showHeader ? 'auto' : 'none' }}
         >
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center h-20">
