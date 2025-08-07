@@ -48,7 +48,7 @@ import React from 'react';
         if (authStatus === 'authenticated') {
           return (
             <div className="text-center w-full">
-              <div className="flex items-center justify-center gap-2 w-full bg-transparent rounded-lg py-3 px-4 mb-2 border border-transparent" style={{ color: '#32d3a2' }}>
+              <div className="flex items-center justify-center gap-2 w-full bg-transparent rounded-lg py-3 px-4 mb-2 border-0 border-transparent" style={{ color: '#FFFFFF' }}>
                 <span className="text-lg">{getNetworkIcon()}</span>
                 <span className="font-mono text-base font-semibold">{`${walletAddress.slice(0, 8)}...${walletAddress.slice(-6)}`}</span>
               </div>
@@ -90,7 +90,7 @@ import React from 'react';
         return (
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="bg-transparent border border-transparent text-emerald-400 rounded-lg flex items-center justify-between gap-2 pr-3 py-2 px-4 hover:bg-transparent transition-all shadow-none">
+              <Button variant="outline" className="bg-transparent border-0 border-transparent text-emerald-400 rounded-lg flex items-center justify-between gap-2 pr-3 py-2 px-4 hover:bg-transparent transition-all shadow-none">
                  <div className="flex items-center gap-2 overflow-hidden">
                     <span className="text-xl flex-shrink-0">{getNetworkIcon()}</span>
                     <div className="overflow-hidden text-left">

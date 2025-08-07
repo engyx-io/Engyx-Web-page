@@ -19,7 +19,7 @@ const LanguageSwitcher = ({ color }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" className="bg-transparent border-0 border-transparent shadow-none hover:bg-transparent focus:bg-transparent">
           <Globe className="h-[1.2rem] w-[1.2rem]" style={{ color: color || '#071c38' }} />
           <span className="sr-only">Change language</span>
         </Button>
