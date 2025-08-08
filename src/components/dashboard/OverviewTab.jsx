@@ -37,10 +37,11 @@ import React from 'react';
           transition={{ duration: 0.6 }} 
           className="space-y-8"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             <StatCard icon={Zap} title="Active Energy Capacity" value={parseFloat(globalStats.total_energy_capacity || 0).toLocaleString()} unit="MW" color="primary" />
             <StatCard icon={Leaf} title="Generated Carbon Credits" value={`${parseFloat(globalStats.generated_carbon_credits || 0).toLocaleString()}`} unit="Tons" color="teal" />
             <StatCard icon={Users} title="Active Investors" value={Number(globalStats.total_investors || 0).toLocaleString()} unit="Registered Users" color="primary" />
+            <StatCard icon={DollarSign} title="Distributed rewards" value={Math.round(globalStats.distributed_rewards || 0).toLocaleString()} unit="Total USD" color="yellow" />
             <StatCard icon={TrendingUp} title="Average ROI" value={`${parseFloat(globalStats.avg_roi || 0).toFixed(1)}%`} unit="Annual project yield" color="teal" />
           </div>
 
@@ -69,6 +70,16 @@ import React from 'react';
                   </div>
                   <div className="w-16 h-16 bg-teal-500/10 rounded-full flex items-center justify-center">
                     <Leaf className="w-8 h-8 text-teal-500" />
+                  </div>
+                </div>
+                <div className="flex justify-between items-center p-4 bg-green-500/5 rounded-lg">
+                  <div>
+                    <p className="text-muted-foreground text-sm">Sustainable Infrastructure Revenue</p>
+                    <p className="text-2xl font-bold text-foreground">${Math.round(globalStats.infrastructure_revenue || 0).toLocaleString()}</p>
+                    <p className="text-green-500 text-sm">Total USD</p>
+                  </div>
+                  <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center">
+                    <TrendingUp className="w-8 h-8 text-green-500" />
                   </div>
                 </div>
               </div>
