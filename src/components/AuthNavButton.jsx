@@ -11,7 +11,7 @@ import React from 'react';
     } from '@/components/ui/dropdown-menu';
     import { useWallet } from '@/contexts/WalletContext';
     import { useTranslation } from 'react-i18next';
-    import { Wallet, LogOut, ChevronDown, User, LayoutDashboard, Hexagon, Loader2 } from 'lucide-react';
+    import { Wallet, LogOut, ChevronDown, User, LayoutDashboard, Hexagon, Loader2, RefreshCw } from 'lucide-react';
 
     export default function AuthNavButton({ variant = 'desktop' }) {
       const { t, i18n } = useTranslation('common');
@@ -20,9 +20,18 @@ import React from 'react';
         walletAddress,
         networkType,
         disconnectWallet,
+        connectEvm,
+        connectSolana,
         isAdmin,
         isLoading
       } = useWallet();
+      const handleChangeWallet = () => {
+        if (networkType === 'solana') {
+          connectSolana();
+        } else {
+          connectEvm();
+        }
+      };
 
       const getLocalizedPath = (path) => {
         return i18n.language === 'es' ? '/comenzar' : '/get-started';
@@ -52,6 +61,9 @@ import React from 'react';
                 <span className="text-lg">{getNetworkIcon()}</span>
                 <span className="font-mono text-base font-semibold">{`${walletAddress.slice(0, 8)}...${walletAddress.slice(-6)}`}</span>
               </div>
+              <Button onClick={handleChangeWallet} variant="outline" size="sm" className="w-full mb-2 border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 flex items-center justify-center gap-2">
+                <RefreshCw className="w-4 h-4 mr-1" /> {t('header.changeWallet', 'Cambiar Wallet')}
+              </Button>
               {userMenuItems.map(item => (
                  <Link key={item.name} to={item.path} className="w-full mt-4 block">
                    <Button variant="outline" className="w-full border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10">{item.name}</Button>
@@ -103,6 +115,10 @@ import React from 'react';
             </DropdownMenuTrigger>
             <DropdownMenuContent className="w-56" align="end">
               <DropdownMenuGroup>
+                <DropdownMenuItem onClick={handleChangeWallet} className="text-emerald-400 focus:text-emerald-400 focus:bg-emerald-500/10 cursor-pointer flex items-center">
+                  <RefreshCw className="mr-2 h-4 w-4" />
+                  <span>{t('header.changeWallet', 'Cambiar Wallet')}</span>
+                </DropdownMenuItem>
                 {userMenuItems.map(item => (
                   <DropdownMenuItem key={item.name} asChild>
                     <Link to={item.path} className="flex items-center w-full">

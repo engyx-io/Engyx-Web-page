@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { toast } from '@/components/ui/use-toast';
 import { supabase } from '@/lib/customSupabaseClient';
 import { useAuth } from '@/contexts/SupabaseAuthContext';
@@ -94,11 +94,25 @@ import { useWalletModal } from '@solana/wallet-adapter-react-ui';
         return null;
       };
 
+      // Sincronizar dirección activa de Metamask/wallet con Engyx
+      const lastWalletAddress = useRef('');
       useEffect(() => {
         const newEvmConnected = isEvmConnected && evmAddress;
         const newSolanaConnected = isSolanaConnected && solanaPublicKey;
         const newWalletAddress = newEvmConnected ? evmAddress : (newSolanaConnected ? solanaPublicKey.toBase58() : '');
         const newNetworkType = newEvmConnected ? 'evm' : (newSolanaConnected ? 'solana' : '');
+
+        // Si hay una wallet conectada y la dirección activa en la wallet externa NO coincide, forzar desconexión
+        if (walletAddress && newWalletAddress && walletAddress.toLowerCase() !== newWalletAddress.toLowerCase()) {
+          toast({
+            title: t('notification.walletMismatchTitle', 'Wallet desconectada'),
+            description: t('notification.walletMismatchDesc', 'La dirección activa en tu wallet no coincide con la conectada en Engyx. Se cerrará la sesión.'),
+            variant: 'destructive',
+          });
+          setTimeout(() => handleDisconnect(), 1000);
+          setIsLoading(false);
+          return;
+        }
 
         if (newWalletAddress) {
           setIsConnected(true);
@@ -111,13 +125,21 @@ import { useWalletModal } from '@solana/wallet-adapter-react-ui';
             setActiveWallet('solana');
             setSignerAddress(newWalletAddress);
           }
+          // Si la dirección cambió respecto a la última conocida, mostrar advertencia
+          if (lastWalletAddress.current && lastWalletAddress.current !== newWalletAddress) {
+            toast({
+              title: t('notification.walletChangedTitle', 'Wallet cambiada'),
+              description: t('notification.walletChangedDesc', 'La dirección activa en tu wallet ha cambiado. Se actualizará la sesión.'),
+            });
+          }
+          lastWalletAddress.current = newWalletAddress;
         } else {
           if (isConnected) {
             handleDisconnect();
           }
         }
         setIsLoading(false);
-      }, [isEvmConnected, evmAddress, isSolanaConnected, solanaPublicKey, isConnected, handleDisconnect, chain, switchNetwork]);
+      }, [isEvmConnected, evmAddress, isSolanaConnected, solanaPublicKey, isConnected, handleDisconnect, chain, switchNetwork, t, walletAddress]);
 
       useEffect(() => {
         const syncAndValidate = async () => {
