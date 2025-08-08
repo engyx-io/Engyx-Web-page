@@ -74,7 +74,7 @@ export default function AuthForm() {
         <p className="text-emerald-200/70 text-center mb-4 text-sm">{t('auth.resetPasswordDesc')}</p>
         <form onSubmit={handleForgotPassword} className="space-y-4">
           <div>
-            <Label htmlFor="email" className="text-emerald-200/80">{t('common.email')}</Label>
+            <Label htmlFor="email" className="text-emerald-200/80">{t('auth.email')}</Label>
             <Input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete="email" />
           </div>
           <Button type="submit" className="w-full bg-gradient-to-r from-emerald-500 to-teal-500" disabled={loading}>
@@ -92,10 +92,10 @@ export default function AuthForm() {
     <div className="w-full">
       <div className="flex border-b border-emerald-500/20 mb-4">
         <button onClick={() => setView('login')} className={`flex-1 py-2 text-sm font-medium transition-colors ${view === 'login' ? 'text-emerald-400 border-b-2 border-emerald-400' : 'text-emerald-200/70 hover:text-emerald-100'}`}>
-          {t('auth.login')}
+          <span style={{color:'#32d3a2'}}>{t('auth.login')}</span>
         </button>
         <button onClick={() => setView('register')} className={`flex-1 py-2 text-sm font-medium transition-colors ${view === 'register' ? 'text-emerald-400 border-b-2 border-emerald-400' : 'text-emerald-200/70 hover:text-emerald-100'}`}>
-          {t('auth.register')}
+          <span style={{color:'#32d3a2'}}>{t('auth.register')}</span>
         </button>
       </div>
       
@@ -107,11 +107,11 @@ export default function AuthForm() {
           </div>
         )}
         <div>
-          <Label htmlFor="email" className="text-emerald-200/80">{t('common.email')}</Label>
+          <Label htmlFor="email" className="text-emerald-200/80">{t('auth.email')}</Label>
           <Input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete="email" />
         </div>
         <div>
-          <Label htmlFor="password" className="text-emerald-200/80">{t('common.password')}</Label>
+          <Label htmlFor="password" className="text-emerald-200/80">{t('auth.password')}</Label>
           <Input id="password" type="password" value={password} onChange={e => setPassword(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete={view === 'login' ? "current-password" : "new-password"} />
         </div>
         {view === 'register' && (
@@ -121,7 +121,7 @@ export default function AuthForm() {
           </div>
         )}
         <Button type="submit" className="w-full bg-gradient-to-r from-emerald-500 to-teal-500" disabled={loading}>
-          {loading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {view === 'login' ? t('auth.loggingIn') : t('auth.registering')}</> : view === 'login' ? t('auth.login') : t('auth.createAccount')}
+          {loading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> {view === 'login' ? t('auth.loggingIn') : t('auth.registering')}</> : view === 'login' ? <span style={{color:'#FFF'}}>{t('auth.login')}</span> : <span style={{color:'#FFF'}}>{t('auth.createAccount')}</span>}
         </Button>
       </form>
 

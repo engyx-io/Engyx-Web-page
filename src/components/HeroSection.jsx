@@ -100,10 +100,11 @@ import React, { memo, useRef, useEffect } from 'react';
                 <Link to="/comenzar">
                   <Button
                     size="lg"
-                    className="text-white font-bold px-8 py-4 rounded-full text-lg shadow-soft-lg transition-all duration-300 transform hover:scale-105 border-0"
+                    className="font-bold px-8 py-4 rounded-full text-lg shadow-soft-lg transition-all duration-300 transform hover:scale-105 border-0"
                     style={{
                       background: 'linear-gradient(135deg, #30d3a2 0%, #14b8a6 100%)',
                       boxShadow: '0 4px 24px 0 rgba(48,211,162,0.15)',
+                      color: '#fff',
                     }}
                   >
                     {t('heroButtonAccess')}

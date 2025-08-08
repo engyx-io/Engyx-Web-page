@@ -78,7 +78,7 @@ import React from 'react';
               <h3 className="text-lg font-semibold text-foreground mb-2">{t('getStartedPage.allSetTitle')}</h3>
               <p className="text-muted-foreground mb-4">{t('getStartedPage.allSetDesc')}</p>
               <Link to="/dashboard">
-                <Button className="w-full">
+                <Button className="w-full" style={{ color: '#fff' }}>
                   <Zap className="w-5 h-5 mr-2" />
                   {t('getStartedPage.accessPlatform')}
                 </Button>
