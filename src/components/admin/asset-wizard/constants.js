@@ -57,4 +57,8 @@ export const STEPS = [
         },
     ];
 
-    export const paymentTokenOptions = ['USDT', 'USDC', 'EURC'];
+    export const paymentTokenOptions = [
+        { symbol: 'USDT', name: 'Tether USD', description: 'Stablecoin USD' },
+        { symbol: 'USDC', name: 'USD Coin', description: 'Stablecoin USD' },
+        { symbol: 'EURC', name: 'Euro Coin', description: 'Stablecoin EUR' },
+    ];

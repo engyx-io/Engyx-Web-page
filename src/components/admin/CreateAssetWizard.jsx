@@ -144,18 +144,37 @@ import React, { useState, useEffect } from 'react';
                 description: "Por favor, revisa y firma la transacción en tu wallet.",
             });
             
+
             const transactionsToSign = prepareData.transactions;
             const provider = new ethers.BrowserProvider(window.ethereum);
             const signer = await provider.getSigner();
             const signedTransactions = [];
 
             for (const tx of transactionsToSign) {
-                const txToSign = { ...tx };
-                // Asegura que chainId sea decimal para firmar
-                txToSign.chainId = 11155111;
-                delete txToSign.from;
-                const signedTx = await signer.signTransaction(txToSign);
-                signedTransactions.push(signedTx);
+              try {
+                // Quitamos campos que MetaMask podría rechazar
+                const { from, gasPrice, ...txToSend } = tx;
+
+                // Aseguramos que gasLimit sea BigInt si existe
+                if (txToSend.gasLimit) {
+                  txToSend.gasLimit = BigInt(txToSend.gasLimit);
+                }
+
+                // Enviar transacción usando MetaMask
+                const sentTx = await signer.sendTransaction(txToSend);
+
+                // Esperar confirmación
+                await sentTx.wait();
+
+                signedTransactions.push(sentTx.hash);
+              } catch (sendErr) {
+                if (sendErr?.code === -32004) {
+                  throw new Error(
+                    "MetaMask bloqueó la transacción. Verifica que la red coincida con el chainId y que tengas permisos para enviar."
+                  );
+                }
+                throw sendErr;
+              }
             }
             
             toast({
