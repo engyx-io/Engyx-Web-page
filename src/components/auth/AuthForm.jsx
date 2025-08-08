@@ -71,11 +71,11 @@ export default function AuthForm() {
     return (
       <div className="w-full">
         <h3 className="text-xl font-semibold text-white text-center mb-1">{t('auth.resetPasswordTitle')}</h3>
-        <p className="text-emerald-200/70 text-center mb-4 text-sm">{t('auth.resetPasswordDesc')}</p>
+        <p className="text-emerald-200/100 text-center mb-4 text-sm">{t('auth.resetPasswordDesc')}</p>
         <form onSubmit={handleForgotPassword} className="space-y-4">
           <div>
-            <Label htmlFor="email" className="text-emerald-200/80">{t('auth.email')}</Label>
-            <Input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete="email" />
+            <Label htmlFor="email" className="text-emerald-200/100">{t('auth.email')}</Label>
+            <Input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required className="bg-black/20 border-emerald-500/30 text-white" autoComplete="email" />
           </div>
           <Button type="submit" className="w-full bg-gradient-to-r from-emerald-500 to-teal-500" disabled={loading}>
             {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : t('auth.sendRecoveryEmail')}
@@ -102,22 +102,22 @@ export default function AuthForm() {
       <form onSubmit={view === 'login' ? handleLogin : handleRegister} className="space-y-4">
         {view === 'register' && (
           <div>
-            <Label htmlFor="fullName" className="text-emerald-200/80">{t('auth.fullName')}</Label>
-            <Input id="fullName" type="text" value={fullName} onChange={e => setFullName(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete="name" />
+            <Label htmlFor="fullName" className="text-emerald-200/100">{t('auth.fullName')}</Label>
+            <Input id="fullName" type="text" value={fullName} onChange={e => setFullName(e.target.value)} required className="bg-black/10 border-emerald-500/30 text-white" autoComplete="name" />
           </div>
         )}
         <div>
-          <Label htmlFor="email" className="text-emerald-200/80">{t('auth.email')}</Label>
-          <Input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete="email" />
+          <Label htmlFor="email" className="text-emerald-200/100">{t('auth.email')}</Label>
+          <Input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required className="bg-black/10 border-emerald-500/30 text-white" autoComplete="email" />
         </div>
         <div>
-          <Label htmlFor="password" className="text-emerald-200/80">{t('auth.password')}</Label>
-          <Input id="password" type="password" value={password} onChange={e => setPassword(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete={view === 'login' ? "current-password" : "new-password"} />
+          <Label htmlFor="password" className="text-emerald-200/100">{t('auth.password')}</Label>
+          <Input id="password" type="password" value={password} onChange={e => setPassword(e.target.value)} required className="bg-black/10 border-emerald-500/30 text-white" autoComplete={view === 'login' ? "current-password" : "new-password"} />
         </div>
         {view === 'register' && (
           <div>
-            <Label htmlFor="confirmPassword" className="text-emerald-200/80">{t('auth.confirmPassword')}</Label>
-            <Input id="confirmPassword" type="password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required className="bg-black/50 border-emerald-500/30 text-white" autoComplete="new-password" />
+            <Label htmlFor="confirmPassword" className="text-emerald-200/100">{t('auth.confirmPassword')}</Label>
+            <Input id="confirmPassword" type="password" value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} required className="bg-black/10 border-emerald-500/30 text-white" autoComplete="new-password" />
           </div>
         )}
         <Button type="submit" className="w-full bg-gradient-to-r from-emerald-500 to-teal-500" disabled={loading}>

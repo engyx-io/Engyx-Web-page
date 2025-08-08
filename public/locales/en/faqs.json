@@ -4,15 +4,11 @@
   "items": [
     {
       "question": "What is Engyx?",
-      "answer": "Engyx is a Web3 platform that allows investment in real renewable energy projects through asset tokenization, providing transparent, automated, and secure access via blockchain."
+      "answer": "Engyx is a Web3 platform that democratizes access to sustainable investments by tokenizing renewable energy projects, carbon credits, and sustainable infrastructure. Through blockchain technology, we offer a transparent, secure, and automated marketplace where anyone can participate in the growth of the global green economy."
     },
     {
       "question": "How does Engyx work?",
-      "answer": "Energy projects are tokenized as digital assets. Users can invest by purchasing tokens backed by real revenue. Through smart contracts, returns are automatically distributed to investors."
-    },
-    {
-      "question": "What type of energy does Engyx finance?",
-      "answer": "Currently, Engyx focuses on solar, wind, and green hydrogen energy, with plans to expand to other renewable sources."
+      "answer": "Engyx tokenizes and converts its assets into digital assets. Investors purchase these tokens, which represent real ownership and entitle them to a share of the project's revenue. Smart contracts automate the transparent distribution of profits, ensuring that investors receive payments reliably and without intermediaries."
     },
     {
       "question": "What is an RWA token?",
@@ -48,7 +44,7 @@
     },
     {
       "question": "What is the difference between ENGYX and project tokens?",
-      "answer": "ENGYX: the main ecosystem token. Project tokens: represent a specific share in a real asset (e.g., a specific solar plant)."
+      "answer": "ENGYX: the main ecosystem token.\n\nProject tokens: represent a specific share in a real asset (e.g., a specific solar plant)."
     },
     {
       "question": "Do I need technical experience to invest?",

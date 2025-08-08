@@ -61,8 +61,8 @@ import { useWallet } from '@/contexts/WalletContext';
       };
 
       const socialLinks = [
-        { icon: Linkedin, name: "LinkedIn", href: "https://www.linkedin.com/company/engyx-io/" },
-        { icon: XIcon, name: "X", href: "https://x.com/engyx_io" },
+        { icon: Linkedin, name: "LinkedIn", href: "https://www.linkedin.com/company/engyx-digital/" },
+        { icon: XIcon, name: "X", href: "https://x.com/engyx_digital" },
         { icon: Send, name: "Telegram Community", href: "https://t.me/engyx_community" },
         { icon: Send, name: "Telegram Channel", href: "https://t.me/engyx_announcement" },
         { icon: Github, name: "GitHub", href: "https://github.com/orgs/engyx-io" },
