@@ -113,7 +113,7 @@ import React from 'react';
         <>
           <Helmet>
             <title>Política de Privacidad - ENGYX</title>
-            <meta name="description" content="Política de Privacidad de ENGYX Digital Energy. Conoce cómo protegemos y gestionamos tus datos personales." />
+            <meta name="description" content="Política de Privacidad de ENGYX Digital Assets. Conoce cómo protegemos y gestionamos tus datos personales." />
           </Helmet>
           <div className="pt-24 pb-20 px-6 overflow-hidden">
             <div className="container mx-auto max-w-4xl">

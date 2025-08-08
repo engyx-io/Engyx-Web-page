@@ -135,7 +135,7 @@ import React from 'react';
         <>
           <Helmet>
             <title>Términos y Condiciones - ENGYX</title>
-            <meta name="description" content="Términos y Condiciones de uso para la plataforma ENGYX Digital Energy." />
+            <meta name="description" content="Términos y Condiciones de uso para la plataforma ENGYX Digital Assets." />
           </Helmet>
           <div className="pt-24 pb-20 px-6 overflow-hidden">
             <div className="container mx-auto max-w-4xl">
