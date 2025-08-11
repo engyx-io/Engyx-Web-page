@@ -90,18 +90,18 @@ import React, { useState, useEffect, useMemo } from 'react';
             <meta name="description" content={t('presale.metaDescription')} />
           </Helmet>
 
-          <div className="pt-24 pb-20 px-6 overflow-hidden">
-            <div className="container mx-auto max-w-6xl space-y-12">
-              <motion.div 
+          <section className="relative min-h-[80vh] flex flex-col justify-center items-center bg-white py-24 px-4 md:px-8">
+            <div className="w-full max-w-6xl mx-auto space-y-12">
+              <motion.div
                 className="text-center"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent presale-neon-text">
+                <h1 className="text-4xl md:text-6xl font-extrabold mb-4" style={{ color: '#07c38' }}>
                   {t('presale.title')}
                 </h1>
-                <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
+                <p className="text-lg md:text-2xl max-w-2xl mx-auto" style={{ color: '#32d3a2' }}>
                   {t('presale.subtitle')}
                 </p>
               </motion.div>
@@ -110,19 +110,19 @@ import React, { useState, useEffect, useMemo } from 'react';
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="glass-card p-6 rounded-xl presale-highlight bg-gradient-to-br from-blue-500/10 via-black to-cyan-500/10"
+                className="glass-card p-6 md:p-8 rounded-2xl shadow-xl border" style={{ borderColor: '#32d3a2', background: '#fff' }}
               >
                 <div className="text-center">
-                  <h2 className="text-2xl font-bold text-emerald-100 mb-4 flex items-center justify-center space-x-2">
-                    <Timer className="w-6 h-6 text-blue-400" />
+                  <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-center justify-center space-x-2" style={{ color: '#32d3a2' }}>
+                    <Timer className="w-6 h-6" style={{ color: '#32d3a2' }} />
                     <span>{t('presale.endsIn')}</span>
                   </h2>
                   <div className="grid grid-cols-4 gap-4 max-w-md mx-auto">
                     {Object.entries(timeLeft).map(([unit, value]) => (
                       <div key={unit} className="text-center">
-                        <div className="bg-black/50 p-4 rounded-lg border border-blue-500/30">
-                          <div className="text-4xl font-bold text-blue-400 mono">{value.toString().padStart(2, '0')}</div>
-                          <div className="text-blue-200/70 text-xs capitalize mt-1">{timeUnits[unit]}</div>
+                        <div className="bg-gray-100 p-4 rounded-lg border" style={{ borderColor: '#32d3a2' }}>
+                          <div className="text-3xl md:text-4xl font-bold mono" style={{ color: '#07c38' }}>{value.toString().padStart(2, '0')}</div>
+                          <div className="text-xs capitalize mt-1" style={{ color: '#32d3a2' }}>{timeUnits[unit]}</div>
                         </div>
                       </div>
                     ))}
@@ -138,7 +138,7 @@ import React, { useState, useEffect, useMemo } from 'react';
                   className="lg:col-span-2 space-y-8"
                 >
                   <div className="sticky top-24 space-y-8">
-                    <div className="glass-card p-6 rounded-xl presale-highlight">
+                    <div className="glass-card p-6 md:p-8 rounded-2xl border border-primary/20 shadow-lg">
                       <WalletConnection />
                     </div>
 
@@ -147,8 +147,8 @@ import React, { useState, useEffect, useMemo } from 'react';
                         {authStatus === 'authenticated' && (
                           <>
                             {isLoadingStats ? (
-                              <div className="glass-card p-8 rounded-2xl tech-border w-full max-w-md flex justify-center items-center h-[450px] presale-highlight">
-                                <div className="w-8 h-8 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+                              <div className="glass-card p-8 rounded-2xl border border-primary/20 w-full max-w-md flex justify-center items-center h-[450px] bg-black/40">
+                                <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
                               </div>
                             ) : presaleStats ? (
                               <PurchaseForm
@@ -156,22 +156,22 @@ import React, { useState, useEffect, useMemo } from 'react';
                                 onPurchase={handlePurchase}
                               />
                             ) : (
-                              <div className="glass-card p-8 rounded-2xl tech-border w-full max-w-md flex justify-center items-center h-[450px] presale-highlight">
+                              <div className="glass-card p-8 rounded-2xl border border-red-500/40 w-full max-w-md flex justify-center items-center h-[450px] bg-black/40">
                                 <p className="text-center text-red-400">{t('presale.statsError')}</p>
                               </div>
                             )}
                           </>
                         )}
                         {authStatus === 'connected_unauthenticated' && (
-                          <div className="glass-card p-6 rounded-xl presale-highlight">
-                            <h3 className="text-xl font-bold text-emerald-100 mb-2 text-center">{t('presale.completeConnection')}</h3>
-                            <p className="text-center text-sm text-emerald-200/80 mb-6">{t('presale.completeConnectionDesc')}</p>
+                          <div className="glass-card p-6 md:p-8 rounded-2xl border border-primary/20 shadow-lg">
+                            <h3 className="text-xl font-bold text-primary mb-2 text-center">{t('presale.completeConnection')}</h3>
+                            <p className="text-center text-sm text-muted-foreground mb-6">{t('presale.completeConnectionDesc')}</p>
                             <AuthForm />
                           </div>
                         )}
                         {authStatus === 'pending' && (
-                          <div className="glass-card p-8 rounded-2xl tech-border w-full max-w-md flex justify-center items-center h-[450px] presale-highlight">
-                            <div className="w-8 h-8 border-4 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+                          <div className="glass-card p-8 rounded-2xl border border-primary/20 w-full max-w-md flex justify-center items-center h-[450px] bg-black/40">
+                            <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
                           </div>
                         )}
                       </>
@@ -202,29 +202,29 @@ import React, { useState, useEffect, useMemo } from 'react';
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="glass-card p-6 rounded-xl presale-highlight bg-gradient-to-r from-blue-500/5 to-cyan-500/5"
+                className="glass-card p-6 md:p-8 rounded-2xl border border-primary/20 shadow-lg bg-gradient-to-r from-blue-900/10 to-cyan-900/10"
               >
                 <div className="flex items-center space-x-3 mb-4">
-                  <Shield className="w-6 h-6 text-blue-400" />
-                  <h3 className="text-emerald-100 font-semibold">{t('presale.securityTitle')}</h3>
+                  <Shield className="w-6 h-6 text-primary" />
+                  <h3 className="text-primary font-semibold">{t('presale.securityTitle')}</h3>
                 </div>
-                <ul className="space-y-2 text-emerald-200/80 text-sm">
+                <ul className="space-y-2 text-muted-foreground text-sm">
                   <li className="flex items-center space-x-2">
-                    <Zap className="w-4 h-4 text-blue-500" />
+                    <Zap className="w-4 h-4 text-primary" />
                     <span>{t('presale.securityDesc1')}</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <Zap className="w-4 h-4 text-blue-500" />
+                    <Zap className="w-4 h-4 text-primary" />
                     <span>{t('presale.securityDesc2')}</span>
                   </li>
                   <li className="flex items-center space-x-2">
-                    <Zap className="w-4 h-4 text-blue-500" />
+                    <Zap className="w-4 h-4 text-primary" />
                     <span>{t('presale.securityDesc3')}</span>
                   </li>
                 </ul>
               </motion.div>
             </div>
-          </div>
+          </section>
         </>
       );
     }

@@ -214,7 +214,7 @@ import React, { useState, useEffect, useCallback } from 'react';
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
                     {t('profile.accessRequiredDesc')}
                 </p>
-                <Link to="/comenzar">
+                <Link to="/get-started">
                     <Button>
                         {t('profile.loginOrRegister')}
                     </Button>

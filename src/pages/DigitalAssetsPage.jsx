@@ -82,7 +82,7 @@ import React from 'react';
               >
                 <h2 className="text-3xl font-bold text-foreground mb-4">{t('digitalAssetsPage.ctaTitle')}</h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto mb-8">{t('digitalAssetsPage.ctaDesc')}</p>
-                <Link to="/contacto">
+                <Link to="/contact">
                   <Button size="lg">
                     {t('digitalAssetsPage.ctaButton')}
                   </Button>

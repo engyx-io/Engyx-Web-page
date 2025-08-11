@@ -22,7 +22,7 @@ export default function ResetPasswordPage() {
 
     if (!session) {
       toast({ title: "Sesión no válida", description: "El enlace de recuperación puede haber expirado. Por favor, inténtalo de nuevo.", variant: "destructive" });
-      navigate('/comenzar');
+  navigate('/get-started');
       return;
     }
 
@@ -37,7 +37,7 @@ export default function ResetPasswordPage() {
 
     if (!error) {
       setSuccess(true);
-      setTimeout(() => navigate('/comenzar'), 3000);
+  setTimeout(() => navigate('/get-started'), 3000);
     }
   };
 

@@ -97,7 +97,7 @@ import React, { memo, useRef, useEffect } from 'react';
                 variants={itemVariants}
                 className="flex flex-col sm:flex-row gap-4 justify-center items-center"
               >
-                <Link to="/comenzar">
+                <Link to="/get-started">
                   <Button
                     size="lg"
                     className="font-bold px-8 py-4 rounded-full text-lg shadow-soft-lg transition-all duration-300 transform hover:scale-105 border-0"
