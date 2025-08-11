@@ -30,14 +30,14 @@ import { useWallet } from '@/contexts/WalletContext';
         e.preventDefault();
         if (!isConnected || authStatus !== 'authenticated') {
           if (currentLang === 'es') {
-            window.location.href = '/comenzar';
+            window.location.href = '/get-started';
           } else {
             window.location.href = '/get-started';
           }
           return;
         }
         if (currentLang === 'es') {
-          window.location.href = '/mercado';
+          window.location.href = '/marketplace';
         } else {
           window.location.href = '/marketplace';
         }
@@ -49,13 +49,13 @@ import { useWallet } from '@/contexts/WalletContext';
           { name: "Monitoring", onClick: handleMonitoringClick },
         ],
         "Company": [
-          { name: "About Us", path: currentLang === 'es' ? "/sobre-nosotros" : "/about-us" },
+          { name: "About Us", path: "/about-us" },
           { name: "Press", onClick: handleFeatureClick },
         ],
         "Support": [
-          { name: "Help Center", path: currentLang === 'es' ? "/centro-de-ayuda" : "/help-center" },
+          { name: "Help Center", path: "/help-center" },
           { name: "Documentation", onClick: handleFeatureClick },
-          { name: "Contact", path: "/contacto" },
+          { name: "Contact", path: "/contact" },
           { name: "Admin", path: "/admin" },
         ]
       };
@@ -122,10 +122,10 @@ import { useWallet } from '@/contexts/WalletContext';
                 </div>
                 
                 <div className="flex space-x-6 text-sm">
-                  <Link to={currentLang === 'es' ? "/privacidad" : "/privacy"} className="text-muted-foreground hover:text-foreground transition-colors duration-300">
+                  <Link to="/privacy" className="text-muted-foreground hover:text-foreground transition-colors duration-300">
                     Privacy
                   </Link>
-                  <Link to={currentLang === 'es' ? "/terminos" : "/terms"} className="text-muted-foreground hover:text-foreground transition-colors duration-300">
+                  <Link to="/terms" className="text-muted-foreground hover:text-foreground transition-colors duration-300">
                     Terms
                   </Link>
                   <Link to={currentLang === 'es' ? "/cookies" : "/cookies"} className="text-muted-foreground hover:text-foreground transition-colors duration-300">

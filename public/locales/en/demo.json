@@ -1,8 +1,8 @@
 {
   "metaTitle": "Interactive Demo - ENGYX",
-  "metaDescription": "Explore the ENGYX platform with our interactive demo. Discover how renewable energy tokenization works.",
+  "metaDescription": "Explore the ENGYX platform with our interactive demo.",
   "title": "Interactive Demo",
-  "subtitle": "Explore all the features of ENGYX in real-time. Discover how we are revolutionizing renewable energy with blockchain.",
+  "subtitle": "Explore all the features of ENGYX in real-time.",
   "controls": {
     "play": "Play",
     "pause": "Pause",
@@ -18,7 +18,7 @@
   "steps": [
     {
       "title": "Welcome to ENGYX",
-      "description": "Explore the world's most advanced renewable energy tokenization platform.",
+      "description": "The renewable energy and carbon credit tokenization platform, a global investment in sustainable assets.",
       "duration": 3000
     },
     {
@@ -27,8 +27,8 @@
       "duration": 4000
     },
     {
-      "title": "Power Plants",
-      "description": "View the operational status and performance of each solar, wind, and hydrogen plant.",
+      "title": "Digital Assets",
+      "description": "View the operational status and performance of each Digital Asset.",
       "duration": 4000
     },
     {
@@ -43,13 +43,13 @@
     },
     {
       "title": "Global Map",
-      "description": "Explore all power plants distributed worldwide.",
+      "description": "Explore all assets distributed worldwide.",
       "duration": 3000
     }
   ],
   "welcome": {
     "title": "Welcome to ENGYX",
-    "description": "The most advanced platform to tokenize renewable energy and create a sustainable future."
+    "description": "The platform for tokenizing and creating a sustainable future."
   },
   "dashboard": {
     "title": "Main Dashboard",
@@ -67,11 +67,12 @@
     "activePlants": "{{count}}/3 active plants"
   },
   "plants": {
-    "title": "Active Power Plants",
+    "title": "Active power plants and infrastructure",
     "types": {
       "solar": "Solar",
       "eólica": "Wind",
-      "hidrógeno": "Hydrogen"
+      "hidrógeno": "Hydrogen",
+      "edificios": "Buildings"
     },
     "status": {
       "operational": "Operational",
@@ -111,13 +112,13 @@
     "co2Avoided": "You will avoid ~{{amount}} tons of CO₂"
   },
   "map": {
-    "title": "Global Map of Plants",
+    "title": "Global Map of Assets",
     "interactiveMap": "Interactive Map",
-    "description": "Visualize the location of all renewable energy plants distributed globally.",
-    "operational": "Operational Plants",
+    "description": "Visualize the location of all globally distributed assets.",
+    "operational": "Operational Assets",
     "activeCount": "{{count}} active",
     "maintenance": "In Maintenance",
-    "maintenanceCount": "{{count}} plant",
+    "maintenanceCount": "{{count}} asset",
     "inDevelopment": "In Development",
     "developmentCount": "{{count}} projects"
   },

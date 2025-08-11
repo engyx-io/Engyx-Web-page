@@ -85,17 +85,18 @@ export default function PurchaseForm({ presaleStats, onPurchase }) {
 
   return (
     <motion.div 
-      className="glass-card p-8 rounded-2xl presale-highlight w-full max-w-md bg-gradient-to-br from-black via-slate-900/50 to-black"
+      className="glass-card p-8 rounded-2xl presale-highlight w-full max-w-md bg-gradient-to-br from-primary to-teal-500 text-white"
+      style={{ color: '#fff' }}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.2 }}
     >
-      <h3 className="text-2xl font-bold text-center mb-2 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">{t('presale.purchaseFormTitle')}</h3>
-      <p className="text-emerald-200/70 text-sm mb-6 text-center">{t('presale.purchaseFormSubtitle', { price: presaleStats?.current_price || '...' })}</p>
+  <h3 className="text-2xl font-bold text-center mb-2" style={{ color: '#fff' }}>{t('presale.purchaseFormTitle')}</h3>
+  <p className="text-sm mb-6 text-center" style={{ color: '#fff' }}>{t('presale.purchaseFormSubtitle', { price: presaleStats?.current_price || '...' })}</p>
 
-      <div className="space-y-6 bg-black/20 p-6 rounded-xl border border-emerald-500/20 mb-6">
+  <div className="space-y-6 bg-black/20 p-6 rounded-xl border border-emerald-500/20 mb-6" style={{ color: '#fff' }}>
         <div>
-          <label htmlFor="amount" className="block text-sm font-semibold text-emerald-200 mb-2">{t('presale.purchaseFormAmountUSD')}</label>
+          <label htmlFor="amount" className="block text-sm font-semibold mb-2" style={{ color: '#fff' }}>{t('presale.purchaseFormAmountUSD')}</label>
           <div className="relative">
             <Input
               id="amount"
@@ -105,11 +106,11 @@ export default function PurchaseForm({ presaleStats, onPurchase }) {
               className="pl-10 text-lg"
               min="10"
             />
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-emerald-200/70 text-lg">$</span>
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-lg" style={{ color: '#fff' }}>$</span>
           </div>
         </div>
         <div>
-          <label htmlFor="tokens" className="block text-sm font-semibold text-emerald-200 mb-2">{t('presale.purchaseFormTokensToReceive')}</label>
+          <label htmlFor="tokens" className="block text-sm font-semibold mb-2" style={{ color: '#fff' }}>{t('presale.purchaseFormTokensToReceive')}</label>
           <div className="relative">
             <Input
               id="tokens"
@@ -118,7 +119,7 @@ export default function PurchaseForm({ presaleStats, onPurchase }) {
               readOnly
               className="pl-12 bg-black/30 text-lg"
             />
-            <span className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-200/70">
+            <span className="absolute left-4 top-1/2 -translate-y-1/2" style={{ color: '#fff' }}>
               <img src="https://storage.googleapis.com/hostinger-horizons-assets-prod/76efbe67-454a-4b85-b3ec-3954b6d7f1f8/fa3d60a2b1c0e1afc116ac4da87347e1.png" alt="ENGYX Token" className="w-6 h-6" />
             </span>
           </div>
@@ -128,11 +129,11 @@ export default function PurchaseForm({ presaleStats, onPurchase }) {
       <div className="mt-6">
         {walletAddress ? (
           <div className="space-y-4">
-            <div className="p-3 bg-emerald-500/10 rounded-lg border border-emerald-500/20">
+            <div className="p-3 bg-emerald-500/10 rounded-lg border border-emerald-500/20" style={{ color: '#fff' }}>
               <div className="flex justify-between items-center">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-emerald-400" />
-                  <p className="text-sm text-white">
+                  <p className="text-sm" style={{ color: '#fff' }}>
                     {walletAddress.substring(0, 6)}...{walletAddress.substring(walletAddress.length - 4)}
                   </p>
                 </div>
@@ -142,7 +143,7 @@ export default function PurchaseForm({ presaleStats, onPurchase }) {
                 </div>
               </div>
             </div>
-            <Button onClick={handlePurchase} size="lg" className="w-full font-bold text-base bg-[#0052FF] hover:bg-[#0045D1] text-white flex items-center justify-center gap-2" disabled={isLoading}>
+            <Button onClick={handlePurchase} size="lg" className="w-full font-bold text-base bg-[#0052FF] hover:bg-[#0045D1] text-white flex items-center justify-center gap-2" style={{ color: '#fff' }} disabled={isLoading}>
               {isLoading ? (
                 <>
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
@@ -158,7 +159,7 @@ export default function PurchaseForm({ presaleStats, onPurchase }) {
           </div>
         ) : (
           <div className="space-y-3">
-            <p className="text-center text-sm text-emerald-200/80">{t('presale.purchaseFormConnectPrompt')}</p>
+            <p className="text-center text-sm" style={{ color: '#fff' }}>{t('presale.purchaseFormConnectPrompt')}</p>
             <div className="grid grid-cols-2 gap-3">
               <Button onClick={connectEvm} variant="outline" className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10">
                 <Wallet className="w-4 h-4 mr-2" /> {t('presale.purchaseFormConnectEVM')}

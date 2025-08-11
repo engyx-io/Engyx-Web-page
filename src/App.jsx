@@ -165,32 +165,24 @@ import { Analytics } from "@vercel/analytics/react";
               <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<HomePage handleFeatureClick={handleFeatureClick} />} />
                 {showPresalePage && <Route path="/pre-sale" element={<PresalePage />} />}
-                <Route path="/mercado" element={<PrivateRoute><MarketplacePage handleFeatureClick={handleFeatureClick} /></PrivateRoute>} />
                 <Route path="/marketplace" element={<PrivateRoute><MarketplacePage handleFeatureClick={handleFeatureClick} /></PrivateRoute>} />
                 <Route path="/project/:id" element={<PrivateRoute><ProjectDetailsPage handleFeatureClick={handleFeatureClick} /></PrivateRoute>} />
                 <Route path="/blockchain" element={<BlockchainPage handleFeatureClick={handleFeatureClick} />} />
-                <Route path="/contacto" element={<ContactPage handleFeatureClick={handleFeatureClick} />} />
                 <Route path="/contact" element={<ContactPage handleFeatureClick={handleFeatureClick} />} />
-                <Route path="/comenzar" element={<GetStartedPage />} />
                 <Route path="/get-started" element={<GetStartedPage />} />
                 <Route path="/dashboard" element={<PrivateRoute><DashboardPage handleFeatureClick={handleFeatureClick} /></PrivateRoute>} />
                 <Route path="/profile" element={<PrivateRoute><ProfilePage handleFeatureClick={handleFeatureClick} /></PrivateRoute>} />
                 <Route path="/protegida" element={<PrivateRoute><ProtectedPage /></PrivateRoute>} />
                 <Route path="/demo" element={<DemoPage handleFeatureClick={handleFeatureClick} />} />
-                <Route path="/sobre-nosotros" element={<AboutPage />} />
                 <Route path="/about-us" element={<AboutPage />} />
-                <Route path="/servicios" element={<ServicesPage handleFeatureClick={handleFeatureClick} />} />
                 <Route path="/services" element={<ServicesPage handleFeatureClick={handleFeatureClick} />} />
                 <Route path="/digital-assets" element={<DigitalAssetsPage />} />
-                <Route path="/activos-digitales" element={<DigitalAssetsPage />} />
-                <Route path="/privacidad" element={<PrivacyPolicyPage />} />
-                <Route path="/terminos" element={<TermsPage />} />
+                <Route path="/privacy" element={<PrivacyPolicyPage />} />
+                <Route path="/terms" element={<TermsPage />} />
                 <Route path="/cookies" element={<CookiePolicyPage />} />
                 <Route path="/privacy" element={<PrivacyPolicyPage />} />
                 <Route path="/terms" element={<TermsPage />} />
-                <Route path="/cookie-policy" element={<CookiePolicyPage />} />
                 <Route path="/help-center" element={<HelpCenterPage />} />
-                <Route path="/centro-de-ayuda" element={<HelpCenterPage />} />
                 <Route path="/admin/login" element={<AdminLoginPage />} />
                 <Route path="/admin" element={<AdminRoute><AdminPage /></AdminRoute>} />
                 <Route path="/update-password" element={<ResetPasswordPage />} />

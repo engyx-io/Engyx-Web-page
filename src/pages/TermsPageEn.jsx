@@ -24,11 +24,11 @@ import React from 'react';
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-foreground title-glow">
+                <h1 className="text-5xl md:text-6xl font-extrabold mb-4 title-glow" style={{ color: '#071c38' }}>
                   {pageData.pageTitle}
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6">{pageData.lastUpdated}</p>
-                <p className="text-foreground max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: pageData.intro.replace(/<a href/g, `<a class="text-primary hover:underline" href`) }}></p>
+                <p className="max-w-3xl mx-auto" style={{ color: '#071c38' }} dangerouslySetInnerHTML={{ __html: pageData.intro.replace(/<a href/g, `<a class='text-primary hover:underline' href`) }}></p>
               </motion.div>
 
               <div className="space-y-12">
@@ -47,17 +47,29 @@ import React from 'react';
                           <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center border border-primary/20">
                             {Icon && <Icon className="w-6 h-6 text-primary" />}
                           </div>
-                          <CardTitle className="text-2xl font-bold text-foreground">{section.title}</CardTitle>
+                          <CardTitle className="text-2xl font-bold" style={{ color: '#071c38' }}>{section.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <div className="leading-relaxed space-y-4 text-foreground" dangerouslySetInnerHTML={{ __html: section.content.replace(/<Link to="\/privacy">/g, `<a href="/privacy" class="text-primary hover:underline">`).replace(/<\/Link>/g, '</a>').replace(/<li>/g, '<li class="flex items-start"><span class="mr-2 mt-1">&#8226;</span><span class="text-foreground">').replace(/<ul>/g, '<ul class="space-y-2 text-foreground">') }}></div>
+                            <div
+                              className={
+                                `leading-relaxed space-y-4`
+                              }
+                              style={{ color: '#071c38' }}
+                              dangerouslySetInnerHTML={{
+                                __html: section.content
+                                  .replace(/<Link to=\"\/privacy\">/g, `<a href="/privacy" class="text-primary hover:underline">`)
+                                  .replace(/<\/Link>/g, '</a>')
+                                  .replace(/<li>/g, '<li class="flex items-start"><span class="mr-2 mt-1">&#8226;</span><span>')
+                                  .replace(/<ul>/g, '<ul class="space-y-2">')
+                              }}
+                            ></div>
                           
                           {section.contact && (
                             <div className="mt-4 space-y-2">
                               <a href={`mailto:${section.contact.email}`} className="text-primary hover:text-primary/80 transition-colors duration-300 block">
                                 {section.contact.email}
                               </a>
-                              <p className="text-foreground">{section.contact.address}</p>
+                              <p style={{ color: '#071c38' }}>{section.contact.address}</p>
                             </div>
                           )}
                         </CardContent>

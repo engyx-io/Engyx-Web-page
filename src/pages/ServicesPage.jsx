@@ -119,7 +119,7 @@ import React from 'react';
                   <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                     {t('servicesPage.ctaDesc')}
                   </p>
-                  <Link to="/contacto">
+                  <Link to="/contact">
                     <Button
                       className="bg-gradient-to-r from-primary to-teal-500 hover:from-primary/90 hover:to-teal-600 text-white"
                     >
