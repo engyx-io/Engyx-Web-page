@@ -11,19 +11,6 @@ import { useWallet } from '@/contexts/WalletContext';
 
       const { isConnected, authStatus, connectEvm } = useWallet();
 
-      // Handler para el acceso seguro a Monitoring
-      const handleMonitoringClick = (e) => {
-        e.preventDefault();
-        if (!isConnected) {
-          connectEvm();
-          return;
-        }
-        if (authStatus !== 'authenticated') {
-          window.location.href = currentLang === 'es' ? '/login' : '/login';
-          return;
-        }
-        window.location.href = '/dashboard';
-      };
 
       // Handler para el acceso seguro a Marketplace
       const handleMarketplaceClick = (e) => {
@@ -46,7 +33,6 @@ import { useWallet } from '@/contexts/WalletContext';
       const footerLinks = {
         "Services": [
           { name: "Marketplace", onClick: handleMarketplaceClick },
-          { name: "Monitoring", onClick: handleMonitoringClick },
         ],
         "Company": [
           { name: "About Us", path: "/about-us" },

@@ -65,26 +65,10 @@ import React, { memo, useRef, useEffect } from 'react';
             >
               <motion.h1 
                 variants={itemVariants}
-                className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow whitespace-pre-line"
-                style={{wordBreak: 'break-word', color: '#fff'}}
+                className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow whitespace-pre-line bg-gradient-to-br from-primary to-teal-500 bg-clip-text text-transparent"
+                style={{wordBreak: 'break-word'}}
               >
-                {(() => {
-                  const title = t('heroTitle');
-                  // Solo resaltar la palabra 'sustainable' (inglés) o 'sustentable' (español)
-                  return title.split(/(sustainable|sustentable)/i).map((part, idx) => {
-                    if (/^sustainable$/i.test(part)) {
-                      return (
-                        <span key={idx} className="bg-gradient-to-br from-primary to-teal-500 bg-clip-text text-transparent">{part}</span>
-                      );
-                    }
-                    if (/^sustentable$/i.test(part)) {
-                      return (
-                        <span key={idx} className="bg-gradient-to-br from-primary to-teal-500 bg-clip-text text-transparent">{part}</span>
-                      );
-                    }
-                    return part;
-                  });
-                })()}
+                {t('heroTitle')}
               </motion.h1>
               <motion.p 
                 variants={itemVariants}
