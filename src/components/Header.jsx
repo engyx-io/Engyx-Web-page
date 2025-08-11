@@ -43,12 +43,12 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
       const getLocalizedPath = (path) => {
         if (i18n.language === 'es') {
           switch (path) {
-            case '/about-us': return '/sobre-nosotros';
-            case '/contact': return '/contacto';
+            case '/about-us': return '/about-us';
+            case '/contact': return '/contact';
             case '/digital-assets': return '/activos-digitales';
-            case '/services': return '/servicios';
-            case '/get-started': return '/comenzar';
-            case '/marketplace': return '/mercado';
+            case '/services': return '/services';
+            case '/get-started': return '/get-started';
+            case '/marketplace': return '/marketplace';
             default: return path;
           }
         }

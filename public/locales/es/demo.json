@@ -1,8 +1,8 @@
 {
   "metaTitle": "Demo Interactiva - ENGYX",
-  "metaDescription": "Explora la plataforma ENGYX con nuestra demo interactiva. Descubre cómo funciona la tokenización de energía renovable.",
+  "metaDescription": "Explora la plataforma ENGYX con nuestra demo interactiva.",
   "title": "Demo Interactiva",
-  "subtitle": "Explora todas las funcionalidades de ENGYX en tiempo real. Descubre cómo revolucionamos la energía renovable con blockchain.",
+  "subtitle": "Explora todas las funcionalidades de ENGYX en tiempo real.",
   "controls": {
     "play": "Reproducir",
     "pause": "Pausar",
@@ -18,7 +18,7 @@
   "steps": [
     {
       "title": "Bienvenida a ENGYX",
-      "description": "Explora la plataforma de tokenización de energía renovable más avanzada del mundo.",
+      "description": "La plataforma de tokenización de energía renovable y créditos de carbono, inversión global en activos sostenibles.",
       "duration": 3000
     },
     {
@@ -27,8 +27,8 @@
       "duration": 4000
     },
     {
-      "title": "Plantas de Energía",
-      "description": "Visualiza el estado operativo y rendimiento de cada planta solar, eólica e hidrógeno.",
+      "title": "Activos Digitales",
+      "description": "Visualiza el estado operativo y rendimiento de cada Activo Digital.",
       "duration": 4000
     },
     {
@@ -43,13 +43,13 @@
     },
     {
       "title": "Mapa Global",
-      "description": "Explora todas las plantas de energía distribuidas mundialmente.",
+      "description": "Explora todos los activos distribuidos mundialmente.",
       "duration": 3000
     }
   ],
   "welcome": {
     "title": "Bienvenido a ENGYX",
-    "description": "La plataforma más avanzada para tokenizar energía renovable y crear un futuro sostenible."
+    "description": "La plataforma para tokenizar y crear un futuro sostenible."
   },
   "dashboard": {
     "title": "Dashboard Principal",
@@ -67,11 +67,12 @@
     "activePlants": "{{count}}/3 plantas activas"
   },
   "plants": {
-    "title": "Plantas de Energía Activas",
+    "title": "Plantas de Energía e Infraestructura Activas",
     "types": {
       "solar": "Solar",
       "eólica": "Eólica",
-      "hidrógeno": "Hidrógeno"
+      "hidrógeno": "Hidrógeno",
+      "edificios": "Edificios"
     },
     "status": {
       "operational": "Operativa",
@@ -111,13 +112,13 @@
     "co2Avoided": "Evitarás ~{{amount}} toneladas de CO₂"
   },
   "map": {
-    "title": "Mapa Global de Plantas",
+    "title": "Mapa Global de Activos",
     "interactiveMap": "Mapa Interactivo",
-    "description": "Visualiza la ubicación de todas las plantas de energía renovable distribuidas globalmente.",
-    "operational": "Plantas Operativas",
-    "activeCount": "{{count}} activas",
+    "description": "Visualiza la ubicación de todos los activos distribuidos globalmente.",
+    "operational": "Activos Operativos",
+    "activeCount": "{{count}} activos",
     "maintenance": "En Mantenimiento",
-    "maintenanceCount": "{{count}} planta",
+    "maintenanceCount": "{{count}} activo",
     "inDevelopment": "En Desarrollo",
     "developmentCount": "{{count}} proyectos"
   },

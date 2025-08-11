@@ -34,7 +34,7 @@ import React from 'react';
       };
 
       const getLocalizedPath = (path) => {
-        return i18n.language === 'es' ? '/comenzar' : '/get-started';
+  return '/get-started';
       };
 
       const userMenuItems = [

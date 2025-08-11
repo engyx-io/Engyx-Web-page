@@ -23,7 +23,7 @@ import React from 'react';
                 {t('ctaSubtitle')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Link to="/comenzar">
+                <Link to="/get-started">
                   <Button size="lg" className="bg-white text-primary hover:bg-gray-100 font-bold px-8 py-4 rounded-full text-lg shadow-soft-lg hover:shadow-white/30 transition-all duration-300 transform hover:scale-105">
                     {t('ctaButtonStart')}
                     <ArrowRight className="ml-2 w-5 h-5" />

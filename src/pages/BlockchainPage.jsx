@@ -37,7 +37,7 @@ export default function BlockchainPage({
         description: t('blockchainPage.restrictedAccessDesc'),
         variant: "destructive"
       });
-      navigate('/comenzar', {
+  navigate('/get-started', {
         state: {
           from: location
         }

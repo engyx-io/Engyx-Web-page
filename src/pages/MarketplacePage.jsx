@@ -27,9 +27,9 @@ export default function MarketplacePage({ handleFeatureClick }) {
     if (location.pathname === '/marketplace' && (!isConnected || authStatus !== 'authenticated')) {
       navigate('/get-started', { replace: true });
     }
-    // Protección para /mercado
-    if (location.pathname === '/mercado' && (!isConnected || authStatus !== 'authenticated')) {
-      navigate('/comenzar', { replace: true });
+  // Protección para /marketplace
+  if (location.pathname === '/marketplace' && (!isConnected || authStatus !== 'authenticated')) {
+  navigate('/get-started', { replace: true });
     }
   }, [isConnected, authStatus, navigate, location]);
 

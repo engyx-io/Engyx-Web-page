@@ -32,7 +32,7 @@ const ProjectDetailsPage = ({ handleFeatureClick }) => {
         description: error.message || "No se pudo encontrar el proyecto solicitado.",
         variant: "destructive",
       });
-      navigate('/mercado');
+  navigate('/marketplace');
       setLoading(false);
       return;
     }
@@ -125,7 +125,7 @@ const ProjectDetailsPage = ({ handleFeatureClick }) => {
             transition={{ duration: 0.6 }}
           >
             <div className="flex items-center justify-between mb-8">
-              <Link to="/mercado">
+              <Link to="/marketplace">
                 <Button variant="outline" className="border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Volver al Mercado
