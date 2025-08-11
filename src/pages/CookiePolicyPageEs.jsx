@@ -70,7 +70,7 @@ import React from 'react';
           content: "Para ejercer tus derechos o realizar consultas, contáctanos en:",
           contact: {
             email: "legal@engyx.io",
-            address: "ENGYX Digital Assets Inc., Delaware, USA."
+            address: "Engyx Digital Energy Inc., Delaware, USA."
           }
         }
       ];
@@ -79,7 +79,7 @@ import React from 'react';
         <>
           <Helmet>
             <title>Política de Cookies - ENGYX</title>
-            <meta name="description" content="Política de Cookies de ENGYX Digital Assets. Entiende cómo y por qué usamos cookies en nuestro sitio." />
+            <meta name="description" content="Política de Cookies de Engyx Digital Energy. Entiende cómo y por qué usamos cookies en nuestro sitio." />
           </Helmet>
           <div className="pt-24 pb-20 px-6 overflow-hidden">
             <div className="container mx-auto max-w-4xl">
@@ -94,7 +94,7 @@ import React from 'react';
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6">Última actualización: 01 de julio de 2025</p>
                 <p className="text-muted-foreground max-w-3xl mx-auto">
-                  Esta Política de Cookies explica cómo <strong>ENGYX Digital Assets Inc.</strong> ("ENGYX", "nosotros", "nuestro") utiliza cookies y tecnologías similares en su sitio web <a href="https://engyx.io" className="text-primary hover:underline">https://engyx.io</a>. Al continuar navegando por este sitio, aceptas el uso de cookies conforme a esta política.
+                  Esta Política de Cookies explica cómo <strong>Engyx Digital Energy Inc.</strong> ("ENGYX", "nosotros", "nuestro") utiliza cookies y tecnologías similares en su sitio web <a href="https://engyx.io" className="text-primary hover:underline">https://engyx.io</a>. Al continuar navegando por este sitio, aceptas el uso de cookies conforme a esta política.
                 </p>
               </motion.div>
 

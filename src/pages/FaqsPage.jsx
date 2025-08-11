@@ -17,7 +17,7 @@ export default function FaqsPage() {
   return (
     <>
       <Helmet>
-        <title>{t('title')} - Engyx Digital Assets</title>
+  <title>{t('title')} - Engyx Digital Energy</title>
         <meta name="description" content={t('subtitle')} />
       </Helmet>
       <motion.div

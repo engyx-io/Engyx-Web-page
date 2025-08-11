@@ -61,8 +61,8 @@ import { Analytics } from "@vercel/analytics/react";
     const projectId = '1c543d75436c30459f57634104555b2e';
 
     const metadata = {
-      name: 'Engyx Digital Assets',
-      description: 'Engyx Digital Assets - Tokenizing Digital Assets',
+  name: 'Engyx Digital Energy',
+  description: 'Engyx Digital Energy - Tokenizing Digital Assets',
       url: 'https://engyx.io',
       icons: ['https://hhoyatmfelywylbpeylz.supabase.co/storage/v1/object/public/general_documents//Logo%20Engyx%20Azul%20Sin%20Margen.png']
     };

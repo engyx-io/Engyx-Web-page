@@ -113,7 +113,7 @@ import React from 'react';
         {
           icon: Copyright,
           title: "9. Propiedad Intelectual",
-          content: <p className="text-foreground leading-relaxed">Todo el contenido, logotipos, código fuente y documentación en el sitio son propiedad de ENGYX Digital Assets Inc., salvo que se indique lo contrario. Está prohibida su reproducción sin autorización.</p>
+          content: <p className="text-foreground leading-relaxed">Todo el contenido, logotipos, código fuente y documentación en el sitio son propiedad de Engyx Digital Energy Inc., salvo que se indique lo contrario. Está prohibida su reproducción sin autorización.</p>
         },
         {
           icon: RefreshCw,
@@ -126,7 +126,7 @@ import React from 'react';
           content: <p className="text-foreground leading-relaxed">Para ejercer tus derechos o realizar consultas, contáctanos en:</p>,
           contact: {
             email: "legal@engyx.io",
-            address: "ENGYX Digital Assets Inc., Delaware, USA."
+            address: "Engyx Digital Energy Inc., Delaware, USA."
           }
         }
       ];
@@ -135,7 +135,7 @@ import React from 'react';
         <>
           <Helmet>
             <title>Términos y Condiciones - ENGYX</title>
-            <meta name="description" content="Términos y Condiciones de uso para la plataforma ENGYX Digital Assets." />
+            <meta name="description" content="Términos y Condiciones de uso para la plataforma Engyx Digital Energy." />
           </Helmet>
           <div className="pt-24 pb-20 px-6 overflow-hidden">
             <div className="container mx-auto max-w-4xl">
@@ -150,7 +150,7 @@ import React from 'react';
                 </h1>
                 <p className="text-lg text-muted-foreground mb-6">Última actualización: 01 de julio de 2025</p>
                 <p className="text-foreground max-w-3xl mx-auto">
-                  Bienvenido a <a href="https://engyx.io" className="text-primary hover:underline">https://engyx.io</a>, una plataforma operada por <strong>ENGYX Digital Assets Inc</strong>, con sede en Delaware, Estados Unidos. Al acceder o utilizar este sitio, aceptas cumplir estos Términos y Condiciones de Uso, así como nuestra Política de Privacidad y cualquier normativa aplicable.
+                  Bienvenido a <a href="https://engyx.io" className="text-primary hover:underline">https://engyx.io</a>, una plataforma operada por <strong>Engyx Digital Energy Inc</strong>, con sede en Delaware, Estados Unidos. Al acceder o utilizar este sitio, aceptas cumplir estos Términos y Condiciones de Uso, así como nuestra Política de Privacidad y cualquier normativa aplicable.
                 </p>
               </motion.div>
 

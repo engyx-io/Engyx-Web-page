@@ -9,7 +9,7 @@ import React from 'react';
         {
           icon: Shield,
           title: "Introducción",
-          content: "ENGYX Digital Assets (“nosotros”, “nuestro”) se compromete a proteger tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos tu información personal cuando interactúas con nuestros servicios en https://engyx.io."
+          content: "Engyx Digital Energy (“nosotros”, “nuestro”) se compromete a proteger tu privacidad. Esta política describe cómo recopilamos, usamos y protegemos tu información personal cuando interactúas con nuestros servicios en https://engyx.io."
         },
         {
           icon: Database,
@@ -104,7 +104,7 @@ import React from 'react';
           content: "Para ejercer tus derechos o realizar consultas, contáctanos en:",
           contact: {
             email: "legal@engyx.io",
-            address: "ENGYX Digital Assets Inc., Delaware, USA."
+            address: "Engyx Digital Energy Inc., Delaware, USA."
           }
         }
       ];
@@ -113,7 +113,7 @@ import React from 'react';
         <>
           <Helmet>
             <title>Política de Privacidad - ENGYX</title>
-            <meta name="description" content="Política de Privacidad de ENGYX Digital Assets. Conoce cómo protegemos y gestionamos tus datos personales." />
+            <meta name="description" content="Política de Privacidad de Engyx Digital Energy. Conoce cómo protegemos y gestionamos tus datos personales." />
           </Helmet>
           <div className="pt-24 pb-20 px-6 overflow-hidden">
             <div className="container mx-auto max-w-4xl">

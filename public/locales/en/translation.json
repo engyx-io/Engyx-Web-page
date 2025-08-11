@@ -352,7 +352,7 @@
         }
       },
       "servicesPage": {
-        "metaTitle": "Services - Engyx Digital Assets",
+  "metaTitle": "Services - Engyx Digital Energy",
         "metaDescription": "Discover our services for asset tokenization, decentralized marketplace, smart contracts, and on-chain monitoring.",
         "title": "Our Services",
         "subtitle": "Comprehensive solutions for the tokenization and trading of digital assets.",
@@ -615,14 +615,14 @@
       },
       "privacyPolicyPage": {
         "metaTitle": "Privacy Policy - ENGYX",
-        "metaDescription": "ENGYX Digital Assets's Privacy Policy. Learn how we protect and manage your personal data.",
+  "metaDescription": "ENGYX Digital Energy's Privacy Policy. Learn how we protect and manage your personal data.",
         "pageTitle": "Privacy Policy",
         "lastUpdated": "Last updated: July 01, 2025",
         "sections": [
           {
             "icon": "Shield",
             "title": "Introduction",
-            "content": "ENGYX Digital Assets (“we”, “our”) is committed to protecting your privacy. This policy outlines how we collect, use, and protect your personal information when you interact with our services at https://engyx.io, and how we comply with the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States."
+            "content": "ENGYX Digital Energy (“we”, “our”) is committed to protecting your privacy. This policy outlines how we collect, use, and protect your personal information when you interact with our services at https://engyx.io, and how we comply with the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States."
           },
           {
             "icon": "Database",
@@ -717,17 +717,17 @@
             "content": "To exercise your rights or make inquiries, contact us at:",
             "contact": {
               "email": "legal@engyx.io",
-              "address": "ENGYX Digital Assets Inc., Delaware, USA."
+              "address": "ENGYX Digital Energy Inc., Delaware, USA."
             }
           }
         ]
       },
       "termsPage": {
         "metaTitle": "Terms and Conditions - ENGYX",
-        "metaDescription": "Terms and Conditions of use for the ENGYX Digital Assets platform.",
+  "metaDescription": "Terms and Conditions of use for the ENGYX Digital Energy platform.",
         "pageTitle": "Terms and Conditions of Use",
         "lastUpdated": "Last updated: July 01, 2025",
-        "intro": "Welcome to <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>, a platform operated by <strong>ENGYX Digital Assets Inc</strong>, based in Delaware, USA. By accessing or using this site, you agree to comply with these Terms and Conditions of Use, as well as our Privacy Policy and any applicable regulations.",
+  "intro": "Welcome to <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>, a platform operated by <strong>ENGYX Digital Energy Inc</strong>, based in Delaware, USA. By accessing or using this site, you agree to comply with these Terms and Conditions of Use, as well as our Privacy Policy and any applicable regulations.",
         "sections": [
           {
             "icon": "LayoutGrid",
@@ -772,7 +772,7 @@
           {
             "icon": "Copyright",
             "title": "9. Intellectual Property",
-            "content": "All content, logos, source code, and documentation on the site are the property of ENGYX Digital Assets LLC, unless otherwise stated. Reproduction without authorization is prohibited."
+            "content": "All content, logos, source code, and documentation on the site are the property of Engyx Digital Energy Inc, unless otherwise stated. Reproduction without authorization is prohibited."
           },
           {
             "icon": "RefreshCw",
@@ -785,17 +785,17 @@
             "content": "To exercise your rights or make inquiries, contact us at:",
             "contact": {
               "email": "legal@engyx.io",
-              "address": "ENGYX Digital Assets Inc., Delaware, USA."
+              "address": "ENGYX Digital Energy Inc., Delaware, USA."
             }
           }
         ]
       },
       "cookiePolicyPage": {
         "metaTitle": "Cookie Policy - ENGYX",
-        "metaDescription": "ENGYX Digital Assets's Cookie Policy. Understand how and why we use cookies on our site.",
+  "metaDescription": "ENGYX Digital Energy's Cookie Policy. Understand how and why we use cookies on our site.",
         "pageTitle": "Cookie Policy",
         "lastUpdated": "Last updated: July 01, 2025",
-        "intro": "This Cookie Policy explains how <strong>ENGYX Digital Assets Inc.</strong> ('ENGYX', 'we', 'our') uses cookies and similar technologies on its website <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>. By continuing to browse this site, you agree to the use of cookies in accordance with this policy.",
+  "intro": "This Cookie Policy explains how <strong>ENGYX Digital Energy Inc.</strong> ('ENGYX', 'we', 'our') uses cookies and similar technologies on its website <a href='https://engyx.io' class='text-emerald-400 hover:underline'>https://engyx.io</a>. By continuing to browse this site, you agree to the use of cookies in accordance with this policy.",
         "sections": [
           {
             "icon": "HelpCircle",
@@ -861,7 +861,7 @@
             "content": "To exercise your rights or make inquiries, contact us at:",
             "contact": {
               "email": "legal@engyx.io",
-              "address": "ENGYX Digital Assets Inc., Delaware, USA."
+              "address": "ENGYX Digital Energy Inc., Delaware, USA."
             }
           }
         ]
