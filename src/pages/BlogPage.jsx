@@ -34,8 +34,8 @@ const BlogPostCard = ({ post, index }) => {
               <img
                 src={post.image_url || `https://source.unsplash.com/random/800x600/?technology,energy,${index}`}
                 alt={title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+                className="w-full h-full object-cover"
+/>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-4">
                 {tags.length > 0 && (

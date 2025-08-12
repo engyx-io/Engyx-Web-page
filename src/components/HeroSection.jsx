@@ -65,8 +65,8 @@ import React, { memo, useRef, useEffect } from 'react';
             >
               <motion.h1 
                 variants={itemVariants}
-                className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow whitespace-pre-line bg-gradient-to-br from-primary to-teal-500 bg-clip-text text-transparent"
-                style={{wordBreak: 'break-word'}}
+                className="text-5xl md:text-7xl font-bold mb-6 text-foreground leading-tight title-glow whitespace-pre-line"
+                style={{wordBreak: 'break-word', color: '#fff'}}
               >
                 {t('heroTitle')}
               </motion.h1>
