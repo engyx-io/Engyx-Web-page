@@ -1,12 +1,4 @@
 import React, { useState } from 'react';
-// reCAPTCHA Enterprise global script
-if (typeof window !== 'undefined' && !window.grecaptchaScriptLoaded) {
-  const script = document.createElement('script');
-  script.src = 'https://www.google.com/recaptcha/enterprise.js?render=6LeyzaArAAAAAKYq2BwrFL7A3bykI6nuddkshZLo';
-  script.async = true;
-  document.head.appendChild(script);
-  window.grecaptchaScriptLoaded = true;
-}
 import { useAuth } from '@/contexts/SupabaseAuthContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -29,39 +21,14 @@ export default function AuthForm() {
   const handleLogin = async e => {
     e.preventDefault();
     setLoading(true);
-    if (window.grecaptcha && window.grecaptcha.enterprise) {
-      window.grecaptcha.enterprise.ready(async () => {
-        try {
-          const token = await window.grecaptcha.enterprise.execute('6LeyzaArAAAAAKYq2BwrFL7A3bykI6nuddkshZLo', {action: 'LOGIN'});
-          // Puedes enviar el token a tu backend para validación si lo requieres
-          const { error } = await signIn(email, password);
-          if (!error) {
-            toast({
-              title: t('auth.loginSuccessTitle'),
-              description: t('auth.loginSuccessDesc'),
-            });
-          }
-          setLoading(false);
-        } catch (err) {
-          toast({
-            title: 'reCAPTCHA error',
-            description: err.message || 'No se pudo validar reCAPTCHA',
-            variant: 'destructive'
-          });
-          setLoading(false);
-        }
+    const { error } = await signIn(email, password);
+    if (!error) {
+      toast({
+        title: t('auth.loginSuccessTitle'),
+        description: t('auth.loginSuccessDesc'),
       });
-    } else {
-      // Fallback si reCAPTCHA no está disponible
-      const { error } = await signIn(email, password);
-      if (!error) {
-        toast({
-          title: t('auth.loginSuccessTitle'),
-          description: t('auth.loginSuccessDesc'),
-        });
-      }
-      setLoading(false);
     }
+    setLoading(false);
   };
   
   const handleRegister = async e => {
