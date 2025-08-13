@@ -1,12 +1,4 @@
 import React, { useState, useCallback, Suspense } from 'react';
-// reCAPTCHA Enterprise global script
-if (typeof window !== 'undefined' && !window.grecaptchaScriptLoaded) {
-  const script = document.createElement('script');
-  script.src = 'https://www.google.com/recaptcha/enterprise.js?render=6LeyzaArAAAAAKYq2BwrFL7A3bykI6nuddkshZLo';
-  script.async = true;
-  document.head.appendChild(script);
-  window.grecaptchaScriptLoaded = true;
-}
     import { Helmet } from 'react-helmet';
     import { motion } from 'framer-motion';
     import { Mail, MapPin, Send, Linkedin, Github } from 'lucide-react';
@@ -98,73 +90,35 @@ if (typeof window !== 'undefined' && !window.grecaptchaScriptLoaded) {
       const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        if (window.grecaptcha && window.grecaptcha.enterprise) {
-          window.grecaptcha.enterprise.ready(async () => {
-            try {
-              const token = await window.grecaptcha.enterprise.execute('6LeyzaArAAAAAKYq2BwrFL7A3bykI6nuddkshZLo', {action: 'CONTACT'});
-              // Puedes enviar el token a tu backend para validación si lo requieres
-              const { data, error } = await supabase.functions.invoke('submit-contact-form', {
-                body: { formData, recaptchaToken: token },
-              });
-              if (error) {
-                throw new Error(error.message);
-              }
-              if (data.error) {
-                throw new Error(data.error);
-              }
-              toast({
-                title: t('contact.notifications.successTitle'),
-                description: t('contact.notifications.successDesc'),
-              });
-              setFormData({
-                name: '',
-                email: '',
-                company: '',
-                subject: '',
-                message: ''
-              });
-            } catch (error) {
-              toast({
-                title: t('contact.notifications.errorTitle'),
-                description: error.message || t('contact.notifications.errorDesc'),
-                variant: "destructive"
-              });
-            } finally {
-              setIsSubmitting(false);
-            }
+        try {
+          const { data, error } = await supabase.functions.invoke('submit-contact-form', {
+            body: { formData },
           });
-        } else {
-          // Fallback si reCAPTCHA no está disponible
-          try {
-            const { data, error } = await supabase.functions.invoke('submit-contact-form', {
-              body: { formData },
-            });
-            if (error) {
-              throw new Error(error.message);
-            }
-            if (data.error) {
-              throw new Error(data.error);
-            }
-            toast({
-              title: t('contact.notifications.successTitle'),
-              description: t('contact.notifications.successDesc'),
-            });
-            setFormData({
-              name: '',
-              email: '',
-              company: '',
-              subject: '',
-              message: ''
-            });
-          } catch (error) {
-            toast({
-              title: t('contact.notifications.errorTitle'),
-              description: error.message || t('contact.notifications.errorDesc'),
-              variant: "destructive"
-            });
-          } finally {
-            setIsSubmitting(false);
+          if (error) {
+            throw new Error(error.message);
           }
+          if (data.error) {
+            throw new Error(data.error);
+          }
+          toast({
+            title: t('contact.notifications.successTitle'),
+            description: t('contact.notifications.successDesc'),
+          });
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            subject: '',
+            message: ''
+          });
+        } catch (error) {
+          toast({
+            title: t('contact.notifications.errorTitle'),
+            description: error.message || t('contact.notifications.errorDesc'),
+            variant: "destructive"
+          });
+        } finally {
+          setIsSubmitting(false);
         }
       };
 
