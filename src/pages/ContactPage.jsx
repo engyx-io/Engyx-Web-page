@@ -90,25 +90,20 @@ import React, { useState, useCallback, Suspense } from 'react';
       const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-
         try {
           const { data, error } = await supabase.functions.invoke('submit-contact-form', {
             body: { formData },
           });
-
           if (error) {
             throw new Error(error.message);
           }
-          
           if (data.error) {
-             throw new Error(data.error);
+            throw new Error(data.error);
           }
-
           toast({
             title: t('contact.notifications.successTitle'),
             description: t('contact.notifications.successDesc'),
           });
-          
           setFormData({
             name: '',
             email: '',
@@ -116,7 +111,6 @@ import React, { useState, useCallback, Suspense } from 'react';
             subject: '',
             message: ''
           });
-
         } catch (error) {
           toast({
             title: t('contact.notifications.errorTitle'),
