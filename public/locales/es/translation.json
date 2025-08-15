@@ -135,7 +135,7 @@
         "sending": "Enviando...",
         "followUs": "Síguenos",
         "officeLocation": "Delaware, Estados Unidos",
-        "loadingRecaptcha": "Cargando reCAPTCHA...",
+        
         "joinTelegramChannel": "Únete a nuestro canal de Telegram",
         "placeholders": {
           "name": "Tu nombre completo",
@@ -149,11 +149,7 @@
           "desc": "Únete a nuestra comunidad en Telegram para soporte en tiempo real."
         },
         "notifications": {
-          "configErrorTitle": "❌ Error de Configuración",
-          "configErrorDesc": "No se pudo cargar la clave de reCAPTCHA.",
-          "configErrorRecaptcha": "reCAPTCHA no está configurado. El formulario no puede ser enviado.",
-          "verificationRequiredTitle": "⚠️ Verificación requerida",
-          "verificationRequiredDesc": "Por favor completa la verificación reCAPTCHA.",
+          
           "successTitle": "🎉 ¡Mensaje enviado exitosamente!",
           "successDesc": "Hemos recibido tu mensaje. Te responderemos pronto.",
           "errorTitle": "❌ Error al enviar el mensaje",

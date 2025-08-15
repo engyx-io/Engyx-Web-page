@@ -58,7 +58,6 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
       const navItems = useMemo(() => {
         const baseItems = [
           { name: t('header.home'), path: '/' },
-          { name: t('header.marketplace'), path: getLocalizedPath('/marketplace') },
           { name: t('header.services'), path: getLocalizedPath('/services') },
           { name: t('header.blockchain'), path: '/blockchain' },
         ];

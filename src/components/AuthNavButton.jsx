@@ -38,8 +38,9 @@ import React from 'react';
       };
 
       const userMenuItems = [
-        { name: t('header.profile'), path: '/profile', icon: <User className="mr-2 h-4 w-4" /> },
-        { name: t('header.dashboard'), path: '/dashboard', icon: <LayoutDashboard className="mr-2 h-4 w-4" /> },
+  { name: t('header.profile'), path: '/profile', icon: <User className="mr-2 h-4 w-4" /> },
+  { name: t('header.dashboard'), path: '/dashboard', icon: <LayoutDashboard className="mr-2 h-4 w-4" /> },
+  { name: t('header.marketplace'), path: '/marketplace', icon: <LayoutDashboard className="mr-2 h-4 w-4" /> },
       ];
 
       if (isAdmin) {
