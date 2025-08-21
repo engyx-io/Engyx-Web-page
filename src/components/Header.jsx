@@ -189,7 +189,7 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
           className="fixed top-0 w-full z-50 bg-transparent"
           style={{ pointerEvents: showHeader ? 'auto' : 'none' }}
         >
-          <nav className="container mx-auto px-6 py-4 flex justify-between items-center h-20">
+          <nav className="container mx-auto px-6 py-4 flex items-center h-20 justify-between">
             <motion.div 
               className="flex items-center space-x-2 h-full"
               whileHover={{ scale: 1.05 }}
@@ -210,16 +210,13 @@ import { ChevronDown, Menu, X, BookOpen, HelpCircle, Mail } from 'lucide-react';
                 )}
               </Link>
             </motion.div>
-            
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex flex-1 justify-center items-center space-x-8">
               {renderDesktopNav()}
             </div>
-
             <div className="hidden md:flex items-center space-x-4">
               <LanguageSwitcher color={location.pathname === '/' ? '#fff' : '#071c38'} />
               <AuthNavButton />
             </div>
-
             <div className="md:hidden">
               <Button onClick={() => setIsMobileMenuOpen(true)} variant="ghost" size="icon">
                 <Menu className="w-6 h-6 text-foreground" />

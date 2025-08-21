@@ -29,21 +29,21 @@ import React, { useState, useEffect, useCallback } from 'react';
 
     const menuItems = [
       { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, component: ProjectList },
-      { id: 'assets', label: 'Activos Digitales', icon: Briefcase, component: DigitalAssetsList },
-      { id: 'tokenize', label: 'Tokenizar', icon: FileUp, component: CreateAssetWizard },
-      { id: 'asset-docs', label: 'Docs de Activos', icon: FileText, component: AssetDocumentsTab },
-      { id: 'project-docs', label: 'Docs de Proyectos', icon: FileText, component: ProjectDocumentsTab },
+      { id: 'assets', label: 'Digital Assets', icon: Briefcase, component: DigitalAssetsList },
+      { id: 'tokenize', label: 'Tokenize', icon: FileUp, component: CreateAssetWizard },
+      { id: 'asset-docs', label: 'Asset Docs', icon: FileText, component: AssetDocumentsTab },
+      { id: 'project-docs', label: 'Project Docs', icon: FileText, component: ProjectDocumentsTab },
       { id: 'sto', label: 'STO', icon: Briefcase, component: StoTab },
-      { id: 'investors', label: 'Inversores', icon: Users, component: InvestorInfoTab },
-      { id: 'transactions', label: 'Transacciones', icon: SearchCheck, component: TransactionStatusTab },
-      { id: 'allowance', label: 'Asignación', icon: HandCoins, component: AllowanceTab },
-      { id: 'whitelist-balance', label: 'Balance Lista Blanca', icon: UserCheck, component: WhitelistStatusTab },
-      { id: 'whitelist-status', label: 'Estado Lista Blanca', icon: ListChecks, component: WhitelistCheckTab },
-      { id: 'network', label: 'Red', icon: Network, component: NetworkInfoTab },
+      { id: 'investors', label: 'Investors', icon: Users, component: InvestorInfoTab },
+      { id: 'transactions', label: 'Transactions', icon: SearchCheck, component: TransactionStatusTab },
+      { id: 'allowance', label: 'Allowance', icon: HandCoins, component: AllowanceTab },
+      { id: 'whitelist-balance', label: 'Whitelist Balance', icon: UserCheck, component: WhitelistStatusTab },
+      { id: 'whitelist-status', label: 'Whitelist Status', icon: ListChecks, component: WhitelistCheckTab },
+      { id: 'network', label: 'Network', icon: Network, component: NetworkInfoTab },
       { id: 'token', label: 'Token', icon: PackageSearch, component: TokenInfoTab },
-      { id: 'tokenizer', label: 'Tokenizador', icon: UserCog, component: TokenizerInfoTab },
+      { id: 'tokenizer', label: 'Tokenizer', icon: UserCog, component: TokenizerInfoTab },
       { id: 'blog', label: 'Blog', icon: Newspaper, component: BlogManagerTab },
-      { id: 'settings', label: 'Configuración', icon: Settings, component: SettingsTab },
+      { id: 'settings', label: 'Settings', icon: Settings, component: SettingsTab },
     ];
 
     export default function AdminPage() {
@@ -174,8 +174,8 @@ import React, { useState, useEffect, useCallback } from 'react';
       return (
         <>
           <Helmet>
-            <title>Panel de Administración - ENGYX</title>
-            <meta name="description" content="Gestión de activos digitales de Engyx." />
+            <title>Administration Panel - ENGYX</title>
+            <meta name="description" content="Management of digital assets for Engyx." />
           </Helmet>
 
           <div className="min-h-screen text-foreground">

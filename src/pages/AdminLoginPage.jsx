@@ -22,8 +22,8 @@ export default function AdminLoginPage() {
     const { error } = await signIn(email, password);
     if (!error) {
       toast({
-        title: 'Inicio de sesión exitoso',
-        description: 'Bienvenido al panel de administración.',
+        title: 'Login Successful',
+        description: 'Welcome to the admin panel.',
       });
       navigate('/admin');
     }
@@ -57,7 +57,7 @@ export default function AdminLoginPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="admin@engyx.xyz"
+                  placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -69,7 +69,7 @@ export default function AdminLoginPage() {
                 <Input
                   id="password"
                   type="password"
-                  placeholder="••••••••"
+                  placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
