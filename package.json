@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@defillama/sdk": "^5.0.160",
     "@emotion/is-prop-valid": "^1.2.1",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
@@ -73,5 +74,18 @@
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
-  }
+  },
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/engyx-io/Engyx-Web-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/engyx-io/Engyx-Web-page/issues"
+  },
+  "homepage": "https://github.com/engyx-io/Engyx-Web-page#readme",
+  "description": ""
 }
